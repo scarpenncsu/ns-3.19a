@@ -1,6 +1,6 @@
 /* -*-  Mode: C++; c-file-style: "gnu"; indent-tabs-mode:nil; -*- */
 /*
- * Copyright (c) 2011 University of Kansas
+ * Copyright (c) 2014 North Carolina State University
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 as
@@ -15,54 +15,59 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  *
- * Author: Justin Rohrer <rohrej@ittc.ku.edu>
+ * Author: Scott E. Carpenter <scarpen@ncsu.edu>
  *
- * James P.G. Sterbenz <jpgs@ittc.ku.edu>, director
- * ResiliNets Research Group  http://wiki.ittc.ku.edu/resilinets
- * Information and Telecommunication Technology Center (ITTC)
- * and Department of Electrical Engineering and Computer Science
- * The University of Kansas Lawrence, KS USA.
- *
- * Work supported in part by NSF FIND (Future Internet Design) Program
- * under grant CNS-0626918 (Postmodern Internet Architecture),
- * NSF grant CNS-1050226 (Multilayer Network Resilience Analysis and Experimentation on GENI),
- * US Department of Defense (DoD), and ITTC at The University of Kansas.
  */
 
 /*
- * This example program allows one to run ns-3 DSDV, AODV, or OLSR under
- * a typical random waypoint mobility model.
+ * This example program allows one to run vehicular ad hoc
+ * network (VANET) simulation scenarios in ns-3 to assess 
+ * performance by evaulating different 802.11p MAC/PHY
+ * characteristics, propagation loss models (e.g. Friss,
+ * Two-Ray Ground, or ITU R-P.1411), and application traffic
+ * (e.g. Basic Safety Message) and/or routing traffic (e.g.
+ * DSDV, AODV, OLSR, or DSR) under either a synthetic highway
+ * scenario (i.e. a random waypoint mobility model) or by 
+ * playing back mobility trace files (i.e. ns-2 format).
  *
- * By default, the simulation runs for 200 simulated seconds, of which
- * the first 50 are used for start-up time.  The number of nodes is 50.
- * Nodes move according to RandomWaypointMobilityModel with a speed of
- * 20 m/s and no pause time within a 300x1500 m region.  The WiFi is
- * in ad hoc mode with a 2 Mb/s rate (802.11b) and a Friis loss model.
- * The transmit power is set to 7.5 dBm.
+ * The script draws from several ns-3 examples, including:
+ * /examples/routing/manet-routing-compare.cc
+ * /src/propagation/model/itu-r-1411-los-propagaion-loss-model.cc
+ * /src/mobility/examples/ns2-mobility-trace.cc
+ * /src/wave/examples/wave-simple-80211p.cc
  *
- * It is possible to change the mobility and density of the network by
- * directly modifying the speed and the number of nodes.  It is also
- * possible to change the characteristics of the network by changing
- * the transmit power (as power increases, the impact of mobility
- * decreases and the effective density increases).
+ * The script allows many parameters to be modified and
+ * includes four predefined scenarios (1..4).  By default
+ * scenario=1 runs for 10 simulated seconds with 40 nodes
+ * (i.e. vehicles) moving according to RandomWaypointMobilityModel
+ * with a speed of 20 m/s and no pause time within a 300x1500 m 
+ * region.  The wiFi is 802.11p with continuous acces to a 10 MHz 
+ * Control Channel (CH) for all traffic.  All nodes transmit a 
+ * 200-byte safety message 10 times per secondat 6 Mbps. 
+ * Additionally, all nodes (optionally) attempt to
+ * continuously route 64-byte packets at an application
+ * rate of 2.048 Kbps to one of 10 other nodes, 
+ * selected as sink nodes. The default routing protocol is AODV.
+ * The ItuR1411LosPropagationLossModel loss model is used.  
+ * The transmit power is set to 20 dBm and the tranmission range
+ * for safety message packet delivery is 145 m.  
  *
- * By default, OLSR is used, but specifying a value of 2 for the protocol
- * will cause AODV to be used, and specifying a value of 3 will cause
- * DSDV to be used.
+ * Scenarios 2, 3, and 4 playback vehicular trace files in 
+ * ns-2 movement format, and are taken from:
+ * http://www.lst.inf.ethz.ch/research/ad-hoc/car-traces/
  *
- * By default, there are 10 source/sink data pairs sending UDP data
- * at an application rate of 2.048 Kb/s each.    This is typically done
- * at a rate of 4 64-byte packets per second.  Application data is
- * started at a random time between 50 and 51 seconds and continues
- * to the end of the simulation.
- *
- * The program outputs a few items:
- * - packet receptions are notified to stdout such as:
- *   <timestamp> <node-id> received one packet from <src-address>
- * - each second, the data reception statistics are tabulated and output
- *   to a comma-separated value (csv) file
- * - some tracing and flow monitor configuration that used to work is
- *   left commented inline in the program
+ * All parameters can be changed from their defaults (see  
+ * --help) and changing simualtion parameters can have dramatic
+ * impact on network performance.
+ * 
+ * Several items can be output:
+ * - a CSV file of data reception statistics, output once per
+ *   second
+ * - final statistics, in a CSV file
+ * - flowmon output 
+ * - dump of routing tables at 5 seconds into the simulation
+ * - ASCII trace file
+ * - PCAP trace files for each node
  */
 
 #include <fstream>
@@ -82,7 +87,7 @@
 #include "ns3/wifi-80211p-helper.h"
 #include "ns3/wave-mac-helper.h"
 #include "ns3/flow-monitor-module.h"
-#include "ns3/vanet-topology.h"
+// future:  #include "ns3/vanet-topology.h"
 
 using namespace ns3;
 using namespace dsr;
@@ -122,23 +127,17 @@ private:
 
   uint32_t port;
   uint32_t bytesTotal;
+  uint32_t totalBytesTotal;
   uint32_t packetsReceived;
+  uint32_t totalPacketsReceived;
 
   std::string m_CSVfileName;
+  std::string m_CSVfileName2;
   int m_nSinks;
   std::string m_protocolName;
   double m_txp;
   bool m_traceMobility;
   uint32_t m_protocol;
-
-  // antenna height
-  double m_hEnb;
-  double m_hUe;
-
-  // indoor / outdoor selections
-  // for propagation
-  bool m_enbIndoor;
-  bool m_ueIndoor;
 
   uint32_t m_lossModel;
   std::string m_lossModelName;
@@ -161,13 +160,16 @@ private:
   double m_waveInterval; // seconds
   int m_verbose;
   std::ofstream m_os;
-  //NodeContainer m_adhocTxNodes;
   NetDeviceContainer m_adhocTxDevices;
   Ipv4InterfaceContainer m_adhocTxInterfaces;
   uint32_t m_scenario;
   int m_flowmon;
   double m_gpsAccuracyNs;
+  int m_routing_tables;
+  int m_ascii_trace;
+  int m_pcap;
 
+  // future
   int m_loadBuildings;
 };
 
@@ -181,17 +183,16 @@ double VanetRoutingExperiment::m_txSafetyRangeSq = 145.0 * 145.0;
 VanetRoutingExperiment::VanetRoutingExperiment ()
   : port (9),
     bytesTotal (0),
+    totalBytesTotal (0),
     packetsReceived (0),
+    totalPacketsReceived (0),
     m_CSVfileName ("vanet-routing.output.csv"),
+    m_CSVfileName2 ("vanet-routing.output2.csv"),
     m_nSinks (10),
     m_protocolName ("protocol"),
     m_txp (7.5),
     m_traceMobility (false),
     m_protocol (2), // AODV
-    m_hEnb (2.0),
-    m_hUe (2.0),
-    m_enbIndoor (false),
-    m_ueIndoor (false),
     m_lossModel (2), // ITU R-1441
     m_lossModelName (""),
     m_phyMode ("OfdmRate6MbpsBW10MHz"),
@@ -213,6 +214,9 @@ VanetRoutingExperiment::VanetRoutingExperiment ()
     m_scenario (1),
     m_flowmon (1),
     m_gpsAccuracyNs (10000),
+    m_routing_tables (0),
+    m_ascii_trace (0),
+    m_pcap (0),
     m_loadBuildings (0)
 {
 }
@@ -262,7 +266,9 @@ VanetRoutingExperiment::ReceivePacket (Ptr<Socket> socket)
   while ((packet = socket->Recv ()))
     {
       bytesTotal += packet->GetSize ();
+      totalBytesTotal += packet->GetSize ();
       packetsReceived += 1;
+      totalPacketsReceived += 1;
       NS_LOG_UNCOND ("ROUT  " + PrintReceivedPacket (socket, packet));
     }
 }
@@ -294,8 +300,6 @@ void VanetRoutingExperiment::ReceiveWavePacket (Ptr<Socket> socket)
   while ((packet = socket->Recv ()))
     {
       VanetRoutingExperiment::wavePktReceiveCount++;
-      bytesTotal += packet->GetSize ();
-      packetsReceived += 1;
       Ptr<Node> node = socket->GetNode ();
 
       Ptr<MobilityModel> rxPosition = node->GetObject<MobilityModel> ();
@@ -482,6 +486,7 @@ VanetRoutingExperiment::CommandSetup (int argc, char **argv)
   CommandLine cmd;
   double txDist = 145.0;
   cmd.AddValue ("CSVfileName", "The name of the CSV output file name", m_CSVfileName);
+  cmd.AddValue ("CSVfileName2", "The name of the CSV output file name2", m_CSVfileName2);
   cmd.AddValue ("totaltime", "Simulation end time", m_TotalTime);
   cmd.AddValue ("nodes", "Number of nodes (i.e. vehicles)", m_nNodes);
   cmd.AddValue ("sinks", "Number of routing sinks", m_nSinks);
@@ -502,9 +507,12 @@ VanetRoutingExperiment::CommandSetup (int argc, char **argv)
   cmd.AddValue ("bsm", "(WAVE) BSM size (bytes)", m_wavePacketSize);
   cmd.AddValue ("interval", "(WAVE) BSM interval (s)", m_waveInterval);
   cmd.AddValue ("scenario", "1=playback(abc)", m_scenario);
-  cmd.AddValue ("flowmon", "o=off; 1=on", m_flowmon);
+  cmd.AddValue ("flowmon", "0=off; 1=on", m_flowmon);
   cmd.AddValue ("txdist", "Expected BSM tx range, m", txDist);
   cmd.AddValue ("gpsaccurcy", "GPS time accuracy, in ns", m_gpsAccuracyNs);
+  cmd.AddValue ("routing_tables", "Dump routing tables at t=5 seconds", m_routing_tables);
+  cmd.AddValue ("ascii_trace", "Dump ASCII Trace data", m_ascii_trace);
+  cmd.AddValue ("pcap", "Create PCAP files for all nodes", m_pcap);
   cmd.AddValue ("buildings", "Load building (obstacles)", m_loadBuildings);
   cmd.Parse (argc, argv);
 
@@ -668,10 +676,16 @@ VanetRoutingExperiment::SetupAdhocDevices ()
     m_adhocTxDevices = wifi.Install (wifiPhy, wifiMac, VanetRoutingExperiment::m_adhocTxNodes);
     }
 
-  AsciiTraceHelper ascii;
-  Ptr<OutputStreamWrapper> osw = ascii.CreateFileStream ( (m_tr_name + ".tr").c_str());
-  wifiPhy.EnableAsciiAll (osw);
-  wifiPhy.EnablePcapAll("vanet-routing-compare-pcap");
+  if (m_ascii_trace != 0)
+    {
+      AsciiTraceHelper ascii;
+      Ptr<OutputStreamWrapper> osw = ascii.CreateFileStream ( (m_tr_name + ".tr").c_str());
+      wifiPhy.EnableAsciiAll (osw);
+    }
+  if (m_pcap != 0) 
+    {
+      wifiPhy.EnablePcapAll("vanet-routing-compare-pcap");
+    }
 }
 
 void
@@ -693,18 +707,27 @@ VanetRoutingExperiment::SetupRouting ()
   switch (m_protocol)
     {
     case 1:
-      olsr.PrintRoutingTableAllAt(rtt, rtw);
+      if (m_routing_tables != 0)
+        {
+          olsr.PrintRoutingTableAllAt(rtt, rtw);
+        }
       list.Add (olsr, 100);
       m_protocolName = "OLSR";
       break;
     case 0:
     case 2:
-      aodv.PrintRoutingTableAllAt(rtt, rtw);
+      if (m_routing_tables != 0)
+        {
+          aodv.PrintRoutingTableAllAt(rtt, rtw);
+        }
       list.Add (aodv, 100);
       m_protocolName = "AODV";
       break;
     case 3:
-      dsdv.PrintRoutingTableAllAt(rtt, rtw);
+      if (m_routing_tables != 0)
+        {
+          dsdv.PrintRoutingTableAllAt(rtt, rtw);
+        }
       list.Add (dsdv, 100);
       m_protocolName = "DSDV";
       break;
@@ -835,51 +858,54 @@ VanetRoutingExperiment::SetupScenario()
     if (m_loadBuildings != 0) 
       {
         std::string bldgFile = "scratch/highway.buildings.xml";
-        Topology::LoadBuildings(bldgFile);
+        // future Topology::LoadBuildings(bldgFile);
       }
     }
   else if (m_scenario == 2) 
     {
     // Realistic vehicular trace in 4.6 km x 3.0 km suburban Zurich
-    // "low density"
-    m_traceFile = "./scratch/low_ct-unterstrass-1day.filt.5.adj.mov";
-    m_logFile = "low_ct-unterstrass-1day.filt.5.adj.log";
+    // "low density, 99 total vehicles"
+    m_traceFile = "./scratch/low99-ct-unterstrass-1day.filt.7.adj.mov";
+    m_logFile = "low99-ct-unterstrass-1day.filt.7.adj.log";
     m_mobility = 1;
-    m_nNodes = 156;
+    m_nNodes = 99;
     m_TotalTime = 300.01;
     m_nodeSpeed = 0;
     m_nodePause = 0;
     m_CSVfileName = "low_vanet-routing-compare.csv";
+    m_CSVfileName2 = "low_vanet-routing-compare2.csv";
     }
   else if (m_scenario == 3) 
     {
     // Realistic vehicular trace in 4.6 km x 3.0 km suburban Zurich
-    // "med density"
-    m_traceFile = "./scratch/low_ct-unterstrass-1day.filt.5.adj.mov";
-    m_logFile = "low_ct-unterstrass-1day.filt.5.adj.log";
+    // "med density, 210 total vehicles"
+    m_traceFile = "./scratch/med210-ct-unterstrass-1day.filt.0.adj.mov";
+    m_logFile = "med210-ct-unterstrass-1day.filt.0.adj.log";
     m_mobility = 1;
-    m_nNodes = 156;
+    m_nNodes = 210;
     m_TotalTime = 300.01;
     m_nodeSpeed = 0;
     m_nodePause = 0;
-    m_CSVfileName = "low_vanet-routing-compare.csv";
+    m_CSVfileName = "med_vanet-routing-compare.csv";
+    m_CSVfileName = "med_vanet-routing-compare2.csv";
     }
   else if (m_scenario == 4) 
     {
     // Realistic vehicular trace in 4.6 km x 3.0 km suburban Zurich
-    // "high density"
-    m_traceFile = "./scratch/low_ct-unterstrass-1day.filt.5.adj.mov";
-    m_logFile = "low_ct-unterstrass-1day.filt.5.adj.log";
+    // "high density, 370 total vehicles"
+    m_traceFile = "./scratch/high370-ct-unterstrass-1day.filt.9.adj.mov";
+    m_logFile = "high370-ct-unterstrass-1day.filt.9.adj.log";
     m_mobility = 1;
-    m_nNodes = 156;
+    m_nNodes = 370;
     m_TotalTime = 300.01;
     m_nodeSpeed = 0;
     m_nodePause = 0;
-    m_CSVfileName = "low_vanet-routing-compare.csv";
+    m_CSVfileName = "high_vanet-routing-compare.csv";
+    m_CSVfileName = "high_vanet-routing-compare2.csv";
     }
   else if (m_scenario == 5) 
     {
-    // Centennial campus
+    // NCSU Centennial campus
     m_traceFile = "./scratch/centennial2.ns2";
     m_logFile = "centennial2.log";
     m_mobility = 1;
@@ -888,13 +914,14 @@ VanetRoutingExperiment::SetupScenario()
     m_nodeSpeed = 0;
     m_nodePause = 0;
     m_CSVfileName = "centennial2.csv";
+    m_CSVfileName = "centennial2_2.csv";
     // WAVE BSM only
     m_protocol = 0;
     m_txSafetyRangeSq = 145.0 * 145.0;
     if (m_loadBuildings != 0) 
       {
         std::string bldgFile = "scratch/centennial1.buildings.xml";
-        Topology::LoadBuildings(bldgFile);
+        // future:  Topology::LoadBuildings(bldgFile);
       }
     }
   if (m_txp == 7.5)
@@ -924,10 +951,13 @@ VanetRoutingExperiment::Run ()
 
   // Enable flowmon capture
   Ptr<FlowMonitor> flowmon;
+  Ptr<FlowMonitor> monitor;
   FlowMonitorHelper flowmonHelper;
   if (m_flowmon != 0)
     {
     flowmon = flowmonHelper.InstallAll ();
+    monitor = flowmon; //.GetMonitor();
+    //monitor->CheckForLostPackets();
     }
 
   NS_LOG_INFO ("Run Simulation.");
@@ -937,10 +967,95 @@ VanetRoutingExperiment::Run ()
   Simulator::Stop (Seconds (m_TotalTime));
   Simulator::Run ();
 
+  Time totalDelaySum;
+  int totalRxPackets = 0;
+  Time totalJitterSum;
+  int totalTxBytes = 0;
+  int totalRxBytes = 0;
+  int totalTxPackets = 0;
+  int totalLostPackets = 0;
   if (m_flowmon != 0)
     {
     flowmon->SerializeToXmlFile ((m_tr_name + ".flowmon").c_str(), false, false);
+    // collect statistics
+    Ptr<Ipv4FlowClassifier> classifier = DynamicCast<Ipv4FlowClassifier>(flowmonHelper.GetClassifier());
+    std::map<FlowId, FlowMonitor::FlowStats> stats = monitor->GetFlowStats();
+    for(std::map<FlowId, FlowMonitor::FlowStats>::const_iterator i = stats.begin(); i != stats.end(); ++i)
+      {
+        Ipv4FlowClassifier::FiveTuple t = classifier->FindFlow(i->first);
+        // routing flows
+        if (t.destinationPort == 9) 
+          {
+            totalTxBytes += i->second.txBytes;
+            totalTxPackets += i->second.txPackets;
+            totalRxBytes += i->second.rxBytes;
+            totalRxPackets += i->second.rxPackets;
+            totalLostPackets += i->second.lostPackets;
+            totalDelaySum += i->second.delaySum;
+            totalJitterSum += i->second.jitterSum;
+          }
+      }
     }
+
+  // calculate and output final results
+  double bsm_pdr = 0.0;
+  if (VanetRoutingExperiment::wavePktExpectedReceiveCount > 0) {
+    bsm_pdr = (double) VanetRoutingExperiment::wavePktInCoverageReceiveCount / (double) VanetRoutingExperiment::wavePktExpectedReceiveCount;
+    }
+
+  double meanDelay = 0.0;
+  if (totalRxPackets > 0)
+    {
+      meanDelay = totalDelaySum.GetDouble() / (double) totalRxPackets;
+    }
+
+  double meanJitter = 0.0;
+  if (totalRxPackets > 0)
+    {
+      meanJitter = totalJitterSum.GetDouble() / (double) totalRxPackets;
+    }
+
+  double meanTxPktSize = 0.0;
+  if (totalTxPackets > 0)
+    {
+      meanTxPktSize = (double) totalTxBytes / (double) totalTxPackets;
+    }
+
+  double meanRxPktSize = 0.0;
+  if (totalRxPackets > 0)
+    {
+      meanRxPktSize = (double) totalRxBytes / (double) totalRxPackets;
+    }
+
+  double meanPktLossRatio = 0.0;
+  if (totalRxPackets > 0)
+    {
+      meanPktLossRatio = (double) totalLostPackets / ((double) totalRxPackets + (double) totalLostPackets);
+    }
+
+  double meanRxThroughputKbps = 0.0;
+  if (totalRxPackets > 0)
+    {
+      meanRxThroughputKbps = ((double) (totalRxBytes * 8.0) / m_TotalTime) / 1000.0;
+   }
+
+  double meanRoutingThroughputKbps = 0.0;
+  meanRoutingThroughputKbps = (((double) totalBytesTotal * 8.0) / m_TotalTime) / 1000.0;
+
+  std::ofstream out (m_CSVfileName2.c_str (), std::ios::app);
+
+  out << bsm_pdr << ","
+      << meanDelay << ","
+      << meanJitter << ","
+      << meanTxPktSize << ","
+      << meanRxPktSize << ","
+      << meanPktLossRatio << ","
+      << meanRxThroughputKbps << ","
+      << meanRoutingThroughputKbps << ""
+      << std::endl;
+
+  out.close ();
+
 
   Simulator::Destroy ();
 
@@ -966,6 +1081,18 @@ VanetRoutingExperiment::WriteCsvHeader ()
   "BSM_PDR" <<
   std::endl;
   out.close ();
+
+  std::ofstream out2 (m_CSVfileName2.c_str ());
+  out2 << "BSM_PDR," <<
+  "MeanDelay," <<
+  "MeanJitter," <<
+  "MeanTxPktSize," <<
+  "MeanRxPktSize," <<
+  "MeanPktLossRatio," <<
+  "MeanRxThroughputKbps," <<
+  "MeanRoutingThroughputKbps" <<
+  std::endl;
+  out2.close ();
 }
 
 int

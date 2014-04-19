@@ -1,0 +1,3050 @@
+# Statisitcs:
+# T_min:	0.000000	T_max:	300.010000
+# X_min:	10	X_max:	4660
+# Y_min:	10	Y_max:	3010
+# V_min:	7.806775	V_max:	32.386778	V_avg:	15.486161
+# nn:	210	area:	13950000.000000 
+# events:	1624	hosts/area:	0.150538
+# Last mov would end time at (time): 355.020
+#
+# Processed from file: ct-unterstrass-1day.filt.0.mov
+# ADJUSTMENT: X_min=679990.0 Y_min=247490.0 T_min=35560.980000 T_max= T_scalar=1
+#
+# Statisitcs:
+# T_min:	35560.980000	T_max:	35860.990000
+# X_min:	680000	X_max:	684650
+# Y_min:	247500	Y_max:	250500
+# V_min:	7.806775	V_max:	32.386778	V_avg:	15.486161
+# nn:	210	area:	13950000.000000 
+# events:	1624	hosts/area:	0.150538
+# Last mov would end time at (time): 35916.000
+#
+# Processed from file: ct-unterstrass-1day.filt.mov
+# FILTERING: X_min=0 X_max=999999999 Y_min=0 Y_max=999999999 T_min=35560.990000 T_max=35860.990000 V_min=0
+#
+# Statisitcs:
+# T_min:	35560.990000	T_max:	37461.000000
+# X_min:	680000	X_max:	684650
+# Y_min:	247500	Y_max:	250500
+# V_min:	7.806775	V_max:	32.386778	V_avg:	15.496693
+# nn:	505	area:	13950000.000000 
+# events:	5174	hosts/area:	0.362007
+# Last mov would end time at (time): 37484.000
+#
+# Processed from file: ct-unterstrass-1day.mov
+# FILTERING: X_min=0 X_max=999999999 Y_min=0 Y_max=999999999 T_min=35561 T_max=37461 V_min=0
+#
+#
+# VANET traces; ns-2 movement file
+# Parser: car-xml2ns
+#
+# City region: Unterstrass
+# Statisitcs:
+# T_min:	16392.990000	T_max:	88387.766811
+# X_min:	680000	X_max:	685000
+# Y_min:	247500	Y_max:	250500
+# V_min:	1.279985	V_max:	32.641710	V_avg:	14.853009
+# nn:	96934	area:	15000000.000000 
+# events:	1973502	hosts/area:	64.622667
+# Last mov would end time at (time): 88387.767
+#
+# Processed from file: VANET-traces-ns2.mov
+# X_min=680000 X_max=685000 Y_min=247500 Y_max=250500 T_min=0 T_max=999999999 V_min=0
+#
+#
+# VANET traces; ns-2 movement file
+# Parser: car-xml2ns
+#
+# Statisitc for VANET-traces-ns2.mov
+# T_min: 14208.990000    T_max:  90811.692948
+# X_min: 486740  X_max:  840500
+# Y_min: 46000   Y_max:  309000
+# V_min: 0.787110        V_max:  32.679368       V_avg:  20.536439
+# nn:    259978  
+# events:        27609858
+#
+# More information on VANET traces can be found in the MobiHoc 2006 paper:
+# Val Naumov, Rainer Baumann, Thomas Gross "An Evaluation of Inter-Vehicle Ad Hoc Networks Based on Realistic Vehicular Traces"
+# (http://www.lst.inf.ethz.ch/research)
+#
+# The speed of 10^9 m/s is used to initially place nodes
+# from (0,0) to their trip starting points, e.g.:
+# $node_(12345) set X_ 0.0
+# $node_(12345) set Y_ 0.0
+# $node_(12345) set Z_ 0.0
+# $ns_ at 10000.990000 "$node_(12345) setdest 710130.000000 91630.000000 1000000000.0"
+#
+
+$ns_ at 0.0 "$node_(0) switch OFF" ;# set_X,Y,Z  
+$node_(0) set X_ 0.000000
+$node_(0) set Y_ 0.000000
+$node_(0) set Z_ 0.0
+$ns_ at 0.000000 "$node_(0) setdest 3886.879741 666.356075 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(0) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(0) setdest 3889.899747 634.394342 12.382848" ;# 
+$ns_ at 0.0 "$node_(1) switch OFF" ;# set_X,Y,Z  
+$node_(1) set X_ 0.000000
+$node_(1) set Y_ 0.000000
+$node_(1) set Z_ 0.0
+$ns_ at 0.000000 "$node_(1) setdest 3546.628838 2442.143413 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(1) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(1) setdest 3550.416788 2450.034975 15.848788" ;# 
+$ns_ at 0.0 "$node_(2) switch OFF" ;# set_X,Y,Z  
+$node_(2) set X_ 0.000000
+$node_(2) set Y_ 0.000000
+$node_(2) set Z_ 0.0
+$ns_ at 0.000000 "$node_(2) setdest 3458.680991 2258.918731 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(2) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(2) setdest 3431.152763 2201.568256 16.097051" ;# 
+$ns_ at 0.0 "$node_(3) switch OFF" ;# set_X,Y,Z  
+$node_(3) set X_ 0.000000
+$node_(3) set Y_ 0.000000
+$node_(3) set Z_ 0.0
+$ns_ at 0.000000 "$node_(3) setdest 1304.153830 2547.384624 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(3) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(3) setdest 1140.584668 2633.879311 16.620014" ;# 
+$ns_ at 0.0 "$node_(4) switch OFF" ;# set_X,Y,Z  
+$node_(4) set X_ 0.000000
+$node_(4) set Y_ 0.000000
+$node_(4) set Z_ 0.0
+$ns_ at 0.000000 "$node_(4) setdest 2877.830222 264.264178 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(4) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(4) setdest 2876.528686 263.222949 12.578349" ;# 
+$ns_ at 0.0 "$node_(5) switch OFF" ;# set_X,Y,Z  
+$node_(5) set X_ 0.000000
+$node_(5) set Y_ 0.000000
+$node_(5) set Z_ 0.0
+$ns_ at 0.000000 "$node_(5) setdest 2854.969144 996.776227 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(5) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(5) setdest 2833.218924 1015.263914 13.572748" ;# 
+$ns_ at 0.0 "$node_(6) switch OFF" ;# set_X,Y,Z  
+$node_(6) set X_ 0.000000
+$node_(6) set Y_ 0.000000
+$node_(6) set Z_ 0.0
+$ns_ at 0.000000 "$node_(6) setdest 825.193001 2144.959791 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(6) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(6) setdest 866.470703 2137.913597 15.907716" ;# 
+$ns_ at 0.0 "$node_(7) switch OFF" ;# set_X,Y,Z  
+$node_(7) set X_ 0.000000
+$node_(7) set Y_ 0.000000
+$node_(7) set Z_ 0.0
+$ns_ at 0.000000 "$node_(7) setdest 1582.651267 546.504790 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(7) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(7) setdest 1290.000000 1090.000000 16.244151" ;# 
+$ns_ at 0.0 "$node_(8) switch OFF" ;# set_X,Y,Z  
+$node_(8) set X_ 0.000000
+$node_(8) set Y_ 0.000000
+$node_(8) set Z_ 0.0
+$ns_ at 0.000000 "$node_(8) setdest 1534.092091 636.686117 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(8) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(8) setdest 1555.218853 597.450701 15.601630" ;# 
+$ns_ at 0.0 "$node_(9) switch OFF" ;# set_X,Y,Z  
+$node_(9) set X_ 0.000000
+$node_(9) set Y_ 0.000000
+$node_(9) set Z_ 0.0
+$ns_ at 0.000000 "$node_(9) setdest 2675.615990 2704.578621 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(9) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(9) setdest 2660.000000 2730.000000 9.944888" ;# 
+$ns_ at 0.0 "$node_(10) switch OFF" ;# set_X,Y,Z  
+$node_(10) set X_ 0.000000
+$node_(10) set Y_ 0.000000
+$node_(10) set Z_ 0.0
+$ns_ at 0.000000 "$node_(10) setdest 2655.302224 29.060445 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(10) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(10) setdest 2560.000000 10.000000 16.198268" ;# 
+$ns_ at 0.0 "$node_(11) switch OFF" ;# set_X,Y,Z  
+$node_(11) set X_ 0.000000
+$node_(11) set Y_ 0.000000
+$node_(11) set Z_ 0.0
+$ns_ at 0.000000 "$node_(11) setdest 1085.712230 2100.333525 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(11) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(11) setdest 1071.000000 2103.000000 14.951900" ;# 
+$ns_ at 0.0 "$node_(12) switch OFF" ;# set_X,Y,Z  
+$node_(12) set X_ 0.000000
+$node_(12) set Y_ 0.000000
+$node_(12) set Z_ 0.0
+$ns_ at 0.000000 "$node_(12) setdest 1781.895341 176.480081 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(12) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(12) setdest 1633.902243 451.324406 14.631564" ;# 
+$ns_ at 0.0 "$node_(13) switch OFF" ;# set_X,Y,Z  
+$node_(13) set X_ 0.000000
+$node_(13) set Y_ 0.000000
+$node_(13) set Z_ 0.0
+$ns_ at 0.000000 "$node_(13) setdest 2876.901403 263.521121 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(13) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(13) setdest 2885.544077 270.435261 13.527727" ;# 
+$ns_ at 0.0 "$node_(14) switch OFF" ;# set_X,Y,Z  
+$node_(14) set X_ 0.000000
+$node_(14) set Y_ 0.000000
+$node_(14) set Z_ 0.0
+$ns_ at 0.000000 "$node_(14) setdest 1524.146344 1433.902443 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(14) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(14) setdest 1610.000000 1560.000000 13.868165" ;# 
+$ns_ at 0.0 "$node_(15) switch OFF" ;# set_X,Y,Z  
+$node_(15) set X_ 0.000000
+$node_(15) set Y_ 0.000000
+$node_(15) set Z_ 0.0
+$ns_ at 0.000000 "$node_(15) setdest 3290.000000 1019.999995 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(15) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(15) setdest 3290.000000 1020.000000 13.682917" ;# 
+$ns_ at 0.0 "$node_(16) switch OFF" ;# set_X,Y,Z  
+$node_(16) set X_ 0.000000
+$node_(16) set Y_ 0.000000
+$node_(16) set Z_ 0.0
+$ns_ at 0.000000 "$node_(16) setdest 3800.413033 2908.458071 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(16) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(16) setdest 3800.000000 2970.000000 12.308666" ;# 
+$ns_ at 0.0 "$node_(17) switch OFF" ;# set_X,Y,Z  
+$node_(17) set X_ 0.000000
+$node_(17) set Y_ 0.000000
+$node_(17) set Z_ 0.0
+$ns_ at 0.000000 "$node_(17) setdest 3291.333334 992.666662 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(17) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(17) setdest 3290.000000 1020.000000 13.682917" ;# 
+$ns_ at 0.0 "$node_(18) switch OFF" ;# set_X,Y,Z  
+$node_(18) set X_ 0.000000
+$node_(18) set Y_ 0.000000
+$node_(18) set Z_ 0.0
+$ns_ at 0.000000 "$node_(18) setdest 3809.090538 1615.509833 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(18) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(18) setdest 3810.000000 1480.000000 12.319358" ;# 
+$ns_ at 0.0 "$node_(19) switch OFF" ;# set_X,Y,Z  
+$node_(19) set X_ 0.000000
+$node_(19) set Y_ 0.000000
+$node_(19) set Z_ 0.0
+$ns_ at 0.000000 "$node_(19) setdest 3888.880081 645.185809 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(19) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(19) setdest 3930.000000 210.000000 12.489262" ;# 
+$ns_ at 0.0 "$node_(20) switch OFF" ;# set_X,Y,Z  
+$node_(20) set X_ 0.000000
+$node_(20) set Y_ 0.000000
+$node_(20) set Z_ 0.0
+$ns_ at 0.000000 "$node_(20) setdest 3292.666667 965.333329 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(20) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(20) setdest 3290.000000 1020.000000 13.682917" ;# 
+$ns_ at 0.0 "$node_(21) switch OFF" ;# set_X,Y,Z  
+$node_(21) set X_ 0.000000
+$node_(21) set Y_ 0.000000
+$node_(21) set Z_ 0.0
+$ns_ at 0.000000 "$node_(21) setdest 1799.485322 143.812973 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(21) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(21) setdest 1700.594112 327.468077 16.073803" ;# 
+$ns_ at 0.0 "$node_(22) switch OFF" ;# set_X,Y,Z  
+$node_(22) set X_ 0.000000
+$node_(22) set Y_ 0.000000
+$node_(22) set Z_ 0.0
+$ns_ at 0.000000 "$node_(22) setdest 3293.333334 951.666662 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(22) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(22) setdest 3290.000000 1020.000000 13.682917" ;# 
+$ns_ at 0.0 "$node_(23) switch OFF" ;# set_X,Y,Z  
+$node_(23) set X_ 0.000000
+$node_(23) set Y_ 0.000000
+$node_(23) set Z_ 0.0
+$ns_ at 0.000000 "$node_(23) setdest 1287.002860 2063.851193 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(23) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(23) setdest 1071.000000 2103.000000 15.680135" ;# 
+$ns_ at 0.0 "$node_(24) switch OFF" ;# set_X,Y,Z  
+$node_(24) set X_ 0.000000
+$node_(24) set Y_ 0.000000
+$node_(24) set Z_ 0.0
+$ns_ at 0.000000 "$node_(24) setdest 3070.222218 1318.148154 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(24) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(24) setdest 3032.000000 1370.000000 16.104256" ;# 
+$ns_ at 0.0 "$node_(25) switch OFF" ;# set_X,Y,Z  
+$node_(25) set X_ 0.000000
+$node_(25) set Y_ 0.000000
+$node_(25) set Z_ 0.0
+$ns_ at 12.600909 "$node_(25) setdest 3511.136364 10.000000 1000000000.000000" ;# init_node
+$ns_ at 12.610909 "$node_(25) switch ON" ;# inside  
+$ns_ at 12.610909 "$node_(25) setdest 3310.000000 160.000000 13.629680" ;# 
+$ns_ at 0.0 "$node_(26) switch OFF" ;# set_X,Y,Z  
+$node_(26) set X_ 0.000000
+$node_(26) set Y_ 0.000000
+$node_(26) set Z_ 0.0
+$ns_ at 2.010000 "$node_(26) setdest 2560.000000 10.000000 1000000000.000000" ;# init_node
+$ns_ at 2.020000 "$node_(26) switch ON" ;# inside  
+$ns_ at 2.020000 "$node_(26) setdest 2560.000000 10.000000 15.366328" ;# 
+$ns_ at 0.0 "$node_(27) switch OFF" ;# set_X,Y,Z  
+$node_(27) set X_ 0.000000
+$node_(27) set Y_ 0.000000
+$node_(27) set Z_ 0.0
+$ns_ at 0.000000 "$node_(27) setdest 3077.605638 424.084511 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(27) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(27) setdest 2560.000000 10.000000 13.527727" ;# 
+$ns_ at 0.0 "$node_(28) switch OFF" ;# set_X,Y,Z  
+$node_(28) set X_ 0.000000
+$node_(28) set Y_ 0.000000
+$node_(28) set Z_ 0.0
+$ns_ at 14.600909 "$node_(28) setdest 3511.136364 10.000000 1000000000.000000" ;# init_node
+$ns_ at 14.610909 "$node_(28) switch ON" ;# inside  
+$ns_ at 14.610909 "$node_(28) setdest 3310.000000 160.000000 13.629680" ;# 
+$ns_ at 0.0 "$node_(29) switch OFF" ;# set_X,Y,Z  
+$node_(29) set X_ 0.000000
+$node_(29) set Y_ 0.000000
+$node_(29) set Z_ 0.0
+$ns_ at 0.000000 "$node_(29) setdest 3803.544224 2441.910650 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(29) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(29) setdest 3804.263915 2334.676627 13.320825" ;# 
+$ns_ at 0.0 "$node_(30) switch OFF" ;# set_X,Y,Z  
+$node_(30) set X_ 0.000000
+$node_(30) set Y_ 0.000000
+$node_(30) set Z_ 0.0
+$ns_ at 0.000000 "$node_(30) setdest 3565.494392 2481.446649 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(30) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(30) setdest 3800.000000 2970.000000 16.421816" ;# 
+$ns_ at 0.0 "$node_(31) switch OFF" ;# set_X,Y,Z  
+$node_(31) set X_ 0.000000
+$node_(31) set Y_ 0.000000
+$node_(31) set Z_ 0.0
+$ns_ at 0.000000 "$node_(31) setdest 3197.622447 1486.506642 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(31) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(31) setdest 3090.000000 2030.000000 13.513331" ;# 
+$ns_ at 0.0 "$node_(32) switch OFF" ;# set_X,Y,Z  
+$node_(32) set X_ 0.000000
+$node_(32) set Y_ 0.000000
+$node_(32) set Z_ 0.0
+$ns_ at 0.000000 "$node_(32) setdest 3120.287854 771.255324 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(32) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(32) setdest 2986.491933 884.981857 13.104521" ;# 
+$ns_ at 0.0 "$node_(33) switch OFF" ;# set_X,Y,Z  
+$node_(33) set X_ 0.000000
+$node_(33) set Y_ 0.000000
+$node_(33) set Z_ 0.0
+$ns_ at 0.000000 "$node_(33) setdest 3808.240741 1742.129630 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(33) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(33) setdest 3805.781452 2108.563607 13.796607" ;# 
+$ns_ at 0.0 "$node_(34) switch OFF" ;# set_X,Y,Z  
+$node_(34) set X_ 0.000000
+$node_(34) set Y_ 0.000000
+$node_(34) set Z_ 0.0
+$ns_ at 0.000000 "$node_(34) setdest 3242.631578 1259.210531 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(34) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(34) setdest 3211.887556 1414.467842 13.547521" ;# 
+$ns_ at 0.0 "$node_(35) switch OFF" ;# set_X,Y,Z  
+$node_(35) set X_ 0.000000
+$node_(35) set Y_ 0.000000
+$node_(35) set Z_ 0.0
+$ns_ at 0.000000 "$node_(35) setdest 1866.680199 19.022489 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(35) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(35) setdest 1567.112367 575.362747 15.300799" ;# 
+$ns_ at 0.0 "$node_(36) switch OFF" ;# set_X,Y,Z  
+$node_(36) set X_ 0.000000
+$node_(36) set Y_ 0.000000
+$node_(36) set Z_ 0.0
+$ns_ at 0.000000 "$node_(36) setdest 3247.187764 1236.201789 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(36) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(36) setdest 3210.673389 1420.599383 12.964698" ;# 
+$ns_ at 0.0 "$node_(37) switch OFF" ;# set_X,Y,Z  
+$node_(37) set X_ 0.000000
+$node_(37) set Y_ 0.000000
+$node_(37) set Z_ 0.0
+$ns_ at 0.000000 "$node_(37) setdest 3545.034835 2438.822573 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(37) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(37) setdest 3032.000000 1370.000000 16.240743" ;# 
+$ns_ at 0.0 "$node_(38) switch OFF" ;# set_X,Y,Z  
+$node_(38) set X_ 0.000000
+$node_(38) set Y_ 0.000000
+$node_(38) set Z_ 0.0
+$ns_ at 0.000000 "$node_(38) setdest 2837.185187 1521.851851 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(38) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(38) setdest 2547.067450 1747.989250 16.467044" ;# 
+$ns_ at 0.0 "$node_(39) switch OFF" ;# set_X,Y,Z  
+$node_(39) set X_ 0.000000
+$node_(39) set Y_ 0.000000
+$node_(39) set Z_ 0.0
+$ns_ at 0.000000 "$node_(39) setdest 1417.047476 854.054687 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(39) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(39) setdest 1505.469742 689.841907 17.865081" ;# 
+$ns_ at 0.0 "$node_(40) switch OFF" ;# set_X,Y,Z  
+$node_(40) set X_ 0.000000
+$node_(40) set Y_ 0.000000
+$node_(40) set Z_ 0.0
+$ns_ at 0.000000 "$node_(40) setdest 1101.606359 2097.452840 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(40) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(40) setdest 1071.000000 2103.000000 15.552482" ;# 
+$ns_ at 0.0 "$node_(41) switch OFF" ;# set_X,Y,Z  
+$node_(41) set X_ 0.000000
+$node_(41) set Y_ 0.000000
+$node_(41) set Z_ 0.0
+$ns_ at 0.000000 "$node_(41) setdest 2106.283752 2290.284156 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(41) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(41) setdest 1980.000000 2190.000000 16.125912" ;# 
+$ns_ at 0.0 "$node_(42) switch OFF" ;# set_X,Y,Z  
+$node_(42) set X_ 0.000000
+$node_(42) set Y_ 0.000000
+$node_(42) set Z_ 0.0
+$ns_ at 0.000000 "$node_(42) setdest 1493.246431 1388.518196 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(42) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(42) setdest 1477.241117 1365.010391 15.958045" ;# 
+$ns_ at 0.0 "$node_(43) switch OFF" ;# set_X,Y,Z  
+$node_(43) set X_ 0.000000
+$node_(43) set Y_ 0.000000
+$node_(43) set Z_ 0.0
+$ns_ at 0.000000 "$node_(43) setdest 2888.171644 2798.982125 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(43) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(43) setdest 2801.870818 2772.891178 16.219257" ;# 
+$ns_ at 0.0 "$node_(44) switch OFF" ;# set_X,Y,Z  
+$node_(44) set X_ 0.000000
+$node_(44) set Y_ 0.000000
+$node_(44) set Z_ 0.0
+$ns_ at 0.000000 "$node_(44) setdest 2075.116336 1738.264700 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(44) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(44) setdest 2003.883496 1811.689319 12.150571" ;# 
+$ns_ at 0.0 "$node_(45) switch OFF" ;# set_X,Y,Z  
+$node_(45) set X_ 0.000000
+$node_(45) set Y_ 0.000000
+$node_(45) set Z_ 0.0
+$ns_ at 10.499796 "$node_(45) setdest 3917.755102 10.000000 1000000000.000000" ;# init_node
+$ns_ at 10.509796 "$node_(45) switch ON" ;# inside  
+$ns_ at 10.509796 "$node_(45) setdest 3930.000000 210.000000 12.918882" ;# 
+$ns_ at 0.0 "$node_(46) switch OFF" ;# set_X,Y,Z  
+$node_(46) set X_ 0.000000
+$node_(46) set Y_ 0.000000
+$node_(46) set Z_ 0.0
+$ns_ at 0.000000 "$node_(46) setdest 1426.945902 1291.139293 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(46) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(46) setdest 1610.000000 1560.000000 13.552552" ;# 
+$ns_ at 0.0 "$node_(47) switch OFF" ;# set_X,Y,Z  
+$node_(47) set X_ 0.000000
+$node_(47) set Y_ 0.000000
+$node_(47) set Z_ 0.0
+$ns_ at 0.000000 "$node_(47) setdest 3629.335165 2877.182283 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(47) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(47) setdest 3536.599278 2826.746976 17.661092" ;# 
+$ns_ at 0.0 "$node_(48) switch OFF" ;# set_X,Y,Z  
+$node_(48) set X_ 0.000000
+$node_(48) set Y_ 0.000000
+$node_(48) set Z_ 0.0
+$ns_ at 0.000000 "$node_(48) setdest 1484.270836 729.211306 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(48) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(48) setdest 1290.000000 1090.000000 16.390712" ;# 
+$ns_ at 0.0 "$node_(49) switch OFF" ;# set_X,Y,Z  
+$node_(49) set X_ 0.000000
+$node_(49) set Y_ 0.000000
+$node_(49) set Z_ 0.0
+$ns_ at 0.000000 "$node_(49) setdest 3915.235049 366.262403 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(49) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(49) setdest 3885.477579 681.195622 15.695841" ;# 
+$ns_ at 0.0 "$node_(50) switch OFF" ;# set_X,Y,Z  
+$node_(50) set X_ 0.000000
+$node_(50) set Y_ 0.000000
+$node_(50) set Z_ 0.0
+$ns_ at 0.000000 "$node_(50) setdest 3803.466057 2453.557485 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(50) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(50) setdest 3802.020670 2668.920146 15.797369" ;# 
+$ns_ at 0.0 "$node_(51) switch OFF" ;# set_X,Y,Z  
+$node_(51) set X_ 0.000000
+$node_(51) set Y_ 0.000000
+$node_(51) set Z_ 0.0
+$ns_ at 0.000000 "$node_(51) setdest 3090.000007 2859.999990 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(51) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(51) setdest 3090.000000 2860.000000 15.031501" ;# 
+$ns_ at 0.0 "$node_(52) switch OFF" ;# set_X,Y,Z  
+$node_(52) set X_ 0.000000
+$node_(52) set Y_ 0.000000
+$node_(52) set Z_ 0.0
+$ns_ at 0.000000 "$node_(52) setdest 3301.455551 785.161202 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(52) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(52) setdest 3290.000000 1020.000000 13.062113" ;# 
+$ns_ at 0.0 "$node_(53) switch OFF" ;# set_X,Y,Z  
+$node_(53) set X_ 0.000000
+$node_(53) set Y_ 0.000000
+$node_(53) set Z_ 0.0
+$ns_ at 0.000000 "$node_(53) setdest 3296.000000 897.000002 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(53) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(53) setdest 3310.000000 610.000000 13.682917" ;# 
+$ns_ at 0.0 "$node_(54) switch OFF" ;# set_X,Y,Z  
+$node_(54) set X_ 0.000000
+$node_(54) set Y_ 0.000000
+$node_(54) set Z_ 0.0
+$ns_ at 0.000000 "$node_(54) setdest 3304.981762 712.873885 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(54) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(54) setdest 3296.593616 884.830879 12.874526" ;# 
+$ns_ at 0.0 "$node_(55) switch OFF" ;# set_X,Y,Z  
+$node_(55) set X_ 0.000000
+$node_(55) set Y_ 0.000000
+$node_(55) set Z_ 0.0
+$ns_ at 0.000000 "$node_(55) setdest 3300.975005 795.012405 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(55) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(55) setdest 3290.000000 1020.000000 13.250301" ;# 
+$ns_ at 0.0 "$node_(56) switch OFF" ;# set_X,Y,Z  
+$node_(56) set X_ 0.000000
+$node_(56) set Y_ 0.000000
+$node_(56) set Z_ 0.0
+$ns_ at 0.000000 "$node_(56) setdest 3272.637850 1107.678859 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(56) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(56) setdest 3175.952477 1595.939992 12.768765" ;# 
+$ns_ at 0.0 "$node_(57) switch OFF" ;# set_X,Y,Z  
+$node_(57) set X_ 0.000000
+$node_(57) set Y_ 0.000000
+$node_(57) set Z_ 0.0
+$ns_ at 0.000000 "$node_(57) setdest 3294.666667 924.333335 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(57) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(57) setdest 3310.000000 610.000000 13.682917" ;# 
+$ns_ at 0.0 "$node_(58) switch OFF" ;# set_X,Y,Z  
+$node_(58) set X_ 0.000000
+$node_(58) set Y_ 0.000000
+$node_(58) set Z_ 0.0
+$ns_ at 0.000000 "$node_(58) setdest 3310.000000 391.921091 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(58) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(58) setdest 3310.000000 160.000000 12.884506" ;# 
+$ns_ at 0.0 "$node_(59) switch OFF" ;# set_X,Y,Z  
+$node_(59) set X_ 0.000000
+$node_(59) set Y_ 0.000000
+$node_(59) set Z_ 0.0
+$ns_ at 0.000000 "$node_(59) setdest 1335.638019 1157.030840 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(59) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(59) setdest 1290.000000 1090.000000 13.515386" ;# 
+$ns_ at 0.0 "$node_(60) switch OFF" ;# set_X,Y,Z  
+$node_(60) set X_ 0.000000
+$node_(60) set Y_ 0.000000
+$node_(60) set Z_ 0.0
+$ns_ at 11.772923 "$node_(60) setdest 3511.136363 10.000000 1000000000.000000" ;# init_node
+$ns_ at 11.782923 "$node_(60) switch ON" ;# inside  
+$ns_ at 11.782923 "$node_(60) setdest 3497.078273 20.483999 13.629680" ;# 
+$ns_ at 0.0 "$node_(61) switch OFF" ;# set_X,Y,Z  
+$node_(61) set X_ 0.000000
+$node_(61) set Y_ 0.000000
+$node_(61) set Z_ 0.0
+$ns_ at 0.000000 "$node_(61) setdest 1046.292779 705.976501 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(61) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(61) setdest 960.000000 570.000000 12.388213" ;# 
+$ns_ at 0.0 "$node_(62) switch OFF" ;# set_X,Y,Z  
+$node_(62) set X_ 0.000000
+$node_(62) set Y_ 0.000000
+$node_(62) set Z_ 0.0
+$ns_ at 0.000000 "$node_(62) setdest 2187.840965 2355.050178 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(62) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(62) setdest 1980.000000 2190.000000 15.612017" ;# 
+$ns_ at 0.0 "$node_(63) switch OFF" ;# set_X,Y,Z  
+$node_(63) set X_ 0.000000
+$node_(63) set Y_ 0.000000
+$node_(63) set Z_ 0.0
+$ns_ at 0.000000 "$node_(63) setdest 3310.000000 481.278204 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(63) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(63) setdest 3310.000000 610.000000 12.872181" ;# 
+$ns_ at 0.0 "$node_(64) switch OFF" ;# set_X,Y,Z  
+$node_(64) set X_ 0.000000
+$node_(64) set Y_ 0.000000
+$node_(64) set Z_ 0.0
+$ns_ at 30.600909 "$node_(64) setdest 3511.136364 10.000000 1000000000.000000" ;# init_node
+$ns_ at 30.610909 "$node_(64) switch ON" ;# inside  
+$ns_ at 30.610909 "$node_(64) setdest 3310.000000 160.000000 13.629680" ;# 
+$ns_ at 0.0 "$node_(65) switch OFF" ;# set_X,Y,Z  
+$node_(65) set X_ 0.000000
+$node_(65) set Y_ 0.000000
+$node_(65) set Z_ 0.0
+$ns_ at 22.920024 "$node_(65) setdest 10.000000 2297.153203 1000000000.000000" ;# init_node
+$ns_ at 22.930024 "$node_(65) switch ON" ;# inside  
+$ns_ at 22.930024 "$node_(65) setdest 245.000000 2244.000000 26.505702" ;# 
+$ns_ at 0.0 "$node_(66) switch OFF" ;# set_X,Y,Z  
+$node_(66) set X_ 0.000000
+$node_(66) set Y_ 0.000000
+$node_(66) set Z_ 0.0
+$ns_ at 0.000000 "$node_(66) setdest 1385.302790 2046.035109 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(66) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(66) setdest 1071.000000 2103.000000 15.971164" ;# 
+$ns_ at 0.0 "$node_(67) switch OFF" ;# set_X,Y,Z  
+$node_(67) set X_ 0.000000
+$node_(67) set Y_ 0.000000
+$node_(67) set Z_ 0.0
+$ns_ at 0.000000 "$node_(67) setdest 2129.950603 1681.743225 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(67) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(67) setdest 2144.507429 1666.738496 14.506690" ;# 
+$ns_ at 0.0 "$node_(68) switch OFF" ;# set_X,Y,Z  
+$node_(68) set X_ 0.000000
+$node_(68) set Y_ 0.000000
+$node_(68) set Z_ 0.0
+$ns_ at 0.000000 "$node_(68) setdest 2337.044689 1468.277012 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(68) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(68) setdest 1860.000000 1960.000000 13.433350" ;# 
+$ns_ at 0.0 "$node_(69) switch OFF" ;# set_X,Y,Z  
+$node_(69) set X_ 0.000000
+$node_(69) set Y_ 0.000000
+$node_(69) set Z_ 0.0
+$ns_ at 0.000000 "$node_(69) setdest 3310.000000 548.664760 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(69) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(69) setdest 3310.000000 446.467262 15.333810" ;# 
+$ns_ at 0.0 "$node_(70) switch OFF" ;# set_X,Y,Z  
+$node_(70) set X_ 0.000000
+$node_(70) set Y_ 0.000000
+$node_(70) set Z_ 0.0
+$ns_ at 0.000000 "$node_(70) setdest 3925.104738 261.808190 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(70) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(70) setdest 3860.537624 945.143479 13.009737" ;# 
+$ns_ at 0.0 "$node_(71) switch OFF" ;# set_X,Y,Z  
+$node_(71) set X_ 0.000000
+$node_(71) set Y_ 0.000000
+$node_(71) set Z_ 0.0
+$ns_ at 0.000000 "$node_(71) setdest 3306.961295 672.293453 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(71) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(71) setdest 3301.975425 774.503779 15.591881" ;# 
+$ns_ at 0.0 "$node_(72) switch OFF" ;# set_X,Y,Z  
+$node_(72) set X_ 0.000000
+$node_(72) set Y_ 0.000000
+$node_(72) set Z_ 0.0
+$ns_ at 0.000000 "$node_(72) setdest 1006.215685 2114.058824 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(72) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(72) setdest 245.000000 2244.000000 16.430355" ;# 
+$ns_ at 0.0 "$node_(73) switch OFF" ;# set_X,Y,Z  
+$node_(73) set X_ 0.000000
+$node_(73) set Y_ 0.000000
+$node_(73) set Z_ 0.0
+$ns_ at 0.000000 "$node_(73) setdest 3926.366276 248.456916 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(73) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(73) setdest 3886.116865 674.429850 12.876069" ;# 
+$ns_ at 0.0 "$node_(74) switch OFF" ;# set_X,Y,Z  
+$node_(74) set X_ 0.000000
+$node_(74) set Y_ 0.000000
+$node_(74) set Z_ 0.0
+$ns_ at 0.000000 "$node_(74) setdest 3282.500000 1057.875001 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(74) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(74) setdest 3177.480727 1588.222331 12.870145" ;# 
+$ns_ at 0.0 "$node_(75) switch OFF" ;# set_X,Y,Z  
+$node_(75) set X_ 0.000000
+$node_(75) set Y_ 0.000000
+$node_(75) set Z_ 0.0
+$ns_ at 0.000000 "$node_(75) setdest 3775.549040 2919.060500 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(75) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(75) setdest 3588.322715 2529.005657 18.834608" ;# 
+$ns_ at 0.0 "$node_(76) switch OFF" ;# set_X,Y,Z  
+$node_(76) set X_ 0.000000
+$node_(76) set Y_ 0.000000
+$node_(76) set Z_ 0.0
+$ns_ at 0.000000 "$node_(76) setdest 3310.000000 205.847092 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(76) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(76) setdest 3310.000000 252.679105 15.282364" ;# 
+$ns_ at 0.0 "$node_(77) switch OFF" ;# set_X,Y,Z  
+$node_(77) set X_ 0.000000
+$node_(77) set Y_ 0.000000
+$node_(77) set Z_ 0.0
+$ns_ at 0.000000 "$node_(77) setdest 3307.843958 654.198867 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(77) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(77) setdest 3300.794038 798.722218 14.750474" ;# 
+$ns_ at 0.0 "$node_(78) switch OFF" ;# set_X,Y,Z  
+$node_(78) set X_ 0.000000
+$node_(78) set Y_ 0.000000
+$node_(78) set Z_ 0.0
+$ns_ at 0.000000 "$node_(78) setdest 1878.947368 1996.315788 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(78) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(78) setdest 1980.000000 2190.000000 13.653812" ;# 
+$ns_ at 0.0 "$node_(79) switch OFF" ;# set_X,Y,Z  
+$node_(79) set X_ 0.000000
+$node_(79) set Y_ 0.000000
+$node_(79) set Z_ 0.0
+$ns_ at 3.866175 "$node_(79) setdest 3511.136364 10.000000 1000000000.000000" ;# init_node
+$ns_ at 3.876175 "$node_(79) switch ON" ;# inside  
+$ns_ at 3.876175 "$node_(79) setdest 3466.974360 42.934376 15.137939" ;# 
+$ns_ at 0.0 "$node_(80) switch OFF" ;# set_X,Y,Z  
+$node_(80) set X_ 0.000000
+$node_(80) set Y_ 0.000000
+$node_(80) set Z_ 0.0
+$ns_ at 0.000000 "$node_(80) setdest 1328.437884 2056.341423 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(80) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(80) setdest 1071.000000 2103.000000 17.442130" ;# 
+$ns_ at 0.0 "$node_(81) switch OFF" ;# set_X,Y,Z  
+$node_(81) set X_ 0.000000
+$node_(81) set Y_ 0.000000
+$node_(81) set Z_ 0.0
+$ns_ at 0.955670 "$node_(81) setdest 3838.461538 3010.000000 1000000000.000000" ;# init_node
+$ns_ at 0.965670 "$node_(81) switch ON" ;# inside  
+$ns_ at 0.965670 "$node_(81) setdest 3800.000000 2970.000000 27.011895" ;# 
+$ns_ at 0.0 "$node_(82) switch OFF" ;# set_X,Y,Z  
+$node_(82) set X_ 0.000000
+$node_(82) set Y_ 0.000000
+$node_(82) set Z_ 0.0
+$ns_ at 0.000000 "$node_(82) setdest 3926.794797 157.648348 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(82) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(82) setdest 3930.000000 210.000000 13.112422" ;# 
+$ns_ at 0.0 "$node_(83) switch OFF" ;# set_X,Y,Z  
+$node_(83) set X_ 0.000000
+$node_(83) set Y_ 0.000000
+$node_(83) set Z_ 0.0
+$ns_ at 0.000000 "$node_(83) setdest 1873.361721 1985.609966 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(83) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(83) setdest 1903.590945 2043.549311 14.443043" ;# 
+$ns_ at 0.0 "$node_(84) switch OFF" ;# set_X,Y,Z  
+$node_(84) set X_ 0.000000
+$node_(84) set Y_ 0.000000
+$node_(84) set Z_ 0.0
+$ns_ at 0.000000 "$node_(84) setdest 1306.883265 1058.645366 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(84) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(84) setdest 1411.718479 863.951396 17.805601" ;# 
+$ns_ at 0.0 "$node_(85) switch OFF" ;# set_X,Y,Z  
+$node_(85) set X_ 0.000000
+$node_(85) set Y_ 0.000000
+$node_(85) set Z_ 0.0
+$ns_ at 0.000000 "$node_(85) setdest 3045.295136 1397.698200 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(85) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(85) setdest 3271.823563 1869.632424 15.361892" ;# 
+$ns_ at 0.0 "$node_(86) switch OFF" ;# set_X,Y,Z  
+$node_(86) set X_ 0.000000
+$node_(86) set Y_ 0.000000
+$node_(86) set Z_ 0.0
+$ns_ at 0.000000 "$node_(86) setdest 2699.226464 1129.157506 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(86) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(86) setdest 2510.000000 1290.000000 14.608733" ;# 
+$ns_ at 0.0 "$node_(87) switch OFF" ;# set_X,Y,Z  
+$node_(87) set X_ 0.000000
+$node_(87) set Y_ 0.000000
+$node_(87) set Z_ 0.0
+$ns_ at 15.513614 "$node_(87) setdest 3511.136363 10.000000 1000000000.000000" ;# init_node
+$ns_ at 15.523614 "$node_(87) switch ON" ;# inside  
+$ns_ at 15.523614 "$node_(87) setdest 3505.726200 14.034698 12.403104" ;# 
+$ns_ at 0.0 "$node_(88) switch OFF" ;# set_X,Y,Z  
+$node_(88) set X_ 0.000000
+$node_(88) set Y_ 0.000000
+$node_(88) set Z_ 0.0
+$ns_ at 17.354626 "$node_(88) setdest 3511.136363 10.000000 1000000000.000000" ;# init_node
+$ns_ at 17.364626 "$node_(88) switch ON" ;# inside  
+$ns_ at 17.364626 "$node_(88) setdest 3467.025826 42.895994 12.846031" ;# 
+$ns_ at 0.0 "$node_(89) switch OFF" ;# set_X,Y,Z  
+$node_(89) set X_ 0.000000
+$node_(89) set Y_ 0.000000
+$node_(89) set Z_ 0.0
+$ns_ at 0.000000 "$node_(89) setdest 3043.163630 1354.855541 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(89) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(89) setdest 3059.753942 1332.349304 18.814390" ;# 
+$ns_ at 0.0 "$node_(90) switch OFF" ;# set_X,Y,Z  
+$node_(90) set X_ 0.000000
+$node_(90) set Y_ 0.000000
+$node_(90) set Z_ 0.0
+$ns_ at 0.000000 "$node_(90) setdest 4255.863213 913.491447 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(90) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(90) setdest 4358.726445 782.794634 11.961566" ;# 
+$ns_ at 0.0 "$node_(91) switch OFF" ;# set_X,Y,Z  
+$node_(91) set X_ 0.000000
+$node_(91) set Y_ 0.000000
+$node_(91) set Z_ 0.0
+$ns_ at 0.000000 "$node_(91) setdest 4073.630391 247.383252 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(91) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(91) setdest 4660.000000 400.000000 10.819737" ;# 
+$ns_ at 0.0 "$node_(92) switch OFF" ;# set_X,Y,Z  
+$node_(92) set X_ 0.000000
+$node_(92) set Y_ 0.000000
+$node_(92) set Z_ 0.0
+$ns_ at 0.000000 "$node_(92) setdest 1143.137445 2089.925660 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(92) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(92) setdest 1071.000000 2103.000000 18.328167" ;# 
+$ns_ at 0.0 "$node_(93) switch OFF" ;# set_X,Y,Z  
+$node_(93) set X_ 0.000000
+$node_(93) set Y_ 0.000000
+$node_(93) set Z_ 0.0
+$ns_ at 0.000000 "$node_(93) setdest 3930.000000 210.000000 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(93) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(93) setdest 3922.717970 91.060176 15.694564" ;# 
+$ns_ at 0.0 "$node_(94) switch OFF" ;# set_X,Y,Z  
+$node_(94) set X_ 0.000000
+$node_(94) set Y_ 0.000000
+$node_(94) set Z_ 0.0
+$ns_ at 0.000000 "$node_(94) setdest 2510.000000 1290.000000 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(94) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(94) setdest 2045.217926 1769.083061 13.065213" ;# 
+$ns_ at 0.0 "$node_(95) switch OFF" ;# set_X,Y,Z  
+$node_(95) set X_ 0.000000
+$node_(95) set Y_ 0.000000
+$node_(95) set Z_ 0.0
+$ns_ at 0.000000 "$node_(95) setdest 3800.000000 2970.000000 1000000000.000000" ;# init_node
+$ns_ at 0.010000 "$node_(95) switch ON" ;# inside  
+$ns_ at 0.010000 "$node_(95) setdest 3802.644628 3010.000000 13.217809" ;# 
+$ns_ at 3.052827 "$node_(95) switch OFF" ;# leaving_area  
+$ns_ at 0.0 "$node_(96) switch OFF" ;# set_X,Y,Z  
+$node_(96) set X_ 0.000000
+$node_(96) set Y_ 0.000000
+$node_(96) set Z_ 0.0
+$ns_ at 11.010000 "$node_(96) setdest 3838.461538 3010.000000 1000000000.000000" ;# init_node
+$ns_ at 11.020000 "$node_(96) switch ON" ;# inside  
+$ns_ at 11.020000 "$node_(96) setdest 3800.000000 2970.000000 27.745675" ;# 
+$ns_ at 0.152513 "$node_(4) setdest 2560.000000 10.000000 15.670426" ;# 
+$ns_ at 0.572318 "$node_(1) setdest 3669.196715 2697.493155 18.875877" ;# 
+$ns_ at 0.838173 "$node_(13) setdest 3056.625528 407.300423 14.366485" ;# 
+$ns_ at 1.020000 "$node_(51) setdest 2966.105115 2822.543407 18.591087" ;# 
+$ns_ at 1.020000 "$node_(15) setdest 3194.152014 1504.032327 14.294149" ;# 
+$ns_ at 1.461099 "$node_(67) setdest 2510.000000 1290.000000 13.612859" ;# 
+$ns_ at 1.506104 "$node_(89) setdest 3290.000000 1020.000000 15.829405" ;# 
+$ns_ at 1.802122 "$node_(42) setdest 1290.000000 1090.000000 12.689852" ;# 
+$ns_ at 2.020000 "$node_(11) setdest 811.607137 2147.278927 14.969271" ;# 
+$ns_ at 2.123175 "$node_(5) setdest 2582.408355 1228.452898 13.815163" ;# 
+$ns_ at 2.612627 "$node_(0) setdest 3930.000000 210.000000 15.006127" ;# 
+$ns_ at 2.652357 "$node_(6) setdest 1071.000000 2103.000000 18.252493" ;# 
+$ns_ at 2.876231 "$node_(8) setdest 1799.990159 142.875420 16.589689" ;# 
+$ns_ at 3.020000 "$node_(17) setdest 3196.392877 1146.986407 16.104256" ;# 
+#$ns_ at 3.020000 $node_(26) arrived_to 2560.000000 10.000000  
+$ns_ at 3.020000 "$node_(26) switch OFF" ;# arrived_to  
+$ns_ at 4.020000 "$node_(26) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 4.030000 "$node_(26) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 3.020000 "$node_(40) setdest 787.169427 2151.450497 18.936169" ;# 
+$ns_ at 3.084448 "$node_(76) setdest 3310.000000 610.000000 13.265773" ;# 
+$ns_ at 3.971972 "$node_(2) setdest 3220.053458 1761.778037 16.743154" ;# 
+#$ns_ at 4.020000 $node_(9) arrived_to 2660.000000 2730.000000  
+$ns_ at 4.020000 "$node_(9) switch OFF" ;# arrived_to  
+$ns_ at 5.020000 "$node_(9) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 5.030000 "$node_(9) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 4.020000 "$node_(81) setdest 3217.943439 1757.382164 15.990833" ;# 
+$ns_ at 4.544750 "$node_(83) setdest 1980.000000 2190.000000 13.241032" ;# 
+$ns_ at 5.020000 "$node_(24) setdest 3200.314068 1720.654309 17.807123" ;# 
+$ns_ at 5.020000 "$node_(20) setdest 3185.239865 1549.038680 12.921121" ;# 
+$ns_ at 5.020000 "$node_(92) setdest 897.241413 2132.660970 18.861437" ;# 
+$ns_ at 5.020000 "$node_(82) setdest 3892.031072 611.837823 13.716739" ;# 
+$ns_ at 5.578737 "$node_(43) setdest 2660.000000 2730.000000 17.558111" ;# 
+$ns_ at 5.997182 "$node_(47) setdest 3230.000000 2660.000000 15.847635" ;# 
+$ns_ at 6.020000 "$node_(16) setdest 3838.461539 3010.000000 32.058190" ;# 
+$ns_ at 7.750957 "$node_(16) switch OFF" ;# leaving_area  
+$ns_ at 6.020000 "$node_(22) setdest 3217.468181 1386.285687 14.337860" ;# 
+$ns_ at 6.583150 "$node_(71) setdest 3290.000000 1020.000000 12.645471" ;# 
+$ns_ at 6.684847 "$node_(69) setdest 3310.000000 160.000000 12.825848" ;# 
+$ns_ at 0.0 "$node_(97) switch OFF" ;# set_X,Y,Z  
+$node_(97) set X_ 0.000000
+$node_(97) set Y_ 0.000000
+$node_(97) set Z_ 0.0
+$ns_ at 14.928548 "$node_(97) setdest 3838.461538 3010.000000 1000000000.000000" ;# init_node
+$ns_ at 14.938548 "$node_(97) switch ON" ;# inside  
+$ns_ at 14.938548 "$node_(97) setdest 3800.000000 2970.000000 26.659928" ;# 
+$ns_ at 7.020000 "$node_(10) setdest 2560.000000 10.000000 15.807362" ;# 
+$ns_ at 7.020000 "$node_(10) switch OFF" ;# leaving_area  
+#$ns_ at 7.020000 $node_(59) arrived_to 1290.000000 1090.000000  
+$ns_ at 7.020000 "$node_(59) switch OFF" ;# arrived_to  
+$ns_ at 8.020000 "$node_(59) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 8.030000 "$node_(59) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 7.515404 "$node_(79) setdest 3310.000000 160.000000 12.629777" ;# 
+$ns_ at 7.612599 "$node_(93) setdest 3917.755102 10.000000 13.086553" ;# 
+$ns_ at 13.818355 "$node_(93) switch OFF" ;# leaving_area  
+$ns_ at 7.982107 "$node_(51) setdest 2660.000000 2730.000000 15.959183" ;# 
+$ns_ at 8.070285 "$node_(29) setdest 3805.675979 2124.279126 14.590438" ;# 
+$ns_ at 8.439359 "$node_(44) setdest 1860.000000 1960.000000 15.215498" ;# 
+$ns_ at 0.0 "$node_(98) switch OFF" ;# set_X,Y,Z  
+$node_(98) set X_ 0.000000
+$node_(98) set Y_ 0.000000
+$node_(98) set Z_ 0.0
+$ns_ at 44.600909 "$node_(98) setdest 3511.136364 10.000000 1000000000.000000" ;# init_node
+$ns_ at 44.610909 "$node_(98) switch ON" ;# inside  
+$ns_ at 44.610909 "$node_(98) setdest 3310.000000 160.000000 13.629680" ;# 
+$ns_ at 9.829529 "$node_(77) setdest 3290.000000 1020.000000 12.887424" ;# 
+$ns_ at 10.459673 "$node_(39) setdest 1871.538461 10.000000 16.079221" ;# 
+$ns_ at 58.480300 "$node_(39) switch OFF" ;# leaving_area  
+$ns_ at 11.020000 "$node_(41) setdest 1910.420370 2056.639042 12.835568" ;# 
+$ns_ at 11.020000 "$node_(63) setdest 3299.719813 820.743833 13.184260" ;# 
+$ns_ at 11.152979 "$node_(3) setdest 975.423817 2721.215678 18.541190" ;# 
+$ns_ at 11.702728 "$node_(34) setdest 3156.465505 1694.349198 14.619565" ;# 
+$ns_ at 12.020000 "$node_(18) setdest 3838.611562 1177.194298 16.264275" ;# 
+$ns_ at 12.020000 "$node_(14) setdest 1860.000000 1960.000000 13.873502" ;# 
+$ns_ at 0.0 "$node_(99) switch OFF" ;# set_X,Y,Z  
+$node_(99) set X_ 0.000000
+$node_(99) set Y_ 0.000000
+$node_(99) set Z_ 0.0
+$ns_ at 39.621011 "$node_(99) setdest 10.000000 2297.153203 1000000000.000000" ;# init_node
+$ns_ at 39.631011 "$node_(99) switch ON" ;# inside  
+$ns_ at 39.631011 "$node_(99) setdest 245.000000 2244.000000 25.661570" ;# 
+$ns_ at 12.438832 "$node_(84) setdest 1871.538462 10.000000 16.354616" ;# 
+$ns_ at 71.741973 "$node_(84) switch OFF" ;# leaving_area  
+$ns_ at 0.0 "$node_(100) switch OFF" ;# set_X,Y,Z  
+$node_(100) set X_ 0.000000
+$node_(100) set Y_ 0.000000
+$node_(100) set Z_ 0.0
+$ns_ at 14.830079 "$node_(100) setdest 3838.461539 3010.000000 1000000000.000000" ;# init_node
+$ns_ at 14.840079 "$node_(100) switch ON" ;# inside  
+$ns_ at 14.840079 "$node_(100) setdest 3800.000000 2970.000000 25.455661" ;# 
+$ns_ at 12.816094 "$node_(17) setdest 3158.323033 1198.631544 18.665910" ;# 
+$ns_ at 12.996849 "$node_(21) setdest 1458.842190 776.435932 16.589689" ;# 
+$ns_ at 0.0 "$node_(101) switch OFF" ;# set_X,Y,Z  
+$node_(101) set X_ 0.000000
+$node_(101) set Y_ 0.000000
+$node_(101) set Z_ 0.0
+$ns_ at 34.907959 "$node_(101) setdest 3917.755102 10.000000 1000000000.000000" ;# init_node
+$ns_ at 34.917959 "$node_(101) switch ON" ;# inside  
+$ns_ at 34.917959 "$node_(101) setdest 3930.000000 210.000000 13.268041" ;# 
+$ns_ at 13.069596 "$node_(60) setdest 3310.000000 160.000000 14.631170" ;# 
+$ns_ at 13.392256 "$node_(54) setdest 3290.000000 1020.000000 15.685426" ;# 
+$ns_ at 13.419893 "$node_(32) setdest 2660.021960 1162.481334 13.635745" ;# 
+$ns_ at 13.653125 "$node_(50) setdest 3800.000000 2970.000000 14.783155" ;# 
+$ns_ at 13.924575 "$node_(90) setdest 4660.000000 400.000000 10.802247" ;# 
+$ns_ at 14.020000 "$node_(96) setdest 3221.570933 1764.939445 16.090290" ;# 
+#$ns_ at 14.020000 $node_(61) arrived_to 960.000000 570.000000  
+$ns_ at 14.020000 "$node_(61) switch OFF" ;# arrived_to  
+$ns_ at 15.020000 "$node_(61) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 15.030000 "$node_(61) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 0.0 "$node_(102) switch OFF" ;# set_X,Y,Z  
+$node_(102) set X_ 0.000000
+$node_(102) set Y_ 0.000000
+$node_(102) set Z_ 0.0
+$ns_ at 49.600909 "$node_(102) setdest 3511.136364 10.000000 1000000000.000000" ;# init_node
+$ns_ at 49.610909 "$node_(102) switch ON" ;# inside  
+$ns_ at 49.610909 "$node_(102) setdest 3310.000000 160.000000 13.629680" ;# 
+$ns_ at 14.365629 "$node_(92) setdest 636.178824 2177.224922 15.132194" ;# 
+$ns_ at 14.519229 "$node_(36) setdest 3147.772129 1738.250749 13.547521" ;# 
+$ns_ at 15.020000 "$node_(6) setdest 1477.525346 2029.320501 16.364369" ;# 
+$ns_ at 15.020000 "$node_(23) setdest 855.839385 2139.728386 17.794774" ;# 
+$ns_ at 15.020000 "$node_(43) setdest 2735.000000 3010.000000 16.564038" ;# 
+$ns_ at 32.520000 "$node_(43) switch OFF" ;# leaving_area  
+$ns_ at 15.114107 "$node_(1) setdest 3800.000000 2970.000000 15.185143" ;# 
+$ns_ at 0.0 "$node_(103) switch OFF" ;# set_X,Y,Z  
+$node_(103) set X_ 0.000000
+$node_(103) set Y_ 0.000000
+$node_(103) set Z_ 0.0
+$ns_ at 23.649610 "$node_(103) setdest 3511.136363 10.000000 1000000000.000000" ;# init_node
+$ns_ at 23.659610 "$node_(103) switch ON" ;# inside  
+$ns_ at 23.659610 "$node_(103) setdest 3310.000000 160.000000 12.959967" ;# 
+$ns_ at 16.020000 "$node_(80) setdest 911.956371 2130.149094 17.632626" ;# 
+$ns_ at 16.067750 "$node_(87) setdest 3370.479022 114.897001 15.571575" ;# 
+$ns_ at 16.088331 "$node_(13) setdest 3310.000000 610.000000 13.014677" ;# 
+$ns_ at 16.253388 "$node_(17) setdest 3032.000000 1370.000000 15.464654" ;# 
+$ns_ at 17.020000 "$node_(78) setdest 1748.569725 2312.379360 18.238797" ;# 
+$ns_ at 18.020000 "$node_(97) setdest 3538.983343 2426.215299 15.812145" ;# 
+$ns_ at 18.020000 "$node_(83) setdest 2346.188417 1904.567964 14.783075" ;# 
+$ns_ at 18.020000 "$node_(86) setdest 2422.940181 1379.738583 14.464882" ;# 
+$ns_ at 18.020000 "$node_(100) setdest 3656.187117 2670.389827 18.570800" ;# 
+#$ns_ at 18.020000 $node_(55) arrived_to 3290.000000 1020.000000  
+$ns_ at 18.020000 "$node_(55) switch OFF" ;# arrived_to  
+$ns_ at 19.020000 "$node_(55) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 19.030000 "$node_(55) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 18.020000 "$node_(62) setdest 1899.591312 2035.883349 13.305783" ;# 
+$ns_ at 18.225620 "$node_(40) setdest 502.787782 2199.995064 14.513511" ;# 
+$ns_ at 19.020000 "$node_(58) setdest 3220.334485 142.066897 18.955241" ;# 
+$ns_ at 19.020000 "$node_(52) setdest 3253.511025 1204.269325 14.094532" ;# 
+$ns_ at 19.599011 "$node_(11) setdest 501.747126 2200.172706 16.430355" ;# 
+$ns_ at 20.174126 "$node_(49) setdest 3810.000000 1480.000000 12.973579" ;# 
+$ns_ at 21.020000 "$node_(66) setdest 817.795907 2146.222490 16.430355" ;# 
+$ns_ at 21.229506 "$node_(3) setdest 429.306931 3010.000000 16.311707" ;# 
+$ns_ at 59.102318 "$node_(3) switch OFF" ;# leaving_area  
+$ns_ at 21.354425 "$node_(12) setdest 1290.000000 1090.000000 19.258419" ;# 
+$ns_ at 21.648145 "$node_(88) setdest 3392.092940 98.778147 15.869765" ;# 
+$ns_ at 22.020000 "$node_(53) setdest 3090.968788 434.775030 12.998194" ;# 
+$ns_ at 22.357963 "$node_(38) setdest 2450.369777 1823.361961 18.120200" ;# 
+$ns_ at 22.490841 "$node_(29) setdest 3810.000000 1480.000000 13.555755" ;# 
+$ns_ at 22.739075 "$node_(41) setdest 1860.000000 1960.000000 14.970824" ;# 
+$ns_ at 22.991653 "$node_(75) setdest 3032.000000 1370.000000 16.064413" ;# 
+$ns_ at 23.020000 "$node_(54) setdest 3188.792937 1531.095670 12.711254" ;# 
+$ns_ at 23.020000 "$node_(44) setdest 1071.000000 2103.000000 16.364369" ;# 
+$ns_ at 0.0 "$node_(104) switch OFF" ;# set_X,Y,Z  
+$node_(104) set X_ 0.000000
+$node_(104) set Y_ 0.000000
+$node_(104) set Z_ 0.0
+$ns_ at 58.600909 "$node_(104) setdest 3511.136364 10.000000 1000000000.000000" ;# init_node
+$ns_ at 58.610909 "$node_(104) switch ON" ;# inside  
+$ns_ at 58.610909 "$node_(104) setdest 3310.000000 160.000000 13.629680" ;# 
+$ns_ at 23.844061 "$node_(58) setdest 3013.959502 100.791900 15.784941" ;# 
+$ns_ at 24.020000 "$node_(57) setdest 2560.000000 10.000000 12.806248" ;# 
+$ns_ at 24.020000 "$node_(79) setdest 3310.000000 610.000000 13.636364" ;# 
+$ns_ at 0.0 "$node_(105) switch OFF" ;# set_X,Y,Z  
+$node_(105) set X_ 0.000000
+$node_(105) set Y_ 0.000000
+$node_(105) set Z_ 0.0
+$ns_ at 62.206393 "$node_(105) setdest 3511.136364 10.000000 1000000000.000000" ;# init_node
+$ns_ at 62.216393 "$node_(105) switch ON" ;# inside  
+$ns_ at 62.216393 "$node_(105) setdest 3471.735833 39.383447 13.041391" ;# 
+#$ns_ at 25.020000 $node_(46) arrived_to 1610.000000 1560.000000  
+$ns_ at 25.020000 "$node_(46) switch OFF" ;# arrived_to  
+$ns_ at 26.020000 "$node_(46) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 26.030000 "$node_(46) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 25.170321 "$node_(80) setdest 245.000000 2244.000000 16.167482" ;# 
+$ns_ at 0.0 "$node_(106) switch OFF" ;# set_X,Y,Z  
+$node_(106) set X_ 0.000000
+$node_(106) set Y_ 0.000000
+$node_(106) set Z_ 0.0
+$ns_ at 32.604028 "$node_(106) setdest 3511.136364 10.000000 1000000000.000000" ;# init_node
+$ns_ at 32.614028 "$node_(106) switch ON" ;# inside  
+$ns_ at 32.614028 "$node_(106) setdest 3440.826698 62.434327 13.629680" ;# 
+$ns_ at 25.950179 "$node_(5) setdest 2510.000000 1290.000000 15.656419" ;# 
+$ns_ at 26.020000 "$node_(48) setdest 1401.327641 1253.512472 15.039497" ;# 
+$ns_ at 26.580315 "$node_(33) setdest 3804.629059 2280.270169 15.806352" ;# 
+$ns_ at 26.663672 "$node_(86) setdest 2203.169806 1606.271123 13.456129" ;# 
+$ns_ at 26.862813 "$node_(24) setdest 3800.000000 2970.000000 16.467003" ;# 
+$ns_ at 26.902604 "$node_(87) setdest 3310.000000 160.000000 14.742909" ;# 
+#$ns_ at 27.020000 $node_(4) arrived_to 2560.000000 10.000000  
+$ns_ at 27.020000 "$node_(4) switch OFF" ;# arrived_to  
+$ns_ at 28.020000 "$node_(4) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 28.030000 "$node_(4) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 27.020000 "$node_(45) setdest 3893.414204 597.199669 12.886533" ;# 
+$ns_ at 27.020000 "$node_(71) setdest 3210.726379 1127.541735 16.104256" ;# 
+$ns_ at 27.020000 "$node_(89) setdest 3310.000000 610.000000 13.682917" ;# 
+$ns_ at 27.023509 "$node_(63) setdest 3293.028137 957.923195 13.682917" ;# 
+$ns_ at 27.286125 "$node_(23) setdest 245.000000 2244.000000 15.998275" ;# 
+$ns_ at 27.538335 "$node_(88) setdest 3310.000000 160.000000 12.074027" ;# 
+$ns_ at 28.020000 "$node_(77) setdest 3240.125596 1271.865741 14.060347" ;# 
+$ns_ at 29.020000 "$node_(42) setdest 1457.641084 778.666558 17.832371" ;# 
+$ns_ at 29.020000 "$node_(51) setdest 2514.656148 2614.579882 18.879065" ;# 
+$ns_ at 29.020000 "$node_(47) setdest 3090.000000 2860.000000 16.275407" ;# 
+$ns_ at 29.124056 "$node_(38) setdest 1980.000000 2190.000000 16.163883" ;# 
+$ns_ at 0.0 "$node_(107) switch OFF" ;# set_X,Y,Z  
+$node_(107) set X_ 0.000000
+$node_(107) set Y_ 0.000000
+$node_(107) set Z_ 0.0
+$ns_ at 41.010001 "$node_(107) setdest 2560.000000 10.000000 1000000000.000000" ;# init_node
+$ns_ at 41.020001 "$node_(107) switch ON" ;# inside  
+$ns_ at 41.020001 "$node_(107) setdest 2560.000000 10.000000 17.505519" ;# 
+$ns_ at 30.020000 "$node_(69) setdest 3511.136363 10.000000 13.629680" ;# 
+$ns_ at 48.429091 "$node_(69) switch OFF" ;# leaving_area  
+$ns_ at 30.020000 "$node_(60) setdest 3310.000000 610.000000 13.636364" ;# 
+$ns_ at 30.720767 "$node_(18) setdest 3886.137324 674.213321 12.735223" ;# 
+$ns_ at 31.020000 "$node_(17) setdest 3438.564666 2217.009721 15.779271" ;# 
+#$ns_ at 31.020000 $node_(41) arrived_to 1860.000000 1960.000000  
+$ns_ at 31.020000 "$node_(41) switch OFF" ;# arrived_to  
+$ns_ at 32.020000 "$node_(41) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 32.030000 "$node_(41) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 31.020000 "$node_(76) setdest 3299.631156 822.561292 13.682917" ;# 
+$ns_ at 31.084380 "$node_(62) setdest 1860.000000 1960.000000 14.419828" ;# 
+$ns_ at 31.218762 "$node_(34) setdest 3090.000000 2030.000000 12.766884" ;# 
+$ns_ at 31.373749 "$node_(78) setdest 772.160890 2828.700262 16.277585" ;# 
+$ns_ at 31.867312 "$node_(92) setdest 487.873246 2202.541008 18.752334" ;# 
+$ns_ at 32.020000 "$node_(25) setdest 3310.000000 391.745889 12.948685" ;# 
+$ns_ at 32.020000 "$node_(0) setdest 3917.755102 10.000000 11.822818" ;# 
+$ns_ at 48.968116 "$node_(0) switch OFF" ;# leaving_area  
+$ns_ at 32.062799 "$node_(22) setdest 3090.000000 2030.000000 12.391395" ;# 
+$ns_ at 32.347676 "$node_(52) setdest 3090.000000 2030.000000 12.438825" ;# 
+$ns_ at 33.020000 "$node_(65) setdest 370.980044 2222.494932 17.993760" ;# 
+$ns_ at 33.020000 "$node_(87) setdest 3044.007331 106.801466 18.638100" ;# 
+$ns_ at 33.020000 "$node_(5) setdest 2316.053164 1489.914431 15.365756" ;# 
+$ns_ at 0.0 "$node_(108) switch OFF" ;# set_X,Y,Z  
+$node_(108) set X_ 0.000000
+$node_(108) set Y_ 0.000000
+$node_(108) set Z_ 0.0
+$ns_ at 48.071538 "$node_(108) setdest 1871.538462 10.000000 1000000000.000000" ;# init_node
+$ns_ at 48.081538 "$node_(108) switch ON" ;# inside  
+$ns_ at 48.081538 "$node_(108) setdest 1676.332728 372.524934 16.589689" ;# 
+$ns_ at 0.0 "$node_(109) switch OFF" ;# set_X,Y,Z  
+$node_(109) set X_ 0.000000
+$node_(109) set Y_ 0.000000
+$node_(109) set Z_ 0.0
+$ns_ at 44.010000 "$node_(109) setdest 3838.461538 3010.000000 1000000000.000000" ;# init_node
+$ns_ at 44.020000 "$node_(109) switch ON" ;# inside  
+$ns_ at 44.020000 "$node_(109) setdest 3800.000000 2970.000000 27.745675" ;# 
+$ns_ at 33.108075 "$node_(2) setdest 3032.000000 1370.000000 18.173922" ;# 
+$ns_ at 33.249882 "$node_(73) setdest 3858.216085 969.713105 13.992310" ;# 
+$ns_ at 33.997153 "$node_(8) setdest 1871.538462 10.000000 18.198386" ;# 
+$ns_ at 42.289867 "$node_(8) switch OFF" ;# leaving_area  
+$ns_ at 34.020000 "$node_(28) setdest 3310.000000 453.028111 13.050993" ;# 
+$ns_ at 34.020000 "$node_(30) setdest 3838.461538 3010.000000 27.745675" ;# 
+$ns_ at 36.020000 "$node_(30) switch OFF" ;# leaving_area  
+$ns_ at 34.096888 "$node_(85) setdest 3458.866093 2259.304361 18.924969" ;# 
+$ns_ at 34.445919 "$node_(82) setdest 3882.526606 712.426749 15.623871" ;# 
+#$ns_ at 35.020000 $node_(50) arrived_to 3800.000000 2970.000000  
+$ns_ at 35.020000 "$node_(50) switch OFF" ;# arrived_to  
+$ns_ at 36.020000 "$node_(50) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 36.030000 "$node_(50) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 35.316076 "$node_(71) setdest 3172.367683 1179.578725 18.135349" ;# 
+$ns_ at 35.539787 "$node_(15) setdest 3090.000000 2030.000000 12.621891" ;# 
+$ns_ at 35.915717 "$node_(100) setdest 3313.169205 1955.769177 15.875548" ;# 
+$ns_ at 36.020000 "$node_(19) setdest 3917.755102 10.000000 13.116458" ;# 
+$ns_ at 51.296570 "$node_(19) switch OFF" ;# leaving_area  
+#$ns_ at 36.020000 $node_(1) arrived_to 3800.000000 2970.000000  
+$ns_ at 36.020000 "$node_(1) switch OFF" ;# arrived_to  
+$ns_ at 37.020000 "$node_(1) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 37.030000 "$node_(1) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 36.653666 "$node_(66) setdest 720.298794 2162.865460 18.405795" ;# 
+$ns_ at 37.020000 "$node_(88) setdest 2919.140994 81.828199 15.329925" ;# 
+$ns_ at 37.061023 "$node_(63) setdest 3290.000000 1020.000000 15.698655" ;# 
+$ns_ at 37.177150 "$node_(58) setdest 2964.827065 90.965413 18.391845" ;# 
+$ns_ at 37.443696 "$node_(33) setdest 3800.000000 2970.000000 13.373300" ;# 
+$ns_ at 38.020000 "$node_(62) setdest 1641.577779 1999.587297 18.194836" ;# 
+$ns_ at 38.103320 "$node_(40) setdest 378.469340 2221.216493 18.064705" ;# 
+$ns_ at 38.421708 "$node_(36) setdest 3090.000000 2030.000000 14.438784" ;# 
+$ns_ at 38.730803 "$node_(11) setdest 245.000000 2244.000000 18.227825" ;# 
+$ns_ at 38.850893 "$node_(51) setdest 2298.690651 2443.077870 15.045239" ;# 
+$ns_ at 38.880774 "$node_(71) setdest 3032.000000 1370.000000 15.626013" ;# 
+$ns_ at 39.001209 "$node_(56) setdest 3090.000000 2030.000000 15.248337" ;# 
+$ns_ at 39.020000 "$node_(7) setdest 1419.267194 1279.861192 13.868165" ;# 
+$ns_ at 39.049149 "$node_(106) setdest 3310.000000 160.000000 14.875908" ;# 
+$ns_ at 39.172932 "$node_(48) setdest 1610.000000 1560.000000 13.314913" ;# 
+$ns_ at 39.890357 "$node_(92) setdest 245.000000 2244.000000 15.275379" ;# 
+$ns_ at 39.901480 "$node_(58) setdest 2560.000000 10.000000 16.435850" ;# 
+$ns_ at 40.122592 "$node_(65) setdest 1071.000000 2103.000000 16.177396" ;# 
+$ns_ at 40.266822 "$node_(6) setdest 1529.841423 2019.838627 18.038603" ;# 
+$ns_ at 40.912751 "$node_(82) setdest 3810.000000 1480.000000 13.500775" ;# 
+#$ns_ at 41.020000 $node_(67) arrived_to 2510.000000 1290.000000  
+$ns_ at 41.020000 "$node_(67) switch OFF" ;# arrived_to  
+$ns_ at 42.020000 "$node_(67) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 42.030000 "$node_(67) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 41.316313 "$node_(35) setdest 1290.000000 1090.000000 19.036872" ;# 
+$ns_ at 42.020000 "$node_(63) setdest 3234.446929 1095.362693 18.209753" ;# 
+$ns_ at 42.020000 "$node_(13) setdest 3305.063286 711.202628 15.453181" ;# 
+$ns_ at 42.020000 "$node_(107) setdest 3310.000000 610.000000 13.527727" ;# 
+$ns_ at 42.020000 "$node_(31) setdest 2660.000000 2730.000000 10.018573" ;# 
+$ns_ at 42.027377 "$node_(66) setdest 245.000000 2244.000000 16.076420" ;# 
+$ns_ at 42.027708 "$node_(74) setdest 3162.567834 1663.532437 15.093293" ;# 
+$ns_ at 43.214300 "$node_(6) setdest 1860.000000 1960.000000 16.127186" ;# 
+$ns_ at 43.599675 "$node_(53) setdest 2836.874962 231.499969 12.652255" ;# 
+$ns_ at 43.733879 "$node_(21) setdest 1290.000000 1090.000000 17.555459" ;# 
+$ns_ at 0.0 "$node_(110) switch OFF" ;# set_X,Y,Z  
+$node_(110) set X_ 0.000000
+$node_(110) set Y_ 0.000000
+$node_(110) set Z_ 0.0
+$ns_ at 57.349263 "$node_(110) setdest 1871.538461 10.000000 1000000000.000000" ;# init_node
+$ns_ at 57.359263 "$node_(110) switch ON" ;# inside  
+$ns_ at 57.359263 "$node_(110) setdest 1841.871272 65.096209 18.731637" ;# 
+$ns_ at 44.020000 "$node_(103) setdest 3310.000000 336.843608 14.438329" ;# 
+$ns_ at 44.842628 "$node_(32) setdest 2510.000000 1290.000000 14.941893" ;# 
+$ns_ at 45.020000 "$node_(47) setdest 2866.880239 2792.545188 16.232660" ;# 
+$ns_ at 45.084708 "$node_(40) setdest 245.000000 2244.000000 15.153392" ;# 
+$ns_ at 46.281024 "$node_(77) setdest 3090.000000 2030.000000 11.756424" ;# 
+$ns_ at 46.573265 "$node_(76) setdest 3295.579707 905.616005 15.974641" ;# 
+$ns_ at 46.758735 "$node_(20) setdest 3120.111098 1877.938953 13.371579" ;# 
+#$ns_ at 47.020000 $node_(14) arrived_to 1860.000000 1960.000000  
+$ns_ at 47.020000 "$node_(14) switch OFF" ;# arrived_to  
+$ns_ at 48.020000 "$node_(14) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 48.030000 "$node_(14) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 47.020000 "$node_(109) setdest 3566.228438 2842.861080 16.637055" ;# 
+$ns_ at 0.0 "$node_(111) switch OFF" ;# set_X,Y,Z  
+$node_(111) set X_ 0.000000
+$node_(111) set Y_ 0.000000
+$node_(111) set Z_ 0.0
+$ns_ at 81.010001 "$node_(111) setdest 2560.000000 10.000000 1000000000.000000" ;# init_node
+$ns_ at 81.020001 "$node_(111) switch ON" ;# inside  
+$ns_ at 81.020001 "$node_(111) setdest 2560.000000 10.000000 16.187162" ;# 
+$ns_ at 0.0 "$node_(112) switch OFF" ;# set_X,Y,Z  
+$node_(112) set X_ 0.000000
+$node_(112) set Y_ 0.000000
+$node_(112) set Z_ 0.0
+$ns_ at 58.010000 "$node_(112) setdest 3838.461538 3010.000000 1000000000.000000" ;# init_node
+$ns_ at 58.020000 "$node_(112) switch ON" ;# inside  
+$ns_ at 58.020000 "$node_(112) setdest 3800.000000 2970.000000 27.745675" ;# 
+$ns_ at 47.114235 "$node_(74) setdest 3090.000000 2030.000000 12.492021" ;# 
+$ns_ at 47.161487 "$node_(63) setdest 3032.000000 1370.000000 15.609008" ;# 
+$ns_ at 47.574078 "$node_(87) setdest 2560.000000 10.000000 15.696553" ;# 
+#$ns_ at 48.020000 $node_(72) arrived_to 245.000000 2244.000000  
+$ns_ at 48.020000 "$node_(72) switch OFF" ;# arrived_to  
+$ns_ at 49.020000 "$node_(72) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 49.030000 "$node_(72) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 48.576771 "$node_(13) setdest 3290.000000 1020.000000 13.187797" ;# 
+$ns_ at 48.849035 "$node_(42) setdest 1871.538462 10.000000 16.233453" ;# 
+$ns_ at 102.627942 "$node_(42) switch OFF" ;# leaving_area  
+$ns_ at 49.426877 "$node_(83) setdest 2625.128166 1687.143445 19.362562" ;# 
+$ns_ at 49.917252 "$node_(25) setdest 3310.000000 519.203330 13.636364" ;# 
+$ns_ at 50.020000 "$node_(27) setdest 2560.000000 10.000000 18.620499" ;# 
+$ns_ at 50.020000 "$node_(27) switch OFF" ;# leaving_area  
+$ns_ at 50.020000 "$node_(99) setdest 788.546448 2151.215437 15.841063" ;# 
+$ns_ at 50.020000 "$node_(64) setdest 3310.000000 610.000000 13.636364" ;# 
+$ns_ at 50.119159 "$node_(86) setdest 2112.822338 1699.398513 15.709812" ;# 
+$ns_ at 50.220202 "$node_(62) setdest 1324.570202 2057.042410 15.303568" ;# 
+$ns_ at 0.0 "$node_(113) switch OFF" ;# set_X,Y,Z  
+$node_(113) set X_ 0.000000
+$node_(113) set Y_ 0.000000
+$node_(113) set Z_ 0.0
+$ns_ at 66.071538 "$node_(113) setdest 1871.538461 10.000000 1000000000.000000" ;# init_node
+$ns_ at 66.081538 "$node_(113) switch ON" ;# inside  
+$ns_ at 66.081538 "$node_(113) setdest 1727.702541 277.123852 16.589689" ;# 
+$ns_ at 51.020000 "$node_(106) setdest 3310.000000 305.392472 13.636364" ;# 
+#$ns_ at 51.020000 $node_(101) arrived_to 3930.000000 210.000000  
+$ns_ at 51.020000 "$node_(101) switch OFF" ;# arrived_to  
+$ns_ at 52.020000 "$node_(101) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 52.030000 "$node_(101) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 51.109104 "$node_(94) setdest 1860.000000 1960.000000 14.851187" ;# 
+$ns_ at 51.146927 "$node_(5) setdest 1860.000000 1960.000000 12.626091" ;# 
+$ns_ at 51.778607 "$node_(76) setdest 3290.000000 1020.000000 12.392072" ;# 
+$ns_ at 52.020000 "$node_(68) setdest 1071.000000 2103.000000 16.364369" ;# 
+$ns_ at 52.778862 "$node_(70) setdest 3829.105826 1277.796678 13.288091" ;# 
+$ns_ at 54.020000 "$node_(11) setdest 10.000000 2297.153203 24.781225" ;# 
+$ns_ at 63.742531 "$node_(11) switch OFF" ;# leaving_area  
+$ns_ at 0.0 "$node_(114) switch OFF" ;# set_X,Y,Z  
+$node_(114) set X_ 0.000000
+$node_(114) set Y_ 0.000000
+$node_(114) set Z_ 0.0
+$ns_ at 89.600909 "$node_(114) setdest 3511.136364 10.000000 1000000000.000000" ;# init_node
+$ns_ at 89.610909 "$node_(114) switch ON" ;# inside  
+$ns_ at 89.610909 "$node_(114) setdest 3310.000000 160.000000 13.629680" ;# 
+$ns_ at 54.447130 "$node_(73) setdest 3847.580076 1082.277526 15.263089" ;# 
+$ns_ at 55.020000 "$node_(71) setdest 2688.070865 1638.081645 17.792332" ;# 
+#$ns_ at 55.020000 $node_(40) arrived_to 245.000000 2244.000000  
+$ns_ at 55.020000 "$node_(40) switch OFF" ;# arrived_to  
+$ns_ at 56.020000 "$node_(40) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 56.030000 "$node_(40) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 55.582359 "$node_(7) setdest 1472.424533 1357.936033 15.991530" ;# 
+$ns_ at 56.166909 "$node_(97) setdest 3249.296966 1822.702012 16.743154" ;# 
+$ns_ at 56.268205 "$node_(103) setdest 3310.000000 610.000000 13.163025" ;# 
+$ns_ at 56.472553 "$node_(28) setdest 3310.000000 610.000000 14.882455" ;# 
+$ns_ at 56.936415 "$node_(85) setdest 3589.259777 2530.957868 19.129127" ;# 
+$ns_ at 57.020000 "$node_(92) setdest 72.716206 2084.771251 18.235883" ;# 
+#$ns_ at 57.020000 $node_(91) arrived_to 4660.000000 400.000000  
+$ns_ at 57.020000 "$node_(91) switch OFF" ;# arrived_to  
+$ns_ at 58.020000 "$node_(91) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 58.030000 "$node_(91) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 57.180875 "$node_(51) setdest 2247.435443 2402.375205 18.966708" ;# 
+$ns_ at 57.200678 "$node_(45) setdest 3840.995409 1151.965250 13.570816" ;# 
+$ns_ at 0.0 "$node_(115) switch OFF" ;# set_X,Y,Z  
+$node_(115) set X_ 0.000000
+$node_(115) set Y_ 0.000000
+$node_(115) set Z_ 0.0
+$ns_ at 64.964430 "$node_(115) setdest 3838.461539 3010.000000 1000000000.000000" ;# init_node
+$ns_ at 64.974430 "$node_(115) switch ON" ;# inside  
+$ns_ at 64.974430 "$node_(115) setdest 3800.000000 2970.000000 27.127577" ;# 
+$ns_ at 58.020000 "$node_(2) setdest 3213.049953 1124.389599 15.309516" ;# 
+$ns_ at 58.020000 "$node_(79) setdest 2874.691512 980.012215 13.136605" ;# 
+$ns_ at 58.020000 "$node_(89) setdest 3205.808612 526.646889 14.793515" ;# 
+$ns_ at 58.378405 "$node_(86) setdest 1860.000000 1960.000000 13.135535" ;# 
+$ns_ at 59.020000 "$node_(32) setdest 2426.253057 1376.323772 15.000459" ;# 
+#$ns_ at 59.020000 $node_(34) arrived_to 3090.000000 2030.000000  
+$ns_ at 59.020000 "$node_(34) switch OFF" ;# arrived_to  
+$ns_ at 60.020000 "$node_(34) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 60.030000 "$node_(34) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 59.264131 "$node_(25) setdest 3310.000000 610.000000 15.774627" ;# 
+$ns_ at 59.379538 "$node_(47) setdest 2731.425432 2751.593735 16.637835" ;# 
+$ns_ at 60.020000 "$node_(36) setdest 2950.843251 2256.534242 11.130824" ;# 
+$ns_ at 60.020000 "$node_(12) setdest 1469.015473 1352.928977 13.526867" ;# 
+#$ns_ at 60.020000 $node_(90) arrived_to 4660.000000 400.000000  
+$ns_ at 60.020000 "$node_(90) switch OFF" ;# arrived_to  
+$ns_ at 61.020000 "$node_(90) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 61.030000 "$node_(90) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 60.631699 "$node_(51) setdest 1980.000000 2190.000000 15.966858" ;# 
+$ns_ at 60.699912 "$node_(110) setdest 1535.852603 633.416594 15.719595" ;# 
+$ns_ at 0.0 "$node_(116) switch OFF" ;# set_X,Y,Z  
+$node_(116) set X_ 0.000000
+$node_(116) set Y_ 0.000000
+$node_(116) set Z_ 0.0
+$ns_ at 74.760333 "$node_(116) setdest 1871.538462 10.000000 1000000000.000000" ;# init_node
+$ns_ at 74.770333 "$node_(116) switch ON" ;# inside  
+$ns_ at 74.770333 "$node_(116) setdest 1759.539068 217.998874 18.171650" ;# 
+$ns_ at 61.020000 "$node_(112) setdest 3230.000000 2660.000000 16.637055" ;# 
+$ns_ at 61.488803 "$node_(7) setdest 1610.000000 1560.000000 13.191385" ;# 
+$ns_ at 61.682114 "$node_(106) setdest 3310.000000 361.109522 15.186727" ;# 
+$ns_ at 61.854923 "$node_(73) setdest 3810.000000 1480.000000 12.818643" ;# 
+$ns_ at 62.020000 "$node_(76) setdest 3184.573064 1552.406025 12.948735" ;# 
+$ns_ at 63.014896 "$node_(109) setdest 3527.411907 2821.750335 19.051473" ;# 
+$ns_ at 63.021401 "$node_(88) setdest 2560.000000 10.000000 18.313954" ;# 
+$ns_ at 64.008861 "$node_(54) setdest 3149.743209 1728.296797 13.430417" ;# 
+$ns_ at 64.020000 "$node_(60) setdest 3048.139555 832.581378 13.815163" ;# 
+$ns_ at 64.020000 "$node_(98) setdest 3310.000000 394.892412 13.636364" ;# 
+$ns_ at 65.020000 "$node_(6) setdest 2217.716220 1591.277127 11.846369" ;# 
+$ns_ at 65.020000 "$node_(21) setdest 1428.470631 1293.378740 16.114254" ;# 
+$ns_ at 0.0 "$node_(117) switch OFF" ;# set_X,Y,Z  
+$node_(117) set X_ 0.000000
+$node_(117) set Y_ 0.000000
+$node_(117) set Z_ 0.0
+$ns_ at 94.009999 "$node_(117) setdest 3917.755102 10.000000 1000000000.000000" ;# init_node
+$ns_ at 94.019999 "$node_(117) switch ON" ;# inside  
+$ns_ at 94.019999 "$node_(117) setdest 3930.000000 210.000000 10.018725" ;# 
+$ns_ at 65.334182 "$node_(109) setdest 3230.000000 2660.000000 16.366351" ;# 
+$ns_ at 65.350913 "$node_(106) setdest 3310.000000 610.000000 13.331691" ;# 
+$ns_ at 0.0 "$node_(118) switch OFF" ;# set_X,Y,Z  
+$node_(118) set X_ 0.000000
+$node_(118) set Y_ 0.000000
+$node_(118) set Z_ 0.0
+$ns_ at 72.010000 "$node_(118) setdest 2560.000000 10.000000 1000000000.000000" ;# init_node
+$ns_ at 72.020000 "$node_(118) switch ON" ;# inside  
+$ns_ at 72.020000 "$node_(118) setdest 2560.000000 10.000000 18.380148" ;# 
+$ns_ at 65.985214 "$node_(105) setdest 3310.000000 160.000000 15.478531" ;# 
+$ns_ at 0.0 "$node_(119) switch OFF" ;# set_X,Y,Z  
+$node_(119) set X_ 0.000000
+$node_(119) set Y_ 0.000000
+$node_(119) set Z_ 0.0
+$ns_ at 72.129118 "$node_(119) setdest 3511.136363 10.000000 1000000000.000000" ;# init_node
+$ns_ at 72.139118 "$node_(119) switch ON" ;# inside  
+$ns_ at 72.139118 "$node_(119) setdest 3310.000000 160.000000 13.289104" ;# 
+$ns_ at 66.020000 "$node_(25) setdest 2929.985853 933.012025 13.460928" ;# 
+$ns_ at 66.020000 "$node_(58) setdest 2560.000000 10.000000 12.748752" ;# 
+$ns_ at 66.020000 "$node_(58) switch OFF" ;# leaving_area  
+$ns_ at 0.0 "$node_(120) switch OFF" ;# set_X,Y,Z  
+$node_(120) set X_ 0.000000
+$node_(120) set Y_ 0.000000
+$node_(120) set Z_ 0.0
+$ns_ at 66.208301 "$node_(120) setdest 3838.461538 3010.000000 1000000000.000000" ;# init_node
+$ns_ at 66.218301 "$node_(120) switch ON" ;# inside  
+$ns_ at 66.218301 "$node_(120) setdest 3800.000000 2970.000000 30.799444" ;# 
+#$ns_ at 67.020000 $node_(38) arrived_to 1980.000000 2190.000000  
+$ns_ at 67.020000 "$node_(38) switch OFF" ;# arrived_to  
+$ns_ at 68.020000 "$node_(38) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 68.030000 "$node_(38) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 67.020000 "$node_(23) setdest 10.000000 2297.153203 25.567340" ;# 
+$ns_ at 76.443594 "$node_(23) switch OFF" ;# leaving_area  
+$ns_ at 67.037885 "$node_(32) setdest 2096.884602 1715.826641 12.532731" ;# 
+$ns_ at 67.039498 "$node_(89) setdest 2560.000000 10.000000 13.343528" ;# 
+$ns_ at 0.0 "$node_(121) switch OFF" ;# set_X,Y,Z  
+$node_(121) set X_ 0.000000
+$node_(121) set Y_ 0.000000
+$node_(121) set Z_ 0.0
+$ns_ at 73.862514 "$node_(121) setdest 3838.461538 3010.000000 1000000000.000000" ;# init_node
+$ns_ at 73.872514 "$node_(121) switch ON" ;# inside  
+$ns_ at 73.872514 "$node_(121) setdest 3800.000000 2970.000000 25.840139" ;# 
+$ns_ at 0.0 "$node_(122) switch OFF" ;# set_X,Y,Z  
+$node_(122) set X_ 0.000000
+$node_(122) set Y_ 0.000000
+$node_(122) set Z_ 0.0
+$ns_ at 71.469313 "$node_(122) setdest 1871.538461 10.000000 1000000000.000000" ;# init_node
+$ns_ at 71.479313 "$node_(122) switch ON" ;# inside  
+$ns_ at 71.479313 "$node_(122) setdest 1608.748862 498.037827 16.295965" ;# 
+$ns_ at 67.692416 "$node_(83) setdest 2692.462799 1634.658275 18.882228" ;# 
+$ns_ at 0.0 "$node_(123) switch OFF" ;# set_X,Y,Z  
+$node_(123) set X_ 0.000000
+$node_(123) set Y_ 0.000000
+$node_(123) set Z_ 0.0
+$ns_ at 75.966364 "$node_(123) setdest 3838.461538 3010.000000 1000000000.000000" ;# init_node
+$ns_ at 75.976364 "$node_(123) switch ON" ;# inside  
+$ns_ at 75.976364 "$node_(123) setdest 3800.000000 2970.000000 27.153246" ;# 
+$ns_ at 67.884840 "$node_(47) setdest 2660.000000 2730.000000 18.044826" ;# 
+$ns_ at 68.020000 "$node_(28) setdest 3033.872503 844.708372 13.164056" ;# 
+$ns_ at 68.020000 "$node_(80) setdest 10.000000 2297.153203 26.199715" ;# 
+$ns_ at 77.216139 "$node_(80) switch OFF" ;# leaving_area  
+$ns_ at 68.020000 "$node_(115) setdest 3230.000000 2660.000000 16.637055" ;# 
+$ns_ at 68.020000 "$node_(48) setdest 1860.000000 1960.000000 13.873502" ;# 
+$ns_ at 69.020000 "$node_(102) setdest 3310.000000 427.934319 13.636364" ;# 
+$ns_ at 69.020000 "$node_(56) setdest 2660.000000 2730.000000 11.101662" ;# 
+$ns_ at 69.020000 "$node_(120) setdest 3230.000000 2660.000000 16.637055" ;# 
+$ns_ at 69.318321 "$node_(53) setdest 2653.038314 84.430651 15.534669" ;# 
+$ns_ at 69.884552 "$node_(92) setdest 10.000000 2026.807453 16.214428" ;# 
+$ns_ at 75.151453 "$node_(92) switch OFF" ;# leaving_area  
+$ns_ at 70.020000 "$node_(94) setdest 1435.541169 2036.929801 16.364369" ;# 
+$ns_ at 70.020000 "$node_(63) setdest 2884.917110 1484.646359 18.115494" ;# 
+$ns_ at 70.391947 "$node_(18) setdest 3905.298931 471.419642 15.799325" ;# 
+$ns_ at 71.020000 "$node_(29) setdest 4307.365355 848.053432 10.994981" ;# 
+$ns_ at 71.272295 "$node_(62) setdest 1216.747033 2076.584505 17.955702" ;# 
+$ns_ at 0.0 "$node_(124) switch OFF" ;# set_X,Y,Z  
+$node_(124) set X_ 0.000000
+$node_(124) set Y_ 0.000000
+$node_(124) set Z_ 0.0
+$ns_ at 76.933524 "$node_(124) setdest 1871.538462 10.000000 1000000000.000000" ;# init_node
+$ns_ at 76.943524 "$node_(124) switch ON" ;# inside  
+$ns_ at 76.943524 "$node_(124) setdest 1290.000000 1090.000000 16.338222" ;# 
+$ns_ at 71.833310 "$node_(20) setdest 3090.000000 2030.000000 15.217277" ;# 
+$ns_ at 72.213788 "$node_(83) setdest 3032.000000 1370.000000 16.059678" ;# 
+$ns_ at 0.0 "$node_(125) switch OFF" ;# set_X,Y,Z  
+$node_(125) set X_ 0.000000
+$node_(125) set Y_ 0.000000
+$node_(125) set Z_ 0.0
+$ns_ at 74.900850 "$node_(125) setdest 3838.461538 3010.000000 1000000000.000000" ;# init_node
+$ns_ at 74.910850 "$node_(125) switch ON" ;# inside  
+$ns_ at 74.910850 "$node_(125) setdest 3800.000000 2970.000000 26.309814" ;# 
+$ns_ at 72.688692 "$node_(85) setdest 3800.000000 2970.000000 15.543571" ;# 
+$ns_ at 72.900553 "$node_(108) setdest 1525.967863 651.773968 17.714863" ;# 
+$ns_ at 73.020000 "$node_(35) setdest 1442.551526 1314.060054 16.146627" ;# 
+$ns_ at 73.020000 "$node_(66) setdest 10.000000 2297.153203 27.467800" ;# 
+$ns_ at 81.791588 "$node_(66) switch OFF" ;# leaving_area  
+$ns_ at 73.020000 "$node_(47) setdest 2566.337792 2655.621188 17.395079" ;# 
+$ns_ at 73.020000 "$node_(13) setdest 3222.950187 1358.601557 13.728154" ;# 
+$ns_ at 73.020000 "$node_(118) setdest 3310.000000 160.000000 16.627238" ;# 
+$ns_ at 73.020000 "$node_(44) setdest 245.000000 2244.000000 16.430355" ;# 
+$ns_ at 74.020000 "$node_(37) setdest 3174.404699 1176.815331 15.333419" ;# 
+$ns_ at 0.0 "$node_(126) switch OFF" ;# set_X,Y,Z  
+$node_(126) set X_ 0.000000
+$node_(126) set Y_ 0.000000
+$node_(126) set Z_ 0.0
+$ns_ at 89.010000 "$node_(126) setdest 2560.000000 10.000000 1000000000.000000" ;# init_node
+$ns_ at 89.020000 "$node_(126) switch ON" ;# inside  
+$ns_ at 89.020000 "$node_(126) setdest 2560.000000 10.000000 15.437956" ;# 
+$ns_ at 0.0 "$node_(127) switch OFF" ;# set_X,Y,Z  
+$node_(127) set X_ 0.000000
+$node_(127) set Y_ 0.000000
+$node_(127) set Z_ 0.0
+$ns_ at 92.731423 "$node_(127) setdest 3511.136364 10.000000 1000000000.000000" ;# init_node
+$ns_ at 92.741423 "$node_(127) switch ON" ;# inside  
+$ns_ at 92.741423 "$node_(127) setdest 3487.415959 27.689794 12.920509" ;# 
+$ns_ at 77.020000 "$node_(121) setdest 3804.318960 2326.474989 15.638577" ;# 
+$ns_ at 77.375080 "$node_(62) setdest 1071.000000 2103.000000 15.357460" ;# 
+$ns_ at 77.924300 "$node_(70) setdest 3810.000000 1480.000000 14.408933" ;# 
+$ns_ at 77.950660 "$node_(2) setdest 3290.000000 1020.000000 18.344876" ;# 
+$ns_ at 78.020000 "$node_(74) setdest 3137.857916 2245.360623 13.731236" ;# 
+$ns_ at 78.020000 "$node_(125) setdest 3583.136864 2852.056891 16.029336" ;# 
+$ns_ at 78.020000 "$node_(104) setdest 3310.000000 494.644749 13.169605" ;# 
+$ns_ at 78.020000 "$node_(103) setdest 3290.000000 1020.000000 13.682917" ;# 
+$ns_ at 78.977142 "$node_(54) setdest 3090.000000 2030.000000 12.281406" ;# 
+$ns_ at 79.020000 "$node_(15) setdest 2954.676775 2250.293621 12.355059" ;# 
+$ns_ at 79.020000 "$node_(123) setdest 3230.000000 2660.000000 16.637055" ;# 
+$ns_ at 79.528743 "$node_(71) setdest 1980.000000 2190.000000 15.892068" ;# 
+$ns_ at 79.895665 "$node_(47) setdest 2314.473535 2455.611336 16.036849" ;# 
+$ns_ at 80.020000 "$node_(105) setdest 3310.000000 381.929313 13.636364" ;# 
+#$ns_ at 80.020000 $node_(87) arrived_to 2560.000000 10.000000  
+$ns_ at 80.020000 "$node_(87) switch OFF" ;# arrived_to  
+$ns_ at 81.020000 "$node_(87) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 81.030000 "$node_(87) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 80.288639 "$node_(21) setdest 1610.000000 1560.000000 12.535366" ;# 
+$ns_ at 80.314302 "$node_(63) setdest 2581.445463 1721.192700 15.771472" ;# 
+$ns_ at 81.020000 "$node_(7) setdest 1772.430794 1819.889270 13.157046" ;# 
+$ns_ at 81.245443 "$node_(98) setdest 3310.000000 471.746367 15.034844" ;# 
+$ns_ at 0.0 "$node_(128) switch OFF" ;# set_X,Y,Z  
+$node_(128) set X_ 0.000000
+$node_(128) set Y_ 0.000000
+$node_(128) set Z_ 0.0
+$ns_ at 83.904930 "$node_(128) setdest 3838.461539 3010.000000 1000000000.000000" ;# init_node
+$ns_ at 83.914930 "$node_(128) switch ON" ;# inside  
+$ns_ at 83.914930 "$node_(128) setdest 3800.000000 2970.000000 26.360805" ;# 
+$ns_ at 82.020000 "$node_(111) setdest 2646.076787 27.215357 19.451790" ;# 
+$ns_ at 0.0 "$node_(129) switch OFF" ;# set_X,Y,Z  
+$node_(129) set X_ 0.000000
+$node_(129) set Y_ 0.000000
+$node_(129) set Z_ 0.0
+$ns_ at 85.926500 "$node_(129) setdest 3511.136364 10.000000 1000000000.000000" ;# init_node
+$ns_ at 85.936500 "$node_(129) switch ON" ;# inside  
+$ns_ at 85.936500 "$node_(129) setdest 3409.673264 85.667396 15.763563" ;# 
+$ns_ at 83.020000 "$node_(20) setdest 3151.687568 2307.594054 13.731236" ;# 
+$ns_ at 83.020000 "$node_(49) setdest 3806.145713 2054.288820 14.931277" ;# 
+$ns_ at 83.020000 "$node_(51) setdest 1860.000000 1960.000000 13.653812" ;# 
+$ns_ at 0.0 "$node_(130) switch OFF" ;# set_X,Y,Z  
+$node_(130) set X_ 0.000000
+$node_(130) set Y_ 0.000000
+$node_(130) set Z_ 0.0
+$ns_ at 91.941159 "$node_(130) setdest 3838.461538 3010.000000 1000000000.000000" ;# init_node
+$ns_ at 91.951159 "$node_(130) switch ON" ;# inside  
+$ns_ at 91.951159 "$node_(130) setdest 3800.000000 2970.000000 26.822436" ;# 
+$ns_ at 83.284709 "$node_(18) setdest 3930.000000 210.000000 12.663631" ;# 
+$ns_ at 83.535068 "$node_(12) setdest 1572.591501 1505.056267 13.868165" ;# 
+$ns_ at 83.905164 "$node_(36) setdest 2660.000000 2730.000000 9.902219" ;# 
+$ns_ at 84.020000 "$node_(64) setdest 3303.876149 735.538946 14.736264" ;# 
+#$ns_ at 84.020000 $node_(88) arrived_to 2560.000000 10.000000  
+$ns_ at 84.020000 "$node_(88) switch OFF" ;# arrived_to  
+$ns_ at 85.020000 "$node_(88) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 85.030000 "$node_(88) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 84.369248 "$node_(113) setdest 1618.958130 479.077759 17.956906" ;# 
+$ns_ at 84.473185 "$node_(53) setdest 2560.000000 10.000000 15.787748" ;# 
+$ns_ at 84.828828 "$node_(99) setdest 1071.000000 2103.000000 17.697252" ;# 
+#$ns_ at 85.020000 $node_(65) arrived_to 1071.000000 2103.000000  
+$ns_ at 85.020000 "$node_(65) switch OFF" ;# arrived_to  
+$ns_ at 86.020000 "$node_(65) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 86.030000 "$node_(65) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 85.020000 "$node_(106) setdest 3290.000000 1020.000000 13.682917" ;# 
+$ns_ at 85.846687 "$node_(100) setdest 3221.251667 1764.274307 18.793486" ;# 
+$ns_ at 86.020000 "$node_(22) setdest 2994.784073 2185.002671 12.068563" ;# 
+$ns_ at 0.0 "$node_(131) switch OFF" ;# set_X,Y,Z  
+$node_(131) set X_ 0.000000
+$node_(131) set Y_ 0.000000
+$node_(131) set Z_ 0.0
+$ns_ at 97.010000 "$node_(131) setdest 3838.461538 3010.000000 1000000000.000000" ;# init_node
+$ns_ at 97.020000 "$node_(131) switch ON" ;# inside  
+$ns_ at 97.020000 "$node_(131) setdest 3800.000000 2970.000000 27.745675" ;# 
+$ns_ at 86.020000 "$node_(2) setdest 3310.000000 610.000000 13.682917" ;# 
+$ns_ at 86.357166 "$node_(98) setdest 3310.000000 610.000000 12.965938" ;# 
+$ns_ at 86.532769 "$node_(111) setdest 2957.455781 89.491156 15.985564" ;# 
+$ns_ at 87.020000 "$node_(128) setdest 3803.635222 2428.351980 13.119014" ;# 
+$ns_ at 87.020000 "$node_(86) setdest 1464.232122 2031.729793 15.210099" ;# 
+$ns_ at 87.020000 "$node_(109) setdest 3090.000000 2860.000000 16.275407" ;# 
+$ns_ at 87.770577 "$node_(116) setdest 1525.543935 652.561263 15.279591" ;# 
+$ns_ at 88.020000 "$node_(62) setdest 245.000000 2244.000000 16.430355" ;# 
+$ns_ at 88.135497 "$node_(81) setdest 3032.000000 1370.000000 19.634781" ;# 
+$ns_ at 88.668516 "$node_(102) setdest 3310.000000 508.587264 14.700933" ;# 
+$ns_ at 88.896742 "$node_(60) setdest 2911.724644 948.534053 15.098598" ;# 
+$ns_ at 89.672007 "$node_(37) setdest 3236.316492 1092.826464 16.104256" ;# 
+$ns_ at 89.807562 "$node_(35) setdest 1610.000000 1560.000000 12.288406" ;# 
+$ns_ at 90.020000 "$node_(126) setdest 2689.681962 113.745570 15.520015" ;# 
+$ns_ at 90.020000 "$node_(33) setdest 3838.461538 3010.000000 27.745675" ;# 
+$ns_ at 92.020000 "$node_(33) switch OFF" ;# leaving_area  
+$ns_ at 90.562163 "$node_(17) setdest 3800.000000 2970.000000 17.978503" ;# 
+$ns_ at 0.0 "$node_(132) switch OFF" ;# set_X,Y,Z  
+$node_(132) set X_ 0.000000
+$node_(132) set Y_ 0.000000
+$node_(132) set Z_ 0.0
+$ns_ at 95.251249 "$node_(132) setdest 3511.136364 10.000000 1000000000.000000" ;# init_node
+$ns_ at 95.261249 "$node_(132) switch ON" ;# inside  
+$ns_ at 95.261249 "$node_(132) setdest 3310.000000 160.000000 15.921949" ;# 
+$ns_ at 90.804088 "$node_(108) setdest 1290.000000 1090.000000 15.944358" ;# 
+$ns_ at 92.020000 "$node_(119) setdest 3310.000000 610.000000 13.636364" ;# 
+$ns_ at 92.549178 "$node_(64) setdest 3296.431538 888.153463 12.923059" ;# 
+$ns_ at 93.020000 "$node_(70) setdest 3806.418023 2013.714546 15.798665" ;# 
+$ns_ at 93.020000 "$node_(53) setdest 2560.000000 10.000000 16.187162" ;# 
+$ns_ at 93.020000 "$node_(53) switch OFF" ;# leaving_area  
+$ns_ at 0.0 "$node_(133) switch OFF" ;# set_X,Y,Z  
+$node_(133) set X_ 0.000000
+$node_(133) set Y_ 0.000000
+$node_(133) set Z_ 0.0
+$ns_ at 103.163859 "$node_(133) setdest 3511.136363 10.000000 1000000000.000000" ;# init_node
+$ns_ at 103.173859 "$node_(133) switch ON" ;# inside  
+$ns_ at 103.173859 "$node_(133) setdest 3412.587043 83.494408 13.629680" ;# 
+$ns_ at 0.0 "$node_(134) switch OFF" ;# set_X,Y,Z  
+$node_(134) set X_ 0.000000
+$node_(134) set Y_ 0.000000
+$node_(134) set Z_ 0.0
+$ns_ at 95.879317 "$node_(134) setdest 3838.461539 3010.000000 1000000000.000000" ;# init_node
+$ns_ at 95.889317 "$node_(134) switch ON" ;# inside  
+$ns_ at 95.889317 "$node_(134) setdest 3800.000000 2970.000000 26.043923" ;# 
+$ns_ at 93.420556 "$node_(125) setdest 3421.785048 2764.304149 15.164707" ;# 
+$ns_ at 93.965863 "$node_(129) setdest 3310.000000 160.000000 15.437860" ;# 
+$ns_ at 94.020000 "$node_(73) setdest 3805.844522 2099.166164 12.796784" ;# 
+$ns_ at 94.086587 "$node_(74) setdest 3178.076656 2426.344951 15.731075" ;# 
+$ns_ at 94.154763 "$node_(102) setdest 3310.000000 610.000000 12.893794" ;# 
+$ns_ at 95.020000 "$node_(130) setdest 3520.845488 2388.428100 15.557672" ;# 
+$ns_ at 0.0 "$node_(135) switch OFF" ;# set_X,Y,Z  
+$node_(135) set X_ 0.000000
+$node_(135) set Y_ 0.000000
+$node_(135) set Z_ 0.0
+$ns_ at 130.600909 "$node_(135) setdest 3511.136364 10.000000 1000000000.000000" ;# init_node
+$ns_ at 130.610909 "$node_(135) switch ON" ;# inside  
+$ns_ at 130.610909 "$node_(135) setdest 3310.000000 160.000000 13.629680" ;# 
+$ns_ at 95.031605 "$node_(127) setdest 3359.565700 123.035749 14.819599" ;# 
+$ns_ at 95.549577 "$node_(28) setdest 2793.783907 1048.783679 12.858951" ;# 
+$ns_ at 0.0 "$node_(136) switch OFF" ;# set_X,Y,Z  
+$node_(136) set X_ 0.000000
+$node_(136) set Y_ 0.000000
+$node_(136) set Z_ 0.0
+$ns_ at 102.963202 "$node_(136) setdest 3838.461538 3010.000000 1000000000.000000" ;# init_node
+$ns_ at 102.973202 "$node_(136) switch ON" ;# inside  
+$ns_ at 102.973202 "$node_(136) setdest 3800.000000 2970.000000 27.111292" ;# 
+$ns_ at 96.149665 "$node_(97) setdest 3032.000000 1370.000000 18.017452" ;# 
+$ns_ at 96.151148 "$node_(37) setdest 3290.000000 1020.000000 18.582282" ;# 
+$ns_ at 96.294816 "$node_(105) setdest 3310.000000 434.139626 15.621183" ;# 
+$ns_ at 96.380562 "$node_(94) setdest 1255.174619 2069.619809 18.095313" ;# 
+$ns_ at 96.805746 "$node_(12) setdest 1610.000000 1560.000000 15.772573" ;# 
+$ns_ at 97.094582 "$node_(96) setdest 3032.000000 1370.000000 19.108930" ;# 
+$ns_ at 97.142623 "$node_(113) setdest 1290.000000 1090.000000 16.182389" ;# 
+$ns_ at 97.149147 "$node_(100) setdest 3032.000000 1370.000000 15.691749" ;# 
+$ns_ at 98.020000 "$node_(98) setdest 3048.984014 831.863588 13.170602" ;# 
+$ns_ at 0.0 "$node_(137) switch OFF" ;# set_X,Y,Z  
+$node_(137) set X_ 0.000000
+$node_(137) set Y_ 0.000000
+$node_(137) set Z_ 0.0
+$ns_ at 111.654178 "$node_(137) setdest 1871.538462 10.000000 1000000000.000000" ;# init_node
+$ns_ at 111.664178 "$node_(137) switch ON" ;# inside  
+$ns_ at 111.664178 "$node_(137) setdest 1799.203148 144.337011 18.313029" ;# 
+$ns_ at 98.163681 "$node_(13) setdest 3176.574236 1592.800106 14.772976" ;# 
+$ns_ at 98.262067 "$node_(45) setdest 3810.000000 1480.000000 14.478286" ;# 
+$ns_ at 99.020000 "$node_(134) setdest 3684.896338 2730.200704 19.236487" ;# 
+$ns_ at 99.020000 "$node_(82) setdest 3806.217832 2043.543099 13.796607" ;# 
+$ns_ at 99.228943 "$node_(78) setdest 429.306931 3010.000000 15.442625" ;# 
+$ns_ at 124.343724 "$node_(78) switch OFF" ;# leaving_area  
+$ns_ at 99.637092 "$node_(105) setdest 3310.000000 610.000000 13.140671" ;# 
+$ns_ at 99.945641 "$node_(15) setdest 2801.670525 2499.373563 9.954961" ;# 
+$ns_ at 99.950739 "$node_(47) setdest 2253.137638 2406.903419 17.248439" ;# 
+$ns_ at 100.020000 "$node_(131) setdest 3721.106911 2805.639398 17.641375" ;# 
+$ns_ at 100.020000 "$node_(83) setdest 3161.558602 1194.242207 14.021894" ;# 
+$ns_ at 100.020000 "$node_(57) setdest 2560.000000 10.000000 15.330887" ;# 
+$ns_ at 100.020000 "$node_(57) switch OFF" ;# leaving_area  
+$ns_ at 100.720630 "$node_(126) setdest 2956.283415 327.026732 12.732673" ;# 
+$ns_ at 100.754562 "$node_(60) setdest 2510.000000 1290.000000 13.427577" ;# 
+$ns_ at 107.024305 "$node_(69) setdest 3917.755102 10.000000 1000000000.000000" ;# reentered_node
+$ns_ at 107.034305 "$node_(69) switch ON" ;# reposition_for_return  
+$ns_ at 107.034305 "$node_(69) setdest 3917.936304 12.959630 13.913372" ;# 
+$ns_ at 101.020000 "$node_(52) setdest 3168.179825 2381.809210 12.269735" ;# 
+$ns_ at 101.020000 "$node_(112) setdest 3090.000000 2860.000000 16.275407" ;# 
+$ns_ at 101.093194 "$node_(22) setdest 2818.480749 2472.008083 10.641228" ;# 
+$ns_ at 101.510420 "$node_(79) setdest 2678.873770 1146.457296 13.460928" ;# 
+$ns_ at 101.761597 "$node_(110) setdest 1467.465292 760.421601 19.416307" ;# 
+$ns_ at 0.0 "$node_(138) switch OFF" ;# set_X,Y,Z  
+$node_(138) set X_ 0.000000
+$node_(138) set Y_ 0.000000
+$node_(138) set Z_ 0.0
+$ns_ at 110.358599 "$node_(138) setdest 10.000000 2297.153204 1000000000.000000" ;# init_node
+$ns_ at 110.368599 "$node_(138) switch ON" ;# inside  
+$ns_ at 110.368599 "$node_(138) setdest 38.460510 2290.715896 30.677763" ;# 
+$ns_ at 102.020000 "$node_(99) setdest 1141.963428 2031.509942 17.585000" ;# 
+$ns_ at 102.020000 "$node_(37) setdest 3298.236809 851.145411 12.591318" ;# 
+#$ns_ at 102.020000 $node_(12) arrived_to 1610.000000 1560.000000  
+$ns_ at 102.020000 "$node_(12) switch OFF" ;# arrived_to  
+$ns_ at 103.020000 "$node_(12) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 103.030000 "$node_(12) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 102.020000 "$node_(68) setdest 828.907568 2144.325706 16.202303" ;# 
+$ns_ at 0.0 "$node_(139) switch OFF" ;# set_X,Y,Z  
+$node_(139) set X_ 0.000000
+$node_(139) set Y_ 0.000000
+$node_(139) set Z_ 0.0
+$ns_ at 107.010001 "$node_(139) setdest 2560.000000 10.000000 1000000000.000000" ;# init_node
+$ns_ at 107.020001 "$node_(139) switch ON" ;# inside  
+$ns_ at 107.020001 "$node_(139) setdest 2560.000000 10.000000 17.130202" ;# 
+$ns_ at 103.020000 "$node_(129) setdest 2916.080969 81.216194 16.242851" ;# 
+$ns_ at 103.020000 "$node_(102) setdest 3137.432680 756.682222 14.940314" ;# 
+$ns_ at 103.020000 "$node_(48) setdest 1980.000000 2190.000000 13.653812" ;# 
+$ns_ at 103.020000 "$node_(51) setdest 1071.000000 2103.000000 16.364369" ;# 
+$ns_ at 103.020000 "$node_(109) setdest 2660.000000 2730.000000 16.637835" ;# 
+$ns_ at 103.071379 "$node_(25) setdest 2734.725907 1098.982979 15.425721" ;# 
+$ns_ at 0.0 "$node_(140) switch OFF" ;# set_X,Y,Z  
+$node_(140) set X_ 0.000000
+$node_(140) set Y_ 0.000000
+$node_(140) set Z_ 0.0
+$ns_ at 117.467194 "$node_(140) setdest 3511.136364 10.000000 1000000000.000000" ;# init_node
+$ns_ at 117.477194 "$node_(140) switch ON" ;# inside  
+$ns_ at 117.477194 "$node_(140) setdest 3310.000000 160.000000 13.531394" ;# 
+$ns_ at 103.430386 "$node_(104) setdest 3310.000000 610.000000 15.199095" ;# 
+$ns_ at 103.729398 "$node_(20) setdest 3173.433865 2405.452394 14.592458" ;# 
+$ns_ at 103.934824 "$node_(76) setdest 3118.833383 1884.391416 13.200148" ;# 
+$ns_ at 104.020000 "$node_(5) setdest 1606.879449 2005.876095 14.652522" ;# 
+$ns_ at 104.020000 "$node_(75) setdest 3290.000000 1020.000000 16.104256" ;# 
+$ns_ at 104.313512 "$node_(7) setdest 1860.000000 1960.000000 15.432256" ;# 
+$ns_ at 104.372693 "$node_(64) setdest 3290.000000 1020.000000 13.682917" ;# 
+$ns_ at 104.491636 "$node_(47) setdest 1980.000000 2190.000000 16.201205" ;# 
+$ns_ at 104.710986 "$node_(63) setdest 2379.186152 1878.847296 18.100277" ;# 
+$ns_ at 104.780476 "$node_(32) setdest 2030.042984 1784.724924 14.811393" ;# 
+$ns_ at 105.020000 "$node_(54) setdest 2984.176640 2202.270585 10.155634" ;# 
+$ns_ at 105.020000 "$node_(18) setdest 3917.755102 10.000000 13.268041" ;# 
+$ns_ at 120.122041 "$node_(18) switch OFF" ;# leaving_area  
+$ns_ at 105.020000 "$node_(85) setdest 3838.461538 3010.000000 27.745675" ;# 
+$ns_ at 107.020000 "$node_(85) switch OFF" ;# leaving_area  
+$ns_ at 0.0 "$node_(141) switch OFF" ;# set_X,Y,Z  
+$node_(141) set X_ 0.000000
+$node_(141) set Y_ 0.000000
+$node_(141) set Z_ 0.0
+$ns_ at 116.010000 "$node_(141) setdest 3838.461538 3010.000000 1000000000.000000" ;# init_node
+$ns_ at 116.020000 "$node_(141) switch ON" ;# inside  
+$ns_ at 116.020000 "$node_(141) setdest 3800.000000 2970.000000 27.745675" ;# 
+$ns_ at 0.0 "$node_(142) switch OFF" ;# set_X,Y,Z  
+$node_(142) set X_ 0.000000
+$node_(142) set Y_ 0.000000
+$node_(142) set Z_ 0.0
+$ns_ at 122.070041 "$node_(142) setdest 3917.755102 10.000000 1000000000.000000" ;# init_node
+$ns_ at 122.080041 "$node_(142) switch ON" ;# inside  
+$ns_ at 122.080041 "$node_(142) setdest 3930.000000 210.000000 13.411982" ;# 
+$ns_ at 105.493358 "$node_(122) setdest 1501.209250 697.754251 17.545851" ;# 
+$ns_ at 105.532281 "$node_(125) setdest 3305.320755 2700.963919 19.222720" ;# 
+$ns_ at 105.793594 "$node_(127) setdest 3310.000000 160.000000 14.629769" ;# 
+$ns_ at 105.872128 "$node_(74) setdest 3230.000000 2660.000000 12.500333" ;# 
+$ns_ at 106.020000 "$node_(136) setdest 3685.547818 2907.754077 18.544569" ;# 
+$ns_ at 106.397287 "$node_(111) setdest 3003.964388 98.792878 18.428257" ;# 
+$ns_ at 106.510534 "$node_(94) setdest 1071.000000 2103.000000 14.962677" ;# 
+$ns_ at 107.020000 "$node_(21) setdest 1406.301480 1765.210197 18.953759" ;# 
+$ns_ at 0.0 "$node_(143) switch OFF" ;# set_X,Y,Z  
+$node_(143) set X_ 0.000000
+$node_(143) set Y_ 0.000000
+$node_(143) set Z_ 0.0
+$ns_ at 142.600909 "$node_(143) setdest 3511.136364 10.000000 1000000000.000000" ;# init_node
+$ns_ at 142.610909 "$node_(143) switch ON" ;# inside  
+$ns_ at 142.610909 "$node_(143) setdest 3310.000000 160.000000 13.629680" ;# 
+$ns_ at 0.0 "$node_(144) switch OFF" ;# set_X,Y,Z  
+$node_(144) set X_ 0.000000
+$node_(144) set Y_ 0.000000
+$node_(144) set Z_ 0.0
+$ns_ at 108.175007 "$node_(144) setdest 3838.461539 3010.000000 1000000000.000000" ;# init_node
+$ns_ at 108.185007 "$node_(144) switch ON" ;# inside  
+$ns_ at 108.185007 "$node_(144) setdest 3800.000000 2970.000000 30.240627" ;# 
+$ns_ at 107.247422 "$node_(69) setdest 3930.000000 210.000000 12.515984" ;# 
+$ns_ at 107.748207 "$node_(99) setdest 1394.239695 1777.361495 16.382878" ;# 
+$ns_ at 108.020000 "$node_(115) setdest 3146.111440 2779.840800 15.616882" ;# 
+$ns_ at 108.020000 "$node_(139) setdest 2698.552393 120.841914 14.775986" ;# 
+$ns_ at 0.0 "$node_(145) switch OFF" ;# set_X,Y,Z  
+$node_(145) set X_ 0.000000
+$node_(145) set Y_ 0.000000
+$node_(145) set Z_ 0.0
+$ns_ at 108.397636 "$node_(145) setdest 3511.136364 10.000000 1000000000.000000" ;# init_node
+$ns_ at 108.407636 "$node_(145) switch ON" ;# inside  
+$ns_ at 108.407636 "$node_(145) setdest 3310.000000 160.000000 13.480825" ;# 
+$ns_ at 108.385945 "$node_(6) setdest 2510.000000 1290.000000 14.659436" ;# 
+$ns_ at 108.971034 "$node_(111) setdest 3310.000000 160.000000 16.383898" ;# 
+$ns_ at 109.020000 "$node_(114) setdest 3310.000000 301.311244 12.228452" ;# 
+$ns_ at 109.020000 "$node_(103) setdest 3260.948099 1166.712101 14.301233" ;# 
+$ns_ at 109.020000 "$node_(120) setdest 3090.000000 2860.000000 16.275407" ;# 
+$ns_ at 109.190747 "$node_(110) setdest 1290.000000 1090.000000 15.708446" ;# 
+$ns_ at 110.354476 "$node_(131) setdest 3032.000000 1370.000000 16.646122" ;# 
+$ns_ at 110.599076 "$node_(20) setdest 3230.000000 2660.000000 13.426600" ;# 
+$ns_ at 111.020000 "$node_(81) setdest 3187.745325 1158.717583 15.372108" ;# 
+$ns_ at 111.020000 "$node_(144) setdest 3516.407593 2379.182485 16.743154" ;# 
+$ns_ at 111.020000 "$node_(127) setdest 3310.000000 610.000000 13.636364" ;# 
+$ns_ at 111.261542 "$node_(32) setdest 1860.000000 1960.000000 12.359505" ;# 
+$ns_ at 111.319758 "$node_(138) setdest 245.000000 2244.000000 31.604345" ;# 
+#$ns_ at 112.020000 $node_(24) arrived_to 3800.000000 2970.000000  
+$ns_ at 112.020000 "$node_(24) switch OFF" ;# arrived_to  
+$ns_ at 113.020000 "$node_(24) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 113.030000 "$node_(24) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 112.020000 "$node_(132) setdest 3310.000000 367.610130 13.636364" ;# 
+$ns_ at 112.020000 "$node_(104) setdest 2835.108638 1013.657657 12.920589" ;# 
+$ns_ at 112.193627 "$node_(133) setdest 3310.000000 160.000000 14.498987" ;# 
+$ns_ at 112.429026 "$node_(125) setdest 3230.000000 2660.000000 18.675666" ;# 
+$ns_ at 112.847552 "$node_(134) setdest 3384.818996 2105.039574 15.950150" ;# 
+$ns_ at 113.020000 "$node_(77) setdest 3129.353647 2207.091412 15.839878" ;# 
+$ns_ at 113.045440 "$node_(136) setdest 3531.967194 2824.227772 15.452545" ;# 
+$ns_ at 113.463983 "$node_(86) setdest 1071.000000 2103.000000 17.717600" ;# 
+$ns_ at 114.020000 "$node_(105) setdest 3051.003598 830.146941 12.692744" ;# 
+$ns_ at 114.020000 "$node_(107) setdest 3300.071155 813.541332 13.020584" ;# 
+$ns_ at 114.324681 "$node_(13) setdest 3090.000000 2030.000000 13.227035" ;# 
+#$ns_ at 115.020000 $node_(35) arrived_to 1610.000000 1560.000000  
+$ns_ at 115.020000 "$node_(35) switch OFF" ;# arrived_to  
+$ns_ at 116.020000 "$node_(35) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 116.030000 "$node_(35) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 115.020000 "$node_(64) setdest 3268.025421 1130.971623 13.824723" ;# 
+#$ns_ at 115.020000 $node_(117) arrived_to 3930.000000 210.000000  
+$ns_ at 115.020000 "$node_(117) switch OFF" ;# arrived_to  
+$ns_ at 116.020000 "$node_(117) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 116.030000 "$node_(117) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 0.0 "$node_(146) switch OFF" ;# set_X,Y,Z  
+$node_(146) set X_ 0.000000
+$node_(146) set Y_ 0.000000
+$node_(146) set Z_ 0.0
+$ns_ at 127.852894 "$node_(146) setdest 1871.538461 10.000000 1000000000.000000" ;# init_node
+$ns_ at 127.862894 "$node_(146) switch ON" ;# inside  
+$ns_ at 127.862894 "$node_(146) setdest 1648.040674 425.067319 19.455602" ;# 
+$ns_ at 115.446344 "$node_(37) setdest 3304.233251 728.218350 13.682917" ;# 
+$ns_ at 115.591996 "$node_(83) setdest 3290.000000 1020.000000 18.941718" ;# 
+$ns_ at 116.020000 "$node_(106) setdest 3189.285346 1528.609004 11.625316" ;# 
+$ns_ at 116.020000 "$node_(7) setdest 1980.000000 2190.000000 13.653812" ;# 
+$ns_ at 117.020000 "$node_(2) setdest 3119.396995 457.517596 15.951064" ;# 
+$ns_ at 0.0 "$node_(147) switch OFF" ;# set_X,Y,Z  
+$node_(147) set X_ 0.000000
+$node_(147) set Y_ 0.000000
+$node_(147) set Z_ 0.0
+$ns_ at 130.765340 "$node_(147) setdest 1871.538462 10.000000 1000000000.000000" ;# init_node
+$ns_ at 130.775340 "$node_(147) switch ON" ;# inside  
+$ns_ at 130.775340 "$node_(147) setdest 1673.170012 378.398549 18.165035" ;# 
+$ns_ at 117.020000 "$node_(112) setdest 2660.000000 2730.000000 16.637835" ;# 
+$ns_ at 117.177987 "$node_(68) setdest 483.190698 2203.340329 15.423152" ;# 
+$ns_ at 117.387064 "$node_(115) setdest 3090.000000 2860.000000 17.370474" ;# 
+$ns_ at 0.0 "$node_(148) switch OFF" ;# set_X,Y,Z  
+$node_(148) set X_ 0.000000
+$node_(148) set Y_ 0.000000
+$node_(148) set Z_ 0.0
+$ns_ at 126.292292 "$node_(148) setdest 3511.136364 10.000000 1000000000.000000" ;# init_node
+$ns_ at 126.302292 "$node_(148) switch ON" ;# inside  
+$ns_ at 126.302292 "$node_(148) setdest 3310.000000 160.000000 13.404954" ;# 
+$ns_ at 118.020000 "$node_(125) setdest 3090.000000 2860.000000 16.275407" ;# 
+$ns_ at 118.170771 "$node_(121) setdest 3810.000000 1480.000000 12.662735" ;# 
+$ns_ at 118.179276 "$node_(102) setdest 2510.000000 1290.000000 12.506971" ;# 
+$ns_ at 118.421147 "$node_(122) setdest 1290.000000 1090.000000 16.141806" ;# 
+$ns_ at 118.878976 "$node_(63) setdest 1980.000000 2190.000000 15.747103" ;# 
+$ns_ at 119.020000 "$node_(141) setdest 3427.229939 2193.395707 16.743154" ;# 
+$ns_ at 119.020000 "$node_(138) setdest 74.588198 2086.501391 18.811622" ;# 
+$ns_ at 119.020000 "$node_(123) setdest 3131.700226 2800.428248 15.582403" ;# 
+$ns_ at 119.477900 "$node_(103) setdest 3090.000000 2030.000000 13.427259" ;# 
+$ns_ at 119.684351 "$node_(25) setdest 2510.000000 1290.000000 12.119643" ;# 
+$ns_ at 119.995625 "$node_(137) setdest 1603.385762 507.997871 15.196311" ;# 
+#$ns_ at 120.020000 $node_(118) arrived_to 3310.000000 160.000000  
+$ns_ at 120.020000 "$node_(118) switch OFF" ;# arrived_to  
+$ns_ at 121.020000 "$node_(118) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 121.030000 "$node_(118) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 120.020000 "$node_(94) setdest 644.234939 2175.849726 16.430355" ;# 
+$ns_ at 120.028243 "$node_(139) setdest 2991.891183 355.512946 13.008658" ;# 
+$ns_ at 120.054064 "$node_(28) setdest 2633.386265 1185.121675 14.991287" ;# 
+$ns_ at 120.072270 "$node_(116) setdest 1472.700847 750.698426 18.407856" ;# 
+$ns_ at 120.575938 "$node_(114) setdest 3310.000000 490.816832 13.636364" ;# 
+$ns_ at 120.602650 "$node_(79) setdest 2510.000000 1290.000000 14.375802" ;# 
+$ns_ at 121.020000 "$node_(96) setdest 3115.128408 1257.228903 14.644739" ;# 
+$ns_ at 121.483004 "$node_(49) setdest 3800.000000 2970.000000 13.168987" ;# 
+$ns_ at 121.576316 "$node_(5) setdest 1300.619410 2061.383301 16.364369" ;# 
+#$ns_ at 122.020000 $node_(45) arrived_to 3810.000000 1480.000000  
+$ns_ at 122.020000 "$node_(45) switch OFF" ;# arrived_to  
+$ns_ at 123.020000 "$node_(45) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 123.030000 "$node_(45) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 122.020000 "$node_(133) setdest 3061.347775 110.269555 16.627238" ;# 
+$ns_ at 122.275238 "$node_(21) setdest 1071.000000 2103.000000 15.480707" ;# 
+$ns_ at 0.0 "$node_(149) switch OFF" ;# set_X,Y,Z  
+$node_(149) set X_ 0.000000
+$node_(149) set Y_ 0.000000
+$node_(149) set Z_ 0.0
+$ns_ at 159.724099 "$node_(149) setdest 3511.136363 10.000000 1000000000.000000" ;# init_node
+$ns_ at 159.734099 "$node_(149) switch ON" ;# inside  
+$ns_ at 159.734099 "$node_(149) setdest 3487.787408 27.412780 13.212709" ;# 
+#$ns_ at 123.020000 $node_(48) arrived_to 1980.000000 2190.000000  
+$ns_ at 123.020000 "$node_(48) switch OFF" ;# arrived_to  
+$ns_ at 124.020000 "$node_(48) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 124.030000 "$node_(48) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 123.020000 "$node_(108) setdest 1345.573626 1171.623763 14.769751" ;# 
+$ns_ at 0.0 "$node_(150) switch OFF" ;# set_X,Y,Z  
+$node_(150) set X_ 0.000000
+$node_(150) set Y_ 0.000000
+$node_(150) set Z_ 0.0
+$ns_ at 136.010001 "$node_(150) setdest 2560.000000 10.000000 1000000000.000000" ;# init_node
+$ns_ at 136.020001 "$node_(150) switch ON" ;# inside  
+$ns_ at 136.020001 "$node_(150) setdest 2560.000000 10.000000 14.667231" ;# 
+$ns_ at 123.202905 "$node_(64) setdest 3185.533018 1547.558260 12.444262" ;# 
+$ns_ at 124.020000 "$node_(115) setdest 2916.514697 2807.550955 16.637835" ;# 
+$ns_ at 124.020000 "$node_(69) setdest 4142.061109 265.193987 10.184001" ;# 
+$ns_ at 124.030045 "$node_(98) setdest 2754.376900 1082.279635 12.936729" ;# 
+$ns_ at 124.359086 "$node_(136) setdest 3458.227129 2784.123526 18.162422" ;# 
+$ns_ at 124.441007 "$node_(37) setdest 3310.000000 610.000000 15.616706" ;# 
+$ns_ at 124.472825 "$node_(77) setdest 3230.000000 2660.000000 13.051860" ;# 
+$ns_ at 124.927914 "$node_(54) setdest 2835.237327 2444.729932 8.515802" ;# 
+$ns_ at 125.020000 "$node_(97) setdest 3083.089945 1300.691935 18.102855" ;# 
+$ns_ at 125.020000 "$node_(44) setdest 10.000000 2297.153204 29.286561" ;# 
+$ns_ at 133.246853 "$node_(44) switch OFF" ;# leaving_area  
+#$ns_ at 125.020000 $node_(31) arrived_to 2660.000000 2730.000000  
+$ns_ at 125.020000 "$node_(31) switch OFF" ;# arrived_to  
+$ns_ at 126.020000 "$node_(31) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 126.030000 "$node_(31) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 125.020000 "$node_(120) setdest 2660.000000 2730.000000 16.637835" ;# 
+#$ns_ at 126.020000 $node_(74) arrived_to 3230.000000 2660.000000  
+$ns_ at 126.020000 "$node_(74) switch OFF" ;# arrived_to  
+$ns_ at 127.020000 "$node_(74) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 127.030000 "$node_(74) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 126.020000 "$node_(119) setdest 2916.529268 944.450122 12.697265" ;# 
+$ns_ at 0.0 "$node_(151) switch OFF" ;# set_X,Y,Z  
+$node_(151) set X_ 0.000000
+$node_(151) set Y_ 0.000000
+$node_(151) set Z_ 0.0
+$ns_ at 140.227183 "$node_(151) setdest 1871.538462 10.000000 1000000000.000000" ;# init_node
+$ns_ at 140.237183 "$node_(151) switch ON" ;# inside  
+$ns_ at 140.237183 "$node_(151) setdest 1854.721590 41.231333 17.574947" ;# 
+$ns_ at 126.020000 "$node_(100) setdest 3290.000000 1020.000000 16.104256" ;# 
+$ns_ at 126.127285 "$node_(116) setdest 1290.000000 1090.000000 16.128920" ;# 
+$ns_ at 126.803017 "$node_(70) setdest 3800.000000 2970.000000 12.547165" ;# 
+#$ns_ at 127.020000 $node_(47) arrived_to 1980.000000 2190.000000  
+$ns_ at 127.020000 "$node_(47) switch OFF" ;# arrived_to  
+$ns_ at 128.020000 "$node_(47) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 128.030000 "$node_(47) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 127.244742 "$node_(132) setdest 3310.000000 452.558146 15.913181" ;# 
+$ns_ at 127.534831 "$node_(126) setdest 3133.634024 468.907219 12.878058" ;# 
+$ns_ at 127.752122 "$node_(129) setdest 2657.732131 29.546426 16.627238" ;# 
+#$ns_ at 128.020000 $node_(83) arrived_to 3290.000000 1020.000000  
+$ns_ at 128.020000 "$node_(83) switch OFF" ;# arrived_to  
+$ns_ at 129.020000 "$node_(83) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 129.030000 "$node_(83) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 128.020000 "$node_(145) setdest 3310.000000 331.199216 13.636364" ;# 
+$ns_ at 128.095220 "$node_(81) setdest 3290.000000 1020.000000 17.363889" ;# 
+$ns_ at 128.308180 "$node_(128) setdest 3805.740975 2114.594732 15.147196" ;# 
+$ns_ at 128.980724 "$node_(136) setdest 3230.000000 2660.000000 16.197528" ;# 
+#$ns_ at 129.020000 $node_(111) arrived_to 3310.000000 160.000000  
+$ns_ at 129.020000 "$node_(111) switch OFF" ;# arrived_to  
+$ns_ at 130.020000 "$node_(111) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 130.030000 "$node_(111) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 129.310023 "$node_(15) setdest 2660.000000 2730.000000 10.953640" ;# 
+$ns_ at 129.573301 "$node_(76) setdest 3090.000000 2030.000000 14.208880" ;# 
+$ns_ at 129.606319 "$node_(99) setdest 1447.929427 1723.273323 19.178282" ;# 
+$ns_ at 129.670862 "$node_(107) setdest 3294.297186 931.907683 13.682917" ;# 
+$ns_ at 129.705724 "$node_(108) setdest 1610.000000 1560.000000 13.692502" ;# 
+$ns_ at 129.776342 "$node_(97) setdest 3290.000000 1020.000000 15.676897" ;# 
+$ns_ at 130.020000 "$node_(89) setdest 2560.000000 10.000000 18.770001" ;# 
+$ns_ at 130.020000 "$node_(89) switch OFF" ;# leaving_area  
+$ns_ at 130.020519 "$node_(123) setdest 3090.000000 2860.000000 18.181505" ;# 
+$ns_ at 130.392369 "$node_(52) setdest 3230.000000 2660.000000 14.519172" ;# 
+$ns_ at 130.586488 "$node_(96) setdest 3215.138174 1121.556741 16.104256" ;# 
+#$ns_ at 131.020000 $node_(20) arrived_to 3230.000000 2660.000000  
+$ns_ at 131.020000 "$node_(20) switch OFF" ;# arrived_to  
+$ns_ at 132.020000 "$node_(20) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 132.030000 "$node_(20) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+#$ns_ at 131.020000 $node_(109) arrived_to 2660.000000 2730.000000  
+$ns_ at 131.020000 "$node_(109) switch OFF" ;# arrived_to  
+$ns_ at 132.020000 "$node_(109) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 132.030000 "$node_(109) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 0.0 "$node_(152) switch OFF" ;# set_X,Y,Z  
+$node_(152) set X_ 0.000000
+$node_(152) set Y_ 0.000000
+$node_(152) set Z_ 0.0
+$ns_ at 154.561724 "$node_(152) setdest 3917.755102 10.000000 1000000000.000000" ;# init_node
+$ns_ at 154.571724 "$node_(152) switch ON" ;# inside  
+$ns_ at 154.571724 "$node_(152) setdest 3918.390817 20.383345 12.336380" ;# 
+$ns_ at 131.355321 "$node_(138) setdest 10.000000 2026.807454 15.657812" ;# 
+$ns_ at 136.972252 "$node_(138) switch OFF" ;# leaving_area  
+$ns_ at 132.020000 "$node_(75) setdest 3297.421062 867.868226 12.720086" ;# 
+$ns_ at 132.020000 "$node_(32) setdest 1071.000000 2103.000000 16.364369" ;# 
+$ns_ at 132.322487 "$node_(2) setdest 2891.611205 275.288964 12.283931" ;# 
+$ns_ at 132.582960 "$node_(132) setdest 3310.000000 610.000000 12.659110" ;# 
+$ns_ at 132.746568 "$node_(22) setdest 2788.686891 2520.509713 12.105915" ;# 
+#$ns_ at 133.020000 $node_(37) arrived_to 3310.000000 610.000000  
+$ns_ at 133.020000 "$node_(37) switch OFF" ;# arrived_to  
+$ns_ at 134.020000 "$node_(37) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 134.030000 "$node_(37) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 133.580137 "$node_(99) setdest 1610.000000 1560.000000 15.931900" ;# 
+$ns_ at 134.020000 "$node_(110) setdest 1365.229140 1200.492799 14.743980" ;# 
+$ns_ at 134.020000 "$node_(125) setdest 2660.000000 2730.000000 16.637835" ;# 
+$ns_ at 134.096378 "$node_(28) setdest 2510.000000 1290.000000 14.824489" ;# 
+$ns_ at 134.473014 "$node_(114) setdest 3310.000000 610.000000 15.792157" ;# 
+$ns_ at 134.913263 "$node_(115) setdest 2820.536103 2778.534171 18.688691" ;# 
+$ns_ at 135.020000 "$node_(123) setdest 2756.698660 2759.234479 16.252358" ;# 
+$ns_ at 0.0 "$node_(153) switch OFF" ;# set_X,Y,Z  
+$node_(153) set X_ 0.000000
+$node_(153) set Y_ 0.000000
+$node_(153) set Z_ 0.0
+$ns_ at 146.010000 "$node_(153) setdest 3838.461538 3010.000000 1000000000.000000" ;# init_node
+$ns_ at 146.020000 "$node_(153) switch ON" ;# inside  
+$ns_ at 146.020000 "$node_(153) setdest 3800.000000 2970.000000 27.745675" ;# 
+#$ns_ at 136.020000 $node_(7) arrived_to 1980.000000 2190.000000  
+$ns_ at 136.020000 "$node_(7) switch OFF" ;# arrived_to  
+$ns_ at 137.020000 "$node_(7) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 137.030000 "$node_(7) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 136.485028 "$node_(130) setdest 3373.807487 2082.098931 19.070936" ;# 
+$ns_ at 137.020000 "$node_(150) setdest 2832.115576 227.692461 13.527727" ;# 
+$ns_ at 137.020000 "$node_(140) setdest 3310.000000 322.445540 12.600477" ;# 
+#$ns_ at 137.020000 $node_(86) arrived_to 1071.000000 2103.000000  
+$ns_ at 137.020000 "$node_(86) switch OFF" ;# arrived_to  
+$ns_ at 138.020000 "$node_(86) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 138.030000 "$node_(86) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 137.020000 "$node_(79) setdest 2402.123822 1401.195445 15.238084" ;# 
+#$ns_ at 137.020000 $node_(71) arrived_to 1980.000000 2190.000000  
+$ns_ at 137.020000 "$node_(71) switch OFF" ;# arrived_to  
+$ns_ at 138.020000 "$node_(71) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 138.030000 "$node_(71) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 137.270669 "$node_(133) setdest 2856.348903 69.269781 19.349064" ;# 
+$ns_ at 137.448544 "$node_(22) setdest 2660.000000 2730.000000 10.892461" ;# 
+$ns_ at 138.020000 "$node_(17) setdest 3838.461538 3010.000000 27.745675" ;# 
+$ns_ at 140.020000 "$node_(17) switch OFF" ;# leaving_area  
+$ns_ at 138.020000 "$node_(6) setdest 2870.374122 983.681996 12.756914" ;# 
+$ns_ at 138.020000 "$node_(142) setdest 3856.265211 990.359845 12.833814" ;# 
+$ns_ at 138.331815 "$node_(107) setdest 3290.000000 1020.000000 15.505306" ;# 
+$ns_ at 139.020000 "$node_(81) setdest 3300.349696 807.831222 13.423349" ;# 
+$ns_ at 0.0 "$node_(154) switch OFF" ;# set_X,Y,Z  
+$node_(154) set X_ 0.000000
+$node_(154) set Y_ 0.000000
+$node_(154) set Z_ 0.0
+$ns_ at 139.625106 "$node_(154) setdest 3511.136363 10.000000 1000000000.000000" ;# init_node
+$ns_ at 139.635106 "$node_(154) switch ON" ;# inside  
+$ns_ at 139.635106 "$node_(154) setdest 3310.000000 160.000000 15.313496" ;# 
+$ns_ at 0.0 "$node_(155) switch OFF" ;# set_X,Y,Z  
+$node_(155) set X_ 0.000000
+$node_(155) set Y_ 0.000000
+$node_(155) set Z_ 0.0
+$ns_ at 147.925520 "$node_(155) setdest 3838.461538 3010.000000 1000000000.000000" ;# init_node
+$ns_ at 147.935520 "$node_(155) switch ON" ;# inside  
+$ns_ at 147.935520 "$node_(155) setdest 3800.000000 2970.000000 26.621198" ;# 
+$ns_ at 139.867419 "$node_(82) setdest 3804.237386 2338.629496 15.454661" ;# 
+$ns_ at 139.917675 "$node_(68) setdest 302.797416 2234.133855 18.780850" ;# 
+$ns_ at 140.020000 "$node_(62) setdest 10.000000 2026.807454 18.145778" ;# 
+$ns_ at 157.654750 "$node_(62) switch OFF" ;# leaving_area  
+$ns_ at 140.278485 "$node_(115) setdest 2660.000000 2730.000000 15.613464" ;# 
+$ns_ at 140.574609 "$node_(145) setdest 3310.000000 470.480182 15.628930" ;# 
+$ns_ at 140.596268 "$node_(5) setdest 1071.000000 2103.000000 18.783427" ;# 
+$ns_ at 140.800447 "$node_(105) setdest 2781.058440 1059.600326 12.516796" ;# 
+$ns_ at 141.020000 "$node_(113) setdest 1377.062439 1217.872957 16.174018" ;# 
+#$ns_ at 141.020000 $node_(36) arrived_to 2660.000000 2730.000000  
+$ns_ at 141.020000 "$node_(36) switch OFF" ;# arrived_to  
+$ns_ at 142.020000 "$node_(36) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 142.030000 "$node_(36) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 141.020000 "$node_(76) setdest 2890.092435 2355.430919 10.269130" ;# 
+$ns_ at 141.020000 "$node_(60) setdest 1860.000000 1960.000000 13.335544" ;# 
+$ns_ at 141.052626 "$node_(96) setdest 3290.000000 1020.000000 18.108233" ;# 
+$ns_ at 0.0 "$node_(156) switch OFF" ;# set_X,Y,Z  
+$node_(156) set X_ 0.000000
+$node_(156) set Y_ 0.000000
+$node_(156) set Z_ 0.0
+$ns_ at 149.473249 "$node_(156) setdest 3511.136364 10.000000 1000000000.000000" ;# init_node
+$ns_ at 149.483249 "$node_(156) switch ON" ;# inside  
+$ns_ at 149.483249 "$node_(156) setdest 3310.000000 160.000000 13.535814" ;# 
+$ns_ at 142.255463 "$node_(151) setdest 1290.000000 1090.000000 16.369855" ;# 
+$ns_ at 142.405604 "$node_(73) setdest 3802.535586 2592.197647 13.545760" ;# 
+$ns_ at 143.020000 "$node_(114) setdest 3303.390034 745.504300 13.682917" ;# 
+$ns_ at 143.086178 "$node_(110) setdest 1610.000000 1560.000000 13.619516" ;# 
+$ns_ at 143.597517 "$node_(129) setdest 2560.000000 10.000000 18.380441" ;# 
+$ns_ at 143.994185 "$node_(75) setdest 3305.355041 705.221662 13.682917" ;# 
+#$ns_ at 144.020000 $node_(56) arrived_to 2660.000000 2730.000000  
+$ns_ at 144.020000 "$node_(56) switch OFF" ;# arrived_to  
+$ns_ at 145.020000 "$node_(56) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 145.030000 "$node_(56) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 144.161962 "$node_(29) setdest 4415.789907 710.290471 11.766419" ;# 
+$ns_ at 145.020000 "$node_(127) setdest 3136.660439 757.338627 15.441821" ;# 
+$ns_ at 145.020000 "$node_(25) setdest 2193.715887 1616.015932 13.335544" ;# 
+$ns_ at 145.020000 "$node_(107) setdest 3130.585168 1236.260430 15.118972" ;# 
+$ns_ at 145.020000 "$node_(112) setdest 2440.710796 2555.858574 15.664938" ;# 
+$ns_ at 145.170999 "$node_(126) setdest 3310.000000 610.000000 14.250654" ;# 
+$ns_ at 145.536709 "$node_(69) setdest 4350.369261 319.411177 11.815903" ;# 
+#$ns_ at 146.020000 $node_(28) arrived_to 2510.000000 1290.000000  
+$ns_ at 146.020000 "$node_(28) switch OFF" ;# arrived_to  
+$ns_ at 147.020000 "$node_(28) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 147.030000 "$node_(28) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 146.020000 "$node_(136) setdest 3209.722632 2568.751846 14.777867" ;# 
+$ns_ at 146.020000 "$node_(132) setdest 3303.366183 745.993247 13.682917" ;# 
+$ns_ at 146.020000 "$node_(148) setdest 3310.000000 610.000000 13.636364" ;# 
+$ns_ at 146.369900 "$node_(94) setdest 460.304784 2207.247004 18.869793" ;# 
+$ns_ at 0.0 "$node_(157) switch OFF" ;# set_X,Y,Z  
+$node_(157) set X_ 0.000000
+$node_(157) set Y_ 0.000000
+$node_(157) set Z_ 0.0
+$ns_ at 188.586943 "$node_(157) setdest 565.476191 10.000000 1000000000.000000" ;# init_node
+$ns_ at 188.596943 "$node_(157) switch ON" ;# inside  
+$ns_ at 188.596943 "$node_(157) setdest 553.177233 22.154264 13.002626" ;# 
+$ns_ at 147.020000 "$node_(122) setdest 617.491587 1239.042405 19.353039" ;# 
+$ns_ at 147.175238 "$node_(137) setdest 1458.879608 776.366443 18.661703" ;# 
+$ns_ at 147.186948 "$node_(79) setdest 2207.937593 1601.356635 13.011347" ;# 
+$ns_ at 148.075257 "$node_(133) setdest 2560.000000 10.000000 15.152754" ;# 
+$ns_ at 148.905699 "$node_(139) setdest 3144.165382 477.332306 14.608935" ;# 
+$ns_ at 149.020000 "$node_(96) setdest 3298.256859 850.734395 15.972530" ;# 
+$ns_ at 149.020000 "$node_(153) setdest 3570.994592 2845.453199 16.637055" ;# 
+$ns_ at 149.020000 "$node_(13) setdest 3108.513955 2113.312799 14.155710" ;# 
+$ns_ at 149.020000 "$node_(99) setdest 1290.000000 1090.000000 13.868165" ;# 
+$ns_ at 149.022530 "$node_(128) setdest 3807.351899 1874.567103 15.275860" ;# 
+$ns_ at 149.486349 "$node_(145) setdest 3310.000000 610.000000 12.096762" ;# 
+$ns_ at 149.661785 "$node_(68) setdest 245.000000 2244.000000 17.459716" ;# 
+$ns_ at 149.912016 "$node_(140) setdest 3310.000000 475.368399 13.636364" ;# 
+#$ns_ at 150.020000 $node_(129) arrived_to 2560.000000 10.000000  
+$ns_ at 150.020000 "$node_(129) switch OFF" ;# arrived_to  
+$ns_ at 151.020000 "$node_(129) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 151.030000 "$node_(129) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 150.020000 "$node_(135) setdest 3310.000000 610.000000 13.636364" ;# 
+$ns_ at 150.161661 "$node_(144) setdest 3310.434592 1950.072067 18.098922" ;# 
+$ns_ at 150.584577 "$node_(113) setdest 1481.188073 1370.807482 12.391109" ;# 
+$ns_ at 151.020000 "$node_(155) setdest 3397.371269 2131.190144 16.743154" ;# 
+$ns_ at 0.0 "$node_(158) switch OFF" ;# set_X,Y,Z  
+$node_(158) set X_ 0.000000
+$node_(158) set Y_ 0.000000
+$node_(158) set Z_ 0.0
+$ns_ at 166.071538 "$node_(158) setdest 1871.538462 10.000000 1000000000.000000" ;# init_node
+$ns_ at 166.081538 "$node_(158) switch ON" ;# inside  
+$ns_ at 166.081538 "$node_(158) setdest 1612.018162 491.966271 16.589689" ;# 
+#$ns_ at 151.020000 $node_(116) arrived_to 1290.000000 1090.000000  
+$ns_ at 151.020000 "$node_(116) switch OFF" ;# arrived_to  
+$ns_ at 152.020000 "$node_(116) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 152.030000 "$node_(116) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+#$ns_ at 151.020000 $node_(52) arrived_to 3230.000000 2660.000000  
+$ns_ at 151.020000 "$node_(52) switch OFF" ;# arrived_to  
+$ns_ at 152.020000 "$node_(52) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 152.030000 "$node_(52) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 0.0 "$node_(159) switch OFF" ;# set_X,Y,Z  
+$node_(159) set X_ 0.000000
+$node_(159) set Y_ 0.000000
+$node_(159) set Z_ 0.0
+$ns_ at 152.700040 "$node_(159) setdest 3511.136363 10.000000 1000000000.000000" ;# init_node
+$ns_ at 152.710040 "$node_(159) switch ON" ;# inside  
+$ns_ at 152.710040 "$node_(159) setdest 3414.199724 82.291731 11.935229" ;# 
+$ns_ at 152.020000 "$node_(63) setdest 1183.683750 2611.088698 16.620014" ;# 
+$ns_ at 152.020000 "$node_(115) setdest 1980.000000 2190.000000 16.383618" ;# 
+$ns_ at 152.093193 "$node_(146) setdest 1290.000000 1090.000000 14.543568" ;# 
+$ns_ at 152.345273 "$node_(136) setdest 3144.112015 2273.504066 13.437115" ;# 
+$ns_ at 152.934949 "$node_(114) setdest 3300.424417 806.299448 15.821453" ;# 
+$ns_ at 153.020000 "$node_(97) setdest 3297.242605 871.526596 12.548973" ;# 
+#$ns_ at 153.020000 $node_(120) arrived_to 2660.000000 2730.000000  
+$ns_ at 153.020000 "$node_(120) switch OFF" ;# arrived_to  
+$ns_ at 154.020000 "$node_(120) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 154.030000 "$node_(120) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+#$ns_ at 153.020000 $node_(51) arrived_to 1071.000000 2103.000000  
+$ns_ at 153.020000 "$node_(51) switch OFF" ;# arrived_to  
+$ns_ at 154.020000 "$node_(51) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 154.030000 "$node_(51) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+#$ns_ at 153.020000 $node_(124) arrived_to 1290.000000 1090.000000  
+$ns_ at 153.020000 "$node_(124) switch OFF" ;# arrived_to  
+$ns_ at 154.020000 "$node_(124) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 154.030000 "$node_(124) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 153.809193 "$node_(147) setdest 1290.000000 1090.000000 15.479656" ;# 
+$ns_ at 153.918150 "$node_(98) setdest 2611.668640 1203.581656 15.347735" ;# 
+$ns_ at 154.020000 "$node_(21) setdest 755.864374 2156.794338 15.344038" ;# 
+$ns_ at 154.020000 "$node_(5) setdest 980.355410 2118.473229 19.038063" ;# 
+$ns_ at 154.020000 "$node_(100) setdest 3297.682670 862.505255 13.239102" ;# 
+$ns_ at 154.020000 "$node_(68) setdest 10.000000 2297.153203 26.602151" ;# 
+$ns_ at 163.077020 "$node_(68) switch OFF" ;# leaving_area  
+$ns_ at 154.302231 "$node_(130) setdest 3220.904215 1763.550447 14.984337" ;# 
+$ns_ at 154.844744 "$node_(81) setdest 3307.424222 662.803450 13.682917" ;# 
+#$ns_ at 155.020000 $node_(15) arrived_to 2660.000000 2730.000000  
+$ns_ at 155.020000 "$node_(15) switch OFF" ;# arrived_to  
+$ns_ at 156.020000 "$node_(15) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 156.030000 "$node_(15) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 0.0 "$node_(160) switch OFF" ;# set_X,Y,Z  
+$node_(160) set X_ 0.000000
+$node_(160) set Y_ 0.000000
+$node_(160) set Z_ 0.0
+$ns_ at 189.010001 "$node_(160) setdest 2560.000000 10.000000 1000000000.000000" ;# init_node
+$ns_ at 189.020001 "$node_(160) switch ON" ;# inside  
+$ns_ at 189.020001 "$node_(160) setdest 2560.000000 10.000000 16.187162" ;# 
+$ns_ at 155.049024 "$node_(13) setdest 3159.144919 2341.152134 12.843996" ;# 
+$ns_ at 155.414985 "$node_(152) setdest 3930.000000 210.000000 15.071122" ;# 
+$ns_ at 155.895154 "$node_(75) setdest 3310.000000 610.000000 15.565269" ;# 
+$ns_ at 155.970726 "$node_(132) setdest 3296.907999 878.386020 15.471213" ;# 
+$ns_ at 156.069619 "$node_(2) setdest 2729.693375 145.754700 15.814143" ;# 
+$ns_ at 0.0 "$node_(161) switch OFF" ;# set_X,Y,Z  
+$node_(161) set X_ 0.000000
+$node_(161) set Y_ 0.000000
+$node_(161) set Z_ 0.0
+$ns_ at 161.249443 "$node_(161) setdest 3511.136364 10.000000 1000000000.000000" ;# init_node
+$ns_ at 161.259443 "$node_(161) switch ON" ;# inside  
+$ns_ at 161.259443 "$node_(161) setdest 3506.649152 13.346395 14.554406" ;# 
+$ns_ at 156.258229 "$node_(94) setdest 245.000000 2244.000000 14.796272" ;# 
+$ns_ at 156.323629 "$node_(134) setdest 3331.188452 1993.309274 18.707913" ;# 
+$ns_ at 156.444604 "$node_(123) setdest 2660.000000 2730.000000 18.119108" ;# 
+$ns_ at 156.782095 "$node_(114) setdest 3290.000000 1020.000000 13.176247" ;# 
+$ns_ at 157.020000 "$node_(154) setdest 2882.181285 74.436257 15.127595" ;# 
+$ns_ at 0.0 "$node_(162) switch OFF" ;# set_X,Y,Z  
+$node_(162) set X_ 0.000000
+$node_(162) set Y_ 0.000000
+$node_(162) set Z_ 0.0
+$ns_ at 168.010000 "$node_(162) setdest 3838.461538 3010.000000 1000000000.000000" ;# init_node
+$ns_ at 168.020000 "$node_(162) switch ON" ;# inside  
+$ns_ at 168.020000 "$node_(162) setdest 3800.000000 2970.000000 27.745675" ;# 
+$ns_ at 157.329128 "$node_(64) setdest 3133.562056 1810.011618 11.718642" ;# 
+$ns_ at 158.342420 "$node_(54) setdest 2797.240674 2506.584950 10.454773" ;# 
+$ns_ at 158.850101 "$node_(5) setdest 245.000000 2244.000000 16.157548" ;# 
+$ns_ at 158.961532 "$node_(82) setdest 3800.000000 2970.000000 13.137845" ;# 
+$ns_ at 159.061365 "$node_(29) setdest 4660.000000 400.000000 10.683985" ;# 
+$ns_ at 0.0 "$node_(163) switch OFF" ;# set_X,Y,Z  
+$node_(163) set X_ 0.000000
+$node_(163) set Y_ 0.000000
+$node_(163) set Z_ 0.0
+$ns_ at 160.929969 "$node_(163) setdest 3838.461539 3010.000000 1000000000.000000" ;# init_node
+$ns_ at 160.939969 "$node_(163) switch ON" ;# inside  
+$ns_ at 160.939969 "$node_(163) setdest 3800.000000 2970.000000 26.678130" ;# 
+$ns_ at 159.629895 "$node_(96) setdest 3310.000000 610.000000 12.430084" ;# 
+$ns_ at 159.752579 "$node_(127) setdest 2777.856858 1062.321671 13.146146" ;# 
+$ns_ at 160.258255 "$node_(104) setdest 2603.799406 1210.270505 13.290536" ;# 
+$ns_ at 160.619635 "$node_(106) setdest 3090.000000 2030.000000 14.041802" ;# 
+#$ns_ at 161.020000 $node_(77) arrived_to 3230.000000 2660.000000  
+$ns_ at 161.020000 "$node_(77) switch OFF" ;# arrived_to  
+$ns_ at 162.020000 "$node_(77) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 162.030000 "$node_(77) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+#$ns_ at 161.020000 $node_(22) arrived_to 2660.000000 2730.000000  
+$ns_ at 161.020000 "$node_(22) switch OFF" ;# arrived_to  
+$ns_ at 162.020000 "$node_(22) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 162.030000 "$node_(22) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 161.126358 "$node_(140) setdest 3310.000000 610.000000 15.137963" ;# 
+$ns_ at 161.644044 "$node_(161) setdest 3310.000000 160.000000 13.349640" ;# 
+$ns_ at 0.0 "$node_(164) switch OFF" ;# set_X,Y,Z  
+$node_(164) set X_ 0.000000
+$node_(164) set Y_ 0.000000
+$node_(164) set Z_ 0.0
+$ns_ at 166.867977 "$node_(164) setdest 3511.136363 10.000000 1000000000.000000" ;# init_node
+$ns_ at 166.877977 "$node_(164) switch ON" ;# inside  
+$ns_ at 166.877977 "$node_(164) setdest 3478.052526 34.672692 15.552417" ;# 
+$ns_ at 161.938564 "$node_(149) setdest 3310.000000 160.000000 14.705700" ;# 
+$ns_ at 162.020000 "$node_(125) setdest 2385.255655 2511.820667 16.383618" ;# 
+$ns_ at 162.020000 "$node_(145) setdest 3083.914832 802.172393 14.966078" ;# 
+$ns_ at 162.020000 "$node_(143) setdest 3310.000000 610.000000 13.636364" ;# 
+$ns_ at 162.020000 "$node_(126) setdest 3290.000000 1020.000000 13.682917" ;# 
+$ns_ at 162.254114 "$node_(139) setdest 3310.000000 610.000000 12.666907" ;# 
+$ns_ at 162.780275 "$node_(150) setdest 2950.867867 322.694294 15.438617" ;# 
+$ns_ at 162.790153 "$node_(107) setdest 3032.000000 1370.000000 18.001215" ;# 
+$ns_ at 162.841794 "$node_(159) setdest 3310.000000 160.000000 15.894100" ;# 
+$ns_ at 162.895794 "$node_(112) setdest 2272.043130 2421.916603 17.422848" ;# 
+$ns_ at 162.948368 "$node_(134) setdest 3032.000000 1370.000000 16.433776" ;# 
+$ns_ at 0.0 "$node_(165) switch OFF" ;# set_X,Y,Z  
+$node_(165) set X_ 0.000000
+$node_(165) set Y_ 0.000000
+$node_(165) set Z_ 0.0
+$ns_ at 179.010001 "$node_(165) setdest 2560.000000 10.000000 1000000000.000000" ;# init_node
+$ns_ at 179.020001 "$node_(165) switch ON" ;# inside  
+$ns_ at 179.020001 "$node_(165) setdest 2560.000000 10.000000 15.875589" ;# 
+$ns_ at 163.020000 "$node_(123) setdest 2512.291208 2612.701841 19.058990" ;# 
+$ns_ at 163.020000 "$node_(75) setdest 2560.000000 10.000000 13.720981" ;# 
+$ns_ at 163.508213 "$node_(137) setdest 1290.000000 1090.000000 15.150320" ;# 
+$ns_ at 163.753532 "$node_(69) setdest 4496.809042 357.525641 12.306202" ;# 
+$ns_ at 164.020000 "$node_(163) setdest 3669.671761 2899.119730 15.661373" ;# 
+$ns_ at 164.538263 "$node_(132) setdest 3290.000000 1020.000000 12.348511" ;# 
+$ns_ at 164.688791 "$node_(153) setdest 3489.480436 2801.120939 19.449594" ;# 
+$ns_ at 164.735756 "$node_(128) setdest 3810.000000 1480.000000 13.029085" ;# 
+$ns_ at 164.865587 "$node_(97) setdest 3304.442259 723.933683 13.682917" ;# 
+#$ns_ at 165.020000 $node_(108) arrived_to 1610.000000 1560.000000  
+$ns_ at 165.020000 "$node_(108) switch OFF" ;# arrived_to  
+$ns_ at 166.020000 "$node_(108) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 166.030000 "$node_(108) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 165.285977 "$node_(54) setdest 2660.000000 2730.000000 8.818210" ;# 
+$ns_ at 165.456532 "$node_(81) setdest 3310.000000 610.000000 14.835612" ;# 
+$ns_ at 165.515972 "$node_(113) setdest 1538.825426 1455.462345 15.387719" ;# 
+$ns_ at 165.930326 "$node_(100) setdest 3305.257679 707.217583 13.682917" ;# 
+$ns_ at 166.121651 "$node_(98) setdest 2510.000000 1290.000000 14.995368" ;# 
+$ns_ at 166.690721 "$node_(119) setdest 2654.414248 1167.247889 13.124405" ;# 
+$ns_ at 168.620375 "$node_(79) setdest 2069.799430 1743.745203 14.634324" ;# 
+$ns_ at 169.020000 "$node_(156) setdest 3310.000000 292.697305 15.728006" ;# 
+$ns_ at 169.020000 "$node_(152) setdest 4007.411532 230.148207 8.762411" ;# 
+$ns_ at 169.020000 "$node_(133) setdest 2560.000000 10.000000 12.500000" ;# 
+$ns_ at 169.020000 "$node_(133) switch OFF" ;# leaving_area  
+$ns_ at 169.105370 "$node_(105) setdest 2642.053552 1177.754481 15.771116" ;# 
+$ns_ at 169.181679 "$node_(2) setdest 2560.000000 10.000000 12.182402" ;# 
+$ns_ at 169.459563 "$node_(153) setdest 3230.000000 2660.000000 15.914120" ;# 
+$ns_ at 169.531639 "$node_(164) setdest 3310.000000 160.000000 12.714373" ;# 
+$ns_ at 170.020000 "$node_(81) setdest 2990.207794 354.166235 15.051680" ;# 
+$ns_ at 170.470035 "$node_(141) setdest 3372.285116 2078.927326 19.125323" ;# 
+$ns_ at 171.020000 "$node_(140) setdest 3126.461366 766.007839 15.019719" ;# 
+$ns_ at 171.020000 "$node_(162) setdest 3230.000000 2660.000000 16.637055" ;# 
+$ns_ at 172.020000 "$node_(94) setdest 10.000000 2297.153203 31.699870" ;# 
+$ns_ at 179.620543 "$node_(94) switch OFF" ;# leaving_area  
+$ns_ at 172.020000 "$node_(159) setdest 3310.000000 610.000000 13.636364" ;# 
+$ns_ at 172.171502 "$node_(113) setdest 1610.000000 1560.000000 12.841264" ;# 
+$ns_ at 0.0 "$node_(166) switch OFF" ;# set_X,Y,Z  
+$node_(166) set X_ 0.000000
+$node_(166) set Y_ 0.000000
+$node_(166) set Z_ 0.0
+$ns_ at 174.425431 "$node_(166) setdest 3511.136364 10.000000 1000000000.000000" ;# init_node
+$ns_ at 174.435431 "$node_(166) switch ON" ;# inside  
+$ns_ at 174.435431 "$node_(166) setdest 3493.045006 23.491860 14.699285" ;# 
+$ns_ at 172.630713 "$node_(150) setdest 3310.000000 610.000000 12.995840" ;# 
+$ns_ at 172.916537 "$node_(123) setdest 2287.977341 2434.570242 14.997345" ;# 
+#$ns_ at 173.020000 $node_(107) arrived_to 3032.000000 1370.000000  
+$ns_ at 173.020000 "$node_(107) switch OFF" ;# arrived_to  
+$ns_ at 174.020000 "$node_(107) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 174.030000 "$node_(107) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 173.220721 "$node_(13) setdest 3194.870842 2501.918789 11.795212" ;# 
+$ns_ at 173.492724 "$node_(163) setdest 3422.217878 2764.539548 15.786517" ;# 
+$ns_ at 174.020000 "$node_(114) setdest 3223.239346 1357.141305 13.371579" ;# 
+$ns_ at 174.853825 "$node_(136) setdest 3110.993977 2124.472894 12.902495" ;# 
+$ns_ at 174.855067 "$node_(21) setdest 456.693206 2207.863508 17.014165" ;# 
+$ns_ at 175.095548 "$node_(6) setdest 3092.854891 794.573342 13.815163" ;# 
+$ns_ at 175.257814 "$node_(112) setdest 2208.623288 2371.553788 18.380895" ;# 
+$ns_ at 175.665068 "$node_(97) setdest 3310.000000 610.000000 15.509206" ;# 
+$ns_ at 175.970763 "$node_(166) setdest 3310.000000 160.000000 13.393077" ;# 
+$ns_ at 176.020000 "$node_(98) setdest 2207.997724 1601.294654 15.203049" ;# 
+$ns_ at 176.020000 "$node_(110) setdest 1860.000000 1960.000000 13.873502" ;# 
+$ns_ at 176.049658 "$node_(69) setdest 4660.000000 400.000000 9.936623" ;# 
+$ns_ at 176.460677 "$node_(144) setdest 3032.000000 1370.000000 15.864062" ;# 
+#$ns_ at 177.020000 $node_(132) arrived_to 3290.000000 1020.000000  
+$ns_ at 177.020000 "$node_(132) switch OFF" ;# arrived_to  
+$ns_ at 178.020000 "$node_(132) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 178.030000 "$node_(132) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 177.108993 "$node_(141) setdest 3032.000000 1370.000000 16.413060" ;# 
+$ns_ at 177.292839 "$node_(100) setdest 3310.000000 610.000000 14.468684" ;# 
+$ns_ at 177.457008 "$node_(156) setdest 3310.000000 610.000000 12.917917" ;# 
+$ns_ at 177.883174 "$node_(130) setdest 3032.000000 1370.000000 18.867734" ;# 
+$ns_ at 178.020000 "$node_(149) setdest 3310.000000 300.716905 13.636364" ;# 
+$ns_ at 178.148834 "$node_(152) setdest 4240.896025 290.918143 7.806775" ;# 
+$ns_ at 178.211767 "$node_(76) setdest 2742.555587 2595.607184 10.532346" ;# 
+$ns_ at 178.803901 "$node_(73) setdest 3800.000000 2970.000000 14.982924" ;# 
+$ns_ at 179.081366 "$node_(25) setdest 2114.371358 1697.801831 15.457180" ;# 
+$ns_ at 0.0 "$node_(167) switch OFF" ;# set_X,Y,Z  
+$node_(167) set X_ 0.000000
+$node_(167) set Y_ 0.000000
+$node_(167) set Z_ 0.0
+$ns_ at 181.332321 "$node_(167) setdest 3511.136364 10.000000 1000000000.000000" ;# init_node
+$ns_ at 181.342321 "$node_(167) switch ON" ;# inside  
+$ns_ at 181.342321 "$node_(167) setdest 3446.049279 58.539521 15.462805" ;# 
+$ns_ at 179.663721 "$node_(112) setdest 1980.000000 2190.000000 15.904228" ;# 
+$ns_ at 180.020000 "$node_(148) setdest 3005.805652 868.565196 12.499433" ;# 
+$ns_ at 180.020000 "$node_(96) setdest 3310.000000 361.775473 13.042768" ;# 
+$ns_ at 180.020000 "$node_(165) setdest 2794.818523 197.854818 12.743062" ;# 
+$ns_ at 0.0 "$node_(168) switch OFF" ;# set_X,Y,Z  
+$node_(168) set X_ 0.000000
+$node_(168) set Y_ 0.000000
+$node_(168) set Z_ 0.0
+$ns_ at 195.886690 "$node_(168) setdest 1871.538462 10.000000 1000000000.000000" ;# init_node
+$ns_ at 195.896690 "$node_(168) switch ON" ;# inside  
+$ns_ at 195.896690 "$node_(168) setdest 1570.371406 569.310246 15.737930" ;# 
+#$ns_ at 180.020000 $node_(139) arrived_to 3310.000000 610.000000  
+$ns_ at 180.020000 "$node_(139) switch OFF" ;# arrived_to  
+$ns_ at 181.020000 "$node_(139) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 181.030000 "$node_(139) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 180.160231 "$node_(64) setdest 3090.000000 2030.000000 14.140180" ;# 
+$ns_ at 180.673076 "$node_(105) setdest 2510.000000 1290.000000 15.273957" ;# 
+$ns_ at 0.0 "$node_(169) switch OFF" ;# set_X,Y,Z  
+$node_(169) set X_ 0.000000
+$node_(169) set Y_ 0.000000
+$node_(169) set Z_ 0.0
+$ns_ at 184.287281 "$node_(169) setdest 3511.136364 10.000000 1000000000.000000" ;# init_node
+$ns_ at 184.297281 "$node_(169) switch ON" ;# inside  
+$ns_ at 184.297281 "$node_(169) setdest 3488.444806 26.922518 14.814287" ;# 
+$ns_ at 181.020000 "$node_(161) setdest 3127.454710 123.490942 18.708203" ;# 
+$ns_ at 181.846391 "$node_(145) setdest 2749.878892 1086.102942 13.131670" ;# 
+$ns_ at 182.020000 "$node_(32) setdest 245.000000 2244.000000 16.430355" ;# 
+$ns_ at 0.0 "$node_(170) switch OFF" ;# set_X,Y,Z  
+$node_(170) set X_ 0.000000
+$node_(170) set Y_ 0.000000
+$node_(170) set Z_ 0.0
+$ns_ at 217.600909 "$node_(170) setdest 3511.136364 10.000000 1000000000.000000" ;# init_node
+$ns_ at 217.610909 "$node_(170) switch ON" ;# inside  
+$ns_ at 217.610909 "$node_(170) setdest 3310.000000 160.000000 13.629680" ;# 
+$ns_ at 182.176527 "$node_(79) setdest 1860.000000 1960.000000 13.189782" ;# 
+$ns_ at 182.612650 "$node_(122) setdest 10.000000 1373.675676 15.382000" ;# 
+$ns_ at 223.064580 "$node_(122) switch OFF" ;# leaving_area  
+$ns_ at 0.0 "$node_(171) switch OFF" ;# set_X,Y,Z  
+$node_(171) set X_ 0.000000
+$node_(171) set Y_ 0.000000
+$node_(171) set Z_ 0.0
+$ns_ at 186.953511 "$node_(171) setdest 3838.461538 3010.000000 1000000000.000000" ;# init_node
+$ns_ at 186.963511 "$node_(171) switch ON" ;# inside  
+$ns_ at 186.963511 "$node_(171) setdest 3800.000000 2970.000000 26.983534" ;# 
+$ns_ at 183.020000 "$node_(113) setdest 1691.592919 1690.548670 15.941929" ;# 
+$ns_ at 183.100042 "$node_(104) setdest 2510.000000 1290.000000 15.543782" ;# 
+$ns_ at 183.433897 "$node_(125) setdest 2249.184525 2403.764181 18.775295" ;# 
+$ns_ at 184.020000 "$node_(97) setdest 3049.669282 401.735425 13.720981" ;# 
+$ns_ at 184.020000 "$node_(135) setdest 3290.000000 1020.000000 13.682917" ;# 
+$ns_ at 0.0 "$node_(172) switch OFF" ;# set_X,Y,Z  
+$node_(172) set X_ 0.000000
+$node_(172) set Y_ 0.000000
+$node_(172) set Z_ 0.0
+$ns_ at 187.066519 "$node_(172) setdest 3511.136364 10.000000 1000000000.000000" ;# init_node
+$ns_ at 187.076519 "$node_(172) switch ON" ;# inside  
+$ns_ at 187.076519 "$node_(172) setdest 3310.000000 160.000000 14.808646" ;# 
+$ns_ at 185.020000 "$node_(100) setdest 3310.000000 434.861799 15.054526" ;# 
+$ns_ at 185.020000 "$node_(102) setdest 2412.550065 1390.448395 15.084091" ;# 
+$ns_ at 185.860752 "$node_(154) setdest 2560.000000 10.000000 19.147794" ;# 
+#$ns_ at 186.020000 $node_(121) arrived_to 3810.000000 1480.000000  
+$ns_ at 186.020000 "$node_(121) switch OFF" ;# arrived_to  
+$ns_ at 187.020000 "$node_(121) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 187.030000 "$node_(121) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 186.020000 "$node_(103) setdest 3014.026321 2153.678081 12.320859" ;# 
+$ns_ at 186.208062 "$node_(169) setdest 3310.000000 160.000000 13.240779" ;# 
+$ns_ at 186.453312 "$node_(25) setdest 1860.000000 1960.000000 12.788033" ;# 
+$ns_ at 186.593224 "$node_(167) setdest 3310.000000 160.000000 12.640141" ;# 
+$ns_ at 186.686157 "$node_(136) setdest 3090.000000 2030.000000 15.279417" ;# 
+$ns_ at 187.020000 "$node_(164) setdest 3310.000000 314.080873 12.932494" ;# 
+$ns_ at 187.057818 "$node_(140) setdest 2910.338487 949.712286 12.646163" ;# 
+$ns_ at 187.183029 "$node_(13) setdest 3230.000000 2660.000000 14.943052" ;# 
+#$ns_ at 188.020000 $node_(2) arrived_to 2560.000000 10.000000  
+$ns_ at 188.020000 "$node_(2) switch OFF" ;# arrived_to  
+$ns_ at 189.020000 "$node_(2) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 189.030000 "$node_(2) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 188.020000 "$node_(137) setdest 1374.474038 1214.071244 12.964038" ;# 
+$ns_ at 188.339239 "$node_(149) setdest 3310.000000 353.413800 15.532783" ;# 
+$ns_ at 189.020000 "$node_(153) setdest 3155.133938 2323.102723 13.731236" ;# 
+$ns_ at 189.926777 "$node_(157) setdest 313.865713 258.650355 13.735993" ;# 
+#$ns_ at 190.020000 $node_(171) arrived_to 3800.000000 2970.000000  
+$ns_ at 190.020000 "$node_(171) switch OFF" ;# arrived_to  
+$ns_ at 191.020000 "$node_(171) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 191.030000 "$node_(171) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 190.020000 "$node_(160) setdest 3310.000000 610.000000 13.527727" ;# 
+$ns_ at 0.0 "$node_(173) switch OFF" ;# set_X,Y,Z  
+$node_(173) set X_ 0.000000
+$node_(173) set Y_ 0.000000
+$node_(173) set Z_ 0.0
+$ns_ at 196.068403 "$node_(173) setdest 3511.136364 10.000000 1000000000.000000" ;# init_node
+$ns_ at 196.078403 "$node_(173) switch ON" ;# inside  
+$ns_ at 196.078403 "$node_(173) setdest 3310.000000 160.000000 13.246508" ;# 
+$ns_ at 190.970736 "$node_(161) setdest 2936.924442 85.384888 15.025910" ;# 
+$ns_ at 191.020000 "$node_(99) setdest 1652.690036 416.432790 15.806621" ;# 
+$ns_ at 0.0 "$node_(174) switch OFF" ;# set_X,Y,Z  
+$node_(174) set X_ 0.000000
+$node_(174) set Y_ 0.000000
+$node_(174) set Z_ 0.0
+$ns_ at 203.240464 "$node_(174) setdest 3511.136363 10.000000 1000000000.000000" ;# init_node
+$ns_ at 203.250464 "$node_(174) switch ON" ;# inside  
+$ns_ at 203.250464 "$node_(174) setdest 3409.014801 86.158453 13.629680" ;# 
+$ns_ at 191.335982 "$node_(163) setdest 3293.590975 2694.584565 18.560894" ;# 
+$ns_ at 191.731864 "$node_(149) setdest 3310.000000 610.000000 13.302799" ;# 
+$ns_ at 192.015883 "$node_(123) setdest 2231.628131 2389.822340 18.675296" ;# 
+$ns_ at 192.020000 "$node_(104) setdest 2116.899137 1695.196274 12.896935" ;# 
+$ns_ at 192.020000 "$node_(49) setdest 3838.461538 3010.000000 27.745675" ;# 
+$ns_ at 194.020000 "$node_(49) switch OFF" ;# leaving_area  
+$ns_ at 192.676875 "$node_(113) setdest 1860.000000 1960.000000 13.052961" ;# 
+$ns_ at 192.688461 "$node_(125) setdest 1980.000000 2190.000000 15.392467" ;# 
+$ns_ at 192.693068 "$node_(21) setdest 408.128808 2216.153557 17.667065" ;# 
+$ns_ at 192.902222 "$node_(119) setdest 2510.000000 1290.000000 14.448722" ;# 
+$ns_ at 193.020000 "$node_(105) setdest 2211.656582 1597.523215 12.965112" ;# 
+$ns_ at 193.020000 "$node_(126) setdest 3137.054001 1227.484882 15.835579" ;# 
+#$ns_ at 194.020000 $node_(69) arrived_to 4660.000000 400.000000  
+$ns_ at 194.020000 "$node_(69) switch OFF" ;# arrived_to  
+$ns_ at 195.020000 "$node_(69) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 195.030000 "$node_(69) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+#$ns_ at 194.020000 $node_(136) arrived_to 3090.000000 2030.000000  
+$ns_ at 194.020000 "$node_(136) switch OFF" ;# arrived_to  
+$ns_ at 195.020000 "$node_(136) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 195.030000 "$node_(136) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 194.020000 "$node_(166) setdest 3310.000000 610.000000 13.636364" ;# 
+$ns_ at 194.298074 "$node_(102) setdest 2096.915325 1715.794973 13.356958" ;# 
+$ns_ at 0.0 "$node_(175) switch OFF" ;# set_X,Y,Z  
+$node_(175) set X_ 0.000000
+$node_(175) set Y_ 0.000000
+$node_(175) set Z_ 0.0
+$ns_ at 214.395567 "$node_(175) setdest 3511.136364 10.000000 1000000000.000000" ;# init_node
+$ns_ at 214.405567 "$node_(175) switch ON" ;# inside  
+$ns_ at 214.405567 "$node_(175) setdest 3493.096036 23.453804 12.122136" ;# 
+$ns_ at 195.481696 "$node_(21) setdest 245.000000 2244.000000 15.703519" ;# 
+$ns_ at 195.573598 "$node_(127) setdest 2717.648433 1113.498832 15.158758" ;# 
+$ns_ at 195.868866 "$node_(123) setdest 1980.000000 2190.000000 15.945439" ;# 
+$ns_ at 196.020000 "$node_(54) setdest 2733.996805 3006.254738 18.107317" ;# 
+$ns_ at 196.020000 "$node_(143) setdest 3090.278171 796.763554 16.030630" ;# 
+$ns_ at 196.020000 "$node_(128) setdest 4298.589250 859.204248 10.410846" ;# 
+$ns_ at 196.231221 "$node_(6) setdest 3310.000000 610.000000 16.020776" ;# 
+$ns_ at 196.653591 "$node_(100) setdest 3310.000000 160.000000 12.864203" ;# 
+$ns_ at 197.020000 "$node_(64) setdest 3000.488395 2175.716567 11.659197" ;# 
+#$ns_ at 197.020000 $node_(29) arrived_to 4660.000000 400.000000  
+$ns_ at 197.020000 "$node_(29) switch OFF" ;# arrived_to  
+$ns_ at 198.020000 "$node_(29) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 198.030000 "$node_(29) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 0.0 "$node_(176) switch OFF" ;# set_X,Y,Z  
+$node_(176) set X_ 0.000000
+$node_(176) set Y_ 0.000000
+$node_(176) set Z_ 0.0
+$ns_ at 232.600909 "$node_(176) setdest 3511.136364 10.000000 1000000000.000000" ;# init_node
+$ns_ at 232.610909 "$node_(176) switch ON" ;# inside  
+$ns_ at 232.610909 "$node_(176) setdest 3310.000000 160.000000 13.629680" ;# 
+$ns_ at 197.228513 "$node_(81) setdest 2560.000000 10.000000 12.874870" ;# 
+$ns_ at 197.800764 "$node_(103) setdest 2898.986132 2340.952808 10.420670" ;# 
+#$ns_ at 198.020000 $node_(106) arrived_to 3090.000000 2030.000000  
+$ns_ at 198.020000 "$node_(106) switch OFF" ;# arrived_to  
+$ns_ at 199.020000 "$node_(106) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 199.030000 "$node_(106) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 0.0 "$node_(177) switch OFF" ;# set_X,Y,Z  
+$node_(177) set X_ 0.000000
+$node_(177) set Y_ 0.000000
+$node_(177) set Z_ 0.0
+$ns_ at 200.810202 "$node_(177) setdest 3917.755102 10.000000 1000000000.000000" ;# init_node
+$ns_ at 200.820202 "$node_(177) switch ON" ;# inside  
+$ns_ at 200.820202 "$node_(177) setdest 3921.601444 72.823579 14.319989" ;# 
+$ns_ at 198.934243 "$node_(164) setdest 3310.000000 484.066762 13.636364" ;# 
+$ns_ at 199.020000 "$node_(112) setdest 1944.312518 2121.598993 14.987791" ;# 
+#$ns_ at 199.020000 $node_(13) arrived_to 3230.000000 2660.000000  
+$ns_ at 199.020000 "$node_(13) switch OFF" ;# arrived_to  
+$ns_ at 200.020000 "$node_(13) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 200.030000 "$node_(13) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 199.051583 "$node_(96) setdest 3310.000000 160.000000 14.445122" ;# 
+$ns_ at 199.077690 "$node_(158) setdest 1521.976936 659.185691 17.850204" ;# 
+$ns_ at 199.095814 "$node_(142) setdest 3810.000000 1480.000000 15.405909" ;# 
+$ns_ at 199.224567 "$node_(163) setdest 3230.000000 2660.000000 19.072185" ;# 
+$ns_ at 0.0 "$node_(178) switch OFF" ;# set_X,Y,Z  
+$node_(178) set X_ 0.000000
+$node_(178) set Y_ 0.000000
+$node_(178) set Z_ 0.0
+$ns_ at 203.907182 "$node_(178) setdest 3838.461538 3010.000000 1000000000.000000" ;# init_node
+$ns_ at 203.917182 "$node_(178) switch ON" ;# inside  
+$ns_ at 203.917182 "$node_(178) setdest 3800.000000 2970.000000 26.389037" ;# 
+$ns_ at 199.598061 "$node_(137) setdest 1453.896665 1330.723226 15.327727" ;# 
+$ns_ at 199.722852 "$node_(114) setdest 3207.538578 1436.430183 14.930535" ;# 
+$ns_ at 200.786425 "$node_(127) setdest 2510.000000 1290.000000 13.469009" ;# 
+$ns_ at 201.020000 "$node_(167) setdest 3310.000000 446.847909 13.073961" ;# 
+$ns_ at 202.020000 "$node_(130) setdest 3097.984579 1280.486036 17.612611" ;# 
+$ns_ at 203.020000 "$node_(156) setdest 3303.643364 740.311035 15.628930" ;# 
+$ns_ at 203.618288 "$node_(165) setdest 2959.964820 329.971856 14.291503" ;# 
+$ns_ at 203.901967 "$node_(161) setdest 2812.128718 60.425744 19.218118" ;# 
+$ns_ at 204.020000 "$node_(163) setdest 3163.801147 2754.569790 17.926663" ;# 
+$ns_ at 204.020000 "$node_(169) setdest 3310.000000 299.777350 13.636364" ;# 
+$ns_ at 204.020000 "$node_(70) setdest 3838.461538 3010.000000 26.992157" ;# 
+$ns_ at 206.075832 "$node_(70) switch OFF" ;# leaving_area  
+#$ns_ at 204.020000 $node_(154) arrived_to 2560.000000 10.000000  
+$ns_ at 204.020000 "$node_(154) switch OFF" ;# arrived_to  
+$ns_ at 205.020000 "$node_(154) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 205.030000 "$node_(154) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 204.167597 "$node_(112) setdest 1860.000000 1960.000000 13.158101" ;# 
+$ns_ at 204.548238 "$node_(98) setdest 1860.000000 1960.000000 12.050896" ;# 
+$ns_ at 204.974265 "$node_(76) setdest 2660.000000 2730.000000 11.229316" ;# 
+$ns_ at 205.020000 "$node_(172) setdest 3310.000000 288.712492 15.557158" ;# 
+$ns_ at 0.0 "$node_(179) switch OFF" ;# set_X,Y,Z  
+$node_(179) set X_ 0.000000
+$node_(179) set Y_ 0.000000
+$node_(179) set Z_ 0.0
+$ns_ at 241.432494 "$node_(179) setdest 3511.136363 10.000000 1000000000.000000" ;# init_node
+$ns_ at 241.442494 "$node_(179) switch ON" ;# inside  
+$ns_ at 241.442494 "$node_(179) setdest 3446.695138 58.057863 13.318492" ;# 
+#$ns_ at 205.020000 $node_(146) arrived_to 1290.000000 1090.000000  
+$ns_ at 205.020000 "$node_(146) switch OFF" ;# arrived_to  
+$ns_ at 206.020000 "$node_(146) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 206.030000 "$node_(146) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 205.020000 "$node_(73) setdest 3838.461538 3010.000000 27.745675" ;# 
+$ns_ at 207.020000 "$node_(73) switch OFF" ;# leaving_area  
+$ns_ at 0.0 "$node_(180) switch OFF" ;# set_X,Y,Z  
+$node_(180) set X_ 0.000000
+$node_(180) set Y_ 0.000000
+$node_(180) set Z_ 0.0
+$ns_ at 216.010000 "$node_(180) setdest 3838.461538 3010.000000 1000000000.000000" ;# init_node
+$ns_ at 216.020000 "$node_(180) switch ON" ;# inside  
+$ns_ at 216.020000 "$node_(180) setdest 3800.000000 2970.000000 27.745675" ;# 
+$ns_ at 205.136486 "$node_(114) setdest 3090.000000 2030.000000 13.187643" ;# 
+$ns_ at 205.215542 "$node_(177) setdest 3930.000000 210.000000 11.642488" ;# 
+$ns_ at 206.020000 "$node_(115) setdest 1940.191492 2113.700359 15.856771" ;# 
+#$ns_ at 206.020000 $node_(159) arrived_to 3310.000000 610.000000  
+$ns_ at 206.020000 "$node_(159) switch OFF" ;# arrived_to  
+$ns_ at 207.020000 "$node_(159) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 207.030000 "$node_(159) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+#$ns_ at 206.020000 $node_(79) arrived_to 1860.000000 1960.000000  
+$ns_ at 206.020000 "$node_(79) switch OFF" ;# arrived_to  
+$ns_ at 207.020000 "$node_(79) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 207.030000 "$node_(79) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 206.020000 "$node_(5) setdest 10.000000 2297.153203 26.313111" ;# 
+$ns_ at 215.176508 "$node_(5) switch OFF" ;# leaving_area  
+$ns_ at 206.020000 "$node_(134) setdest 3290.000000 1020.000000 16.104256" ;# 
+$ns_ at 206.219534 "$node_(63) setdest 797.933580 2815.071772 18.390659" ;# 
+$ns_ at 206.591154 "$node_(155) setdest 3256.771676 1838.274325 17.639019" ;# 
+$ns_ at 0.0 "$node_(181) switch OFF" ;# set_X,Y,Z  
+$node_(181) set X_ 0.000000
+$node_(181) set Y_ 0.000000
+$node_(181) set Z_ 0.0
+$ns_ at 228.699027 "$node_(181) setdest 565.476190 10.000000 1000000000.000000" ;# init_node
+$ns_ at 228.709027 "$node_(181) switch ON" ;# inside  
+$ns_ at 228.709027 "$node_(181) setdest 100.000000 470.000000 13.007540" ;# 
+$ns_ at 207.020000 "$node_(131) setdest 3143.100668 1219.282040 16.104256" ;# 
+$ns_ at 207.020000 "$node_(178) setdest 3801.091319 2807.393537 15.442277" ;# 
+#$ns_ at 207.020000 $node_(147) arrived_to 1290.000000 1090.000000  
+$ns_ at 207.020000 "$node_(147) switch OFF" ;# arrived_to  
+$ns_ at 208.020000 "$node_(147) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 208.030000 "$node_(147) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+#$ns_ at 207.020000 $node_(21) arrived_to 245.000000 2244.000000  
+$ns_ at 207.020000 "$node_(21) switch OFF" ;# arrived_to  
+$ns_ at 208.020000 "$node_(21) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 208.030000 "$node_(21) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 207.020000 "$node_(119) setdest 1860.000000 1960.000000 13.147719" ;# 
+$ns_ at 0.0 "$node_(182) switch OFF" ;# set_X,Y,Z  
+$node_(182) set X_ 0.000000
+$node_(182) set Y_ 0.000000
+$node_(182) set Z_ 0.0
+$ns_ at 213.015970 "$node_(182) setdest 3917.755102 10.000000 1000000000.000000" ;# init_node
+$ns_ at 213.025970 "$node_(182) switch ON" ;# inside  
+$ns_ at 213.025970 "$node_(182) setdest 3922.930705 94.534845 13.268041" ;# 
+$ns_ at 208.020000 "$node_(82) setdest 3838.461539 3010.000000 30.577877" ;# 
+$ns_ at 209.834755 "$node_(82) switch OFF" ;# leaving_area  
+$ns_ at 208.317533 "$node_(97) setdest 2917.898377 296.318701 14.690295" ;# 
+$ns_ at 208.333983 "$node_(130) setdest 3290.000000 1020.000000 15.643861" ;# 
+$ns_ at 208.805087 "$node_(137) setdest 1538.992232 1455.707341 12.736226" ;# 
+$ns_ at 209.020000 "$node_(150) setdest 3290.000000 1020.000000 13.682917" ;# 
+$ns_ at 0.0 "$node_(183) switch OFF" ;# set_X,Y,Z  
+$node_(183) set X_ 0.000000
+$node_(183) set Y_ 0.000000
+$node_(183) set Z_ 0.0
+$ns_ at 244.600909 "$node_(183) setdest 3511.136364 10.000000 1000000000.000000" ;# init_node
+$ns_ at 244.610909 "$node_(183) switch ON" ;# inside  
+$ns_ at 244.610909 "$node_(183) setdest 3310.000000 160.000000 13.629680" ;# 
+$ns_ at 209.053188 "$node_(152) setdest 4318.380876 311.085434 8.860373" ;# 
+$ns_ at 209.297545 "$node_(126) setdest 3078.084440 1307.482349 16.104256" ;# 
+$ns_ at 209.487421 "$node_(140) setdest 2799.594674 1043.844527 15.501466" ;# 
+$ns_ at 209.717367 "$node_(158) setdest 1290.000000 1090.000000 16.147105" ;# 
+$ns_ at 210.459410 "$node_(163) setdest 3090.000000 2860.000000 15.033306" ;# 
+$ns_ at 210.524216 "$node_(161) setdest 2560.000000 10.000000 15.587127" ;# 
+$ns_ at 211.020000 "$node_(162) setdest 3166.235064 2751.092765 18.791297" ;# 
+#$ns_ at 211.020000 $node_(110) arrived_to 1860.000000 1960.000000  
+$ns_ at 211.020000 "$node_(110) switch OFF" ;# arrived_to  
+$ns_ at 212.020000 "$node_(110) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 212.030000 "$node_(110) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 211.367723 "$node_(156) setdest 3290.000000 1020.000000 12.932660" ;# 
+$ns_ at 211.399874 "$node_(164) setdest 3310.000000 610.000000 14.609213" ;# 
+$ns_ at 211.447345 "$node_(115) setdest 1860.000000 1960.000000 12.772907" ;# 
+$ns_ at 211.687698 "$node_(64) setdest 2821.594766 2466.938753 9.865488" ;# 
+$ns_ at 211.814354 "$node_(54) setdest 2735.000000 3010.000000 15.294875" ;# 
+$ns_ at 212.067857 "$node_(54) switch OFF" ;# leaving_area  
+$ns_ at 211.960407 "$node_(148) setdest 2774.184863 1065.442867 13.743347" ;# 
+$ns_ at 212.020000 "$node_(149) setdest 3299.689699 821.361169 12.594946" ;# 
+$ns_ at 212.020000 "$node_(60) setdest 1536.573564 2018.618479 16.364369" ;# 
+$ns_ at 212.597183 "$node_(174) setdest 3310.000000 160.000000 14.664599" ;# 
+$ns_ at 213.293522 "$node_(172) setdest 3310.000000 610.000000 12.993663" ;# 
+$ns_ at 214.008802 "$node_(143) setdest 2510.000000 1290.000000 13.128165" ;# 
+$ns_ at 214.020000 "$node_(96) setdest 2993.290299 96.658060 18.262193" ;# 
+$ns_ at 214.153607 "$node_(153) setdest 3137.287417 2242.793376 15.374171" ;# 
+$ns_ at 214.270339 "$node_(169) setdest 3310.000000 386.487707 15.802194" ;# 
+$ns_ at 214.421014 "$node_(157) setdest 100.000000 470.000000 15.341505" ;# 
+$ns_ at 215.020000 "$node_(6) setdest 3310.000000 326.163989 13.144911" ;# 
+$ns_ at 215.020000 "$node_(135) setdest 3258.842619 1177.344772 14.442775" ;# 
+$ns_ at 215.231505 "$node_(145) setdest 2663.112603 1159.854287 15.032823" ;# 
+$ns_ at 215.468778 "$node_(126) setdest 3032.000000 1370.000000 17.065187" ;# 
+$ns_ at 216.020000 "$node_(173) setdest 2876.531053 73.306211 15.555078" ;# 
+$ns_ at 216.020000 "$node_(125) setdest 1953.064921 2138.374432 14.714790" ;# 
+$ns_ at 216.020000 "$node_(151) setdest 1357.396422 1188.988494 16.129726" ;# 
+$ns_ at 216.020000 "$node_(25) setdest 1610.000000 1560.000000 13.873502" ;# 
+$ns_ at 216.262058 "$node_(175) setdest 3428.060906 71.954579 15.998668" ;# 
+$ns_ at 216.937255 "$node_(162) setdest 3090.000000 2860.000000 14.636347" ;# 
+$ns_ at 217.020000 "$node_(123) setdest 1500.280283 2443.673777 16.620014" ;# 
+$ns_ at 217.550191 "$node_(178) setdest 3804.285571 2331.449897 13.311928" ;# 
+$ns_ at 218.020000 "$node_(177) setdest 3862.469156 924.701437 13.466332" ;# 
+$ns_ at 218.020000 "$node_(144) setdest 3100.990544 1276.408176 17.400488" ;# 
+$ns_ at 218.020000 "$node_(113) setdest 1980.000000 2190.000000 13.653812" ;# 
+$ns_ at 218.089643 "$node_(152) setdest 4660.000000 400.000000 7.856616" ;# 
+$ns_ at 218.416623 "$node_(165) setdest 3031.047215 386.837772 14.592342" ;# 
+$ns_ at 218.646814 "$node_(131) setdest 3209.917353 1128.639249 17.023402" ;# 
+$ns_ at 218.863610 "$node_(140) setdest 2510.000000 1290.000000 13.035762" ;# 
+$ns_ at 218.892153 "$node_(103) setdest 2818.443339 2472.068983 12.708478" ;# 
+$ns_ at 219.020000 "$node_(180) setdest 3654.780386 2667.459137 15.784445" ;# 
+$ns_ at 0.0 "$node_(184) switch OFF" ;# set_X,Y,Z  
+$node_(184) set X_ 0.000000
+$node_(184) set Y_ 0.000000
+$node_(184) set Z_ 0.0
+$ns_ at 235.868427 "$node_(184) setdest 1871.538462 10.000000 1000000000.000000" ;# init_node
+$ns_ at 235.878427 "$node_(184) switch ON" ;# inside  
+$ns_ at 235.878427 "$node_(184) setdest 1617.450370 481.877885 14.821444" ;# 
+$ns_ at 219.020000 "$node_(100) setdest 3208.922385 139.784477 18.144079" ;# 
+$ns_ at 219.020000 "$node_(112) setdest 1715.136678 1986.255330 17.374814" ;# 
+$ns_ at 0.0 "$node_(185) switch OFF" ;# set_X,Y,Z  
+$node_(185) set X_ 0.000000
+$node_(185) set Y_ 0.000000
+$node_(185) set Z_ 0.0
+$ns_ at 254.600909 "$node_(185) setdest 3511.136364 10.000000 1000000000.000000" ;# init_node
+$ns_ at 254.610909 "$node_(185) switch ON" ;# inside  
+$ns_ at 254.610909 "$node_(185) setdest 3310.000000 160.000000 13.629680" ;# 
+$ns_ at 219.409213 "$node_(182) setdest 3930.000000 210.000000 15.199660" ;# 
+$ns_ at 219.504686 "$node_(153) setdest 3090.000000 2030.000000 13.198913" ;# 
+$ns_ at 219.757574 "$node_(169) setdest 3310.000000 610.000000 12.947908" ;# 
+$ns_ at 219.804647 "$node_(97) setdest 2560.000000 10.000000 13.395553" ;# 
+$ns_ at 219.977223 "$node_(125) setdest 1860.000000 1960.000000 13.374706" ;# 
+$ns_ at 220.020000 "$node_(163) setdest 2779.395840 2766.096417 16.075548" ;# 
+#$ns_ at 220.020000 $node_(76) arrived_to 2660.000000 2730.000000  
+$ns_ at 220.020000 "$node_(76) switch OFF" ;# arrived_to  
+$ns_ at 221.020000 "$node_(76) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 221.030000 "$node_(76) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 0.0 "$node_(186) switch OFF" ;# set_X,Y,Z  
+$node_(186) set X_ 0.000000
+$node_(186) set Y_ 0.000000
+$node_(186) set Z_ 0.0
+$ns_ at 223.296605 "$node_(186) setdest 3838.461539 3010.000000 1000000000.000000" ;# init_node
+$ns_ at 223.306605 "$node_(186) switch ON" ;# inside  
+$ns_ at 223.306605 "$node_(186) setdest 3800.000000 2970.000000 32.386778" ;# 
+$ns_ at 220.676954 "$node_(137) setdest 1610.000000 1560.000000 15.122867" ;# 
+$ns_ at 221.020000 "$node_(164) setdest 3298.750750 840.609628 13.208039" ;# 
+$ns_ at 221.020000 "$node_(126) setdest 3337.535117 2006.531494 19.643760" ;# 
+$ns_ at 0.0 "$node_(187) switch OFF" ;# set_X,Y,Z  
+$node_(187) set X_ 0.000000
+$node_(187) set Y_ 0.000000
+$node_(187) set Z_ 0.0
+$ns_ at 256.600909 "$node_(187) setdest 3511.136364 10.000000 1000000000.000000" ;# init_node
+$ns_ at 256.610909 "$node_(187) switch ON" ;# inside  
+$ns_ at 256.610909 "$node_(187) setdest 3310.000000 160.000000 13.629680" ;# 
+$ns_ at 221.333034 "$node_(175) setdest 3310.000000 160.000000 12.601776" ;# 
+$ns_ at 222.020000 "$node_(127) setdest 2265.551412 1541.970083 14.987362" ;# 
+$ns_ at 222.020000 "$node_(174) setdest 3310.000000 610.000000 13.636364" ;# 
+$ns_ at 222.806635 "$node_(145) setdest 2510.000000 1290.000000 13.208858" ;# 
+$ns_ at 222.960399 "$node_(167) setdest 3310.000000 610.000000 14.752078" ;# 
+$ns_ at 223.444423 "$node_(151) setdest 1485.135528 1376.605306 12.912912" ;# 
+$ns_ at 224.654819 "$node_(165) setdest 3310.000000 610.000000 13.054321" ;# 
+$ns_ at 224.701156 "$node_(100) setdest 2560.000000 10.000000 16.413506" ;# 
+$ns_ at 224.702098 "$node_(144) setdest 3290.000000 1020.000000 15.677955" ;# 
+$ns_ at 225.011235 "$node_(155) setdest 3032.000000 1370.000000 16.227610" ;# 
+$ns_ at 0.0 "$node_(188) switch OFF" ;# set_X,Y,Z  
+$node_(188) set X_ 0.000000
+$node_(188) set Y_ 0.000000
+$node_(188) set Z_ 0.0
+$ns_ at 240.071538 "$node_(188) setdest 1871.538461 10.000000 1000000000.000000" ;# init_node
+$ns_ at 240.081538 "$node_(188) switch ON" ;# inside  
+$ns_ at 240.081538 "$node_(188) setdest 1707.111400 315.364542 16.589689" ;# 
+$ns_ at 225.261714 "$node_(131) setdest 3290.000000 1020.000000 15.410050" ;# 
+$ns_ at 226.020000 "$node_(141) setdest 3191.760855 1153.270158 15.132681" ;# 
+$ns_ at 226.020000 "$node_(186) setdest 3604.583706 2863.720963 16.141533" ;# 
+#$ns_ at 226.020000 $node_(115) arrived_to 1860.000000 1960.000000  
+$ns_ at 226.020000 "$node_(115) switch OFF" ;# arrived_to  
+$ns_ at 227.020000 "$node_(115) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 227.030000 "$node_(115) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 226.067272 "$node_(105) setdest 2142.712885 1668.588257 14.996250" ;# 
+$ns_ at 226.125899 "$node_(135) setdest 3178.239477 1584.390642 12.775265" ;# 
+$ns_ at 0.0 "$node_(189) switch OFF" ;# set_X,Y,Z  
+$node_(189) set X_ 0.000000
+$node_(189) set Y_ 0.000000
+$node_(189) set Z_ 0.0
+$ns_ at 235.971404 "$node_(189) setdest 3838.461538 3010.000000 1000000000.000000" ;# init_node
+$ns_ at 235.981404 "$node_(189) switch ON" ;# inside  
+$ns_ at 235.981404 "$node_(189) setdest 3800.000000 2970.000000 27.220378" ;# 
+$ns_ at 227.020000 "$node_(162) setdest 2660.000000 2730.000000 16.637835" ;# 
+$ns_ at 227.493379 "$node_(112) setdest 1342.845387 2053.730177 16.002252" ;# 
+$ns_ at 228.020000 "$node_(166) setdest 3297.422333 867.842176 13.282021" ;# 
+$ns_ at 228.020000 "$node_(161) setdest 2560.000000 10.000000 13.313732" ;# 
+$ns_ at 228.020000 "$node_(161) switch OFF" ;# leaving_area  
+#$ns_ at 228.020000 $node_(182) arrived_to 3930.000000 210.000000  
+$ns_ at 228.020000 "$node_(182) switch OFF" ;# arrived_to  
+$ns_ at 229.020000 "$node_(182) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 229.030000 "$node_(182) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 228.235012 "$node_(102) setdest 2045.287913 1769.010921 14.498964" ;# 
+$ns_ at 0.0 "$node_(190) switch OFF" ;# set_X,Y,Z  
+$node_(190) set X_ 0.000000
+$node_(190) set Y_ 0.000000
+$node_(190) set Z_ 0.0
+$ns_ at 251.010001 "$node_(190) setdest 2560.000000 10.000000 1000000000.000000" ;# init_node
+$ns_ at 251.020001 "$node_(190) switch ON" ;# inside  
+$ns_ at 251.020001 "$node_(190) setdest 2560.000000 10.000000 15.079542" ;# 
+$ns_ at 228.821381 "$node_(149) setdest 3290.000000 1020.000000 15.067866" ;# 
+$ns_ at 229.946936 "$node_(63) setdest 429.306931 3010.000000 15.813209" ;# 
+$ns_ at 256.316811 "$node_(63) switch OFF" ;# leaving_area  
+$ns_ at 230.020000 "$node_(130) setdest 3299.086218 833.732528 15.564032" ;# 
+#$ns_ at 230.020000 $node_(137) arrived_to 1610.000000 1560.000000  
+$ns_ at 230.020000 "$node_(137) switch OFF" ;# arrived_to  
+$ns_ at 231.020000 "$node_(137) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 231.030000 "$node_(137) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 231.000487 "$node_(103) setdest 2660.000000 2730.000000 10.431221" ;# 
+$ns_ at 0.0 "$node_(191) switch OFF" ;# set_X,Y,Z  
+$node_(191) set X_ 0.000000
+$node_(191) set Y_ 0.000000
+$node_(191) set Z_ 0.0
+$ns_ at 266.600909 "$node_(191) setdest 3511.136364 10.000000 1000000000.000000" ;# init_node
+$ns_ at 266.610909 "$node_(191) switch ON" ;# inside  
+$ns_ at 266.610909 "$node_(191) setdest 3310.000000 160.000000 13.629680" ;# 
+$ns_ at 231.705816 "$node_(96) setdest 2560.000000 10.000000 15.606000" ;# 
+$ns_ at 0.0 "$node_(192) switch OFF" ;# set_X,Y,Z  
+$node_(192) set X_ 0.000000
+$node_(192) set Y_ 0.000000
+$node_(192) set Z_ 0.0
+$ns_ at 248.499203 "$node_(192) setdest 1871.538462 10.000000 1000000000.000000" ;# init_node
+$ns_ at 248.509203 "$node_(192) switch ON" ;# inside  
+$ns_ at 248.509203 "$node_(192) setdest 1776.764584 186.008630 15.153324" ;# 
+$ns_ at 232.020000 "$node_(142) setdest 3807.769472 1812.348680 13.129426" ;# 
+$ns_ at 232.106053 "$node_(60) setdest 1459.146258 2032.651565 17.492861" ;# 
+$ns_ at 232.669755 "$node_(105) setdest 1860.000000 1960.000000 12.550569" ;# 
+$ns_ at 0.0 "$node_(193) switch OFF" ;# set_X,Y,Z  
+$node_(193) set X_ 0.000000
+$node_(193) set Y_ 0.000000
+$node_(193) set Z_ 0.0
+$ns_ at 244.010000 "$node_(193) setdest 3838.461538 3010.000000 1000000000.000000" ;# init_node
+$ns_ at 244.020000 "$node_(193) switch ON" ;# inside  
+$ns_ at 244.020000 "$node_(193) setdest 3800.000000 2970.000000 27.745675" ;# 
+$ns_ at 233.348754 "$node_(102) setdest 1860.000000 1960.000000 13.527285" ;# 
+$ns_ at 234.020000 "$node_(32) setdest 20.915480 2294.684298 30.759398" ;# 
+$ns_ at 234.020000 "$node_(75) setdest 2560.000000 10.000000 15.014085" ;# 
+$ns_ at 234.020000 "$node_(75) switch OFF" ;# leaving_area  
+$ns_ at 234.020000 "$node_(134) setdest 3301.646131 781.254312 13.484949" ;# 
+$ns_ at 234.020000 "$node_(156) setdest 3236.081747 1292.287180 15.166941" ;# 
+$ns_ at 234.020000 "$node_(175) setdest 3310.000000 519.388972 13.200480" ;# 
+$ns_ at 234.079364 "$node_(148) setdest 2510.000000 1290.000000 11.580479" ;# 
+#$ns_ at 235.020000 $node_(157) arrived_to 100.000000 470.000000  
+$ns_ at 235.020000 "$node_(157) switch OFF" ;# arrived_to  
+$ns_ at 236.020000 "$node_(157) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 236.030000 "$node_(157) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+#$ns_ at 235.020000 $node_(131) arrived_to 3290.000000 1020.000000  
+$ns_ at 235.020000 "$node_(131) switch OFF" ;# arrived_to  
+$ns_ at 236.020000 "$node_(131) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 236.030000 "$node_(131) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 235.020000 "$node_(167) setdest 3303.536826 742.495066 15.058776" ;# 
+$ns_ at 235.793664 "$node_(104) setdest 1860.000000 1960.000000 15.228963" ;# 
+$ns_ at 236.020000 "$node_(125) setdest 1562.111702 2013.989894 15.078824" ;# 
+$ns_ at 236.260305 "$node_(168) setdest 1290.000000 1090.000000 18.051949" ;# 
+$ns_ at 236.604387 "$node_(60) setdest 1071.000000 2103.000000 16.156456" ;# 
+$ns_ at 236.612843 "$node_(6) setdest 3310.000000 160.000000 14.566645" ;# 
+#$ns_ at 237.020000 $node_(153) arrived_to 3090.000000 2030.000000  
+$ns_ at 237.020000 "$node_(153) switch OFF" ;# arrived_to  
+$ns_ at 238.020000 "$node_(153) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 238.030000 "$node_(153) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 237.020000 "$node_(170) setdest 3310.000000 610.000000 13.636364" ;# 
+$ns_ at 238.020000 "$node_(113) setdest 2356.733916 2489.171051 15.417881" ;# 
+$ns_ at 238.020000 "$node_(169) setdest 3133.750193 759.812336 15.358701" ;# 
+$ns_ at 238.500555 "$node_(164) setdest 3293.948320 939.059448 13.682917" ;# 
+$ns_ at 239.020000 "$node_(172) setdest 3139.501223 754.923961 14.549323" ;# 
+$ns_ at 239.020000 "$node_(189) setdest 3663.741279 2895.894380 15.260972" ;# 
+$ns_ at 239.020000 "$node_(145) setdest 2120.897574 1691.074808 13.727766" ;# 
+$ns_ at 239.417930 "$node_(99) setdest 1871.538461 10.000000 17.523111" ;# 
+$ns_ at 265.760760 "$node_(99) switch OFF" ;# leaving_area  
+$ns_ at 239.801046 "$node_(186) setdest 3411.724578 2758.832665 16.109797" ;# 
+#$ns_ at 240.020000 $node_(150) arrived_to 3290.000000 1020.000000  
+$ns_ at 240.020000 "$node_(150) switch OFF" ;# arrived_to  
+$ns_ at 241.020000 "$node_(150) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 241.030000 "$node_(150) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 240.205225 "$node_(163) setdest 2660.000000 2730.000000 18.303317" ;# 
+$ns_ at 240.280716 "$node_(180) setdest 3287.062188 1901.379559 15.572279" ;# 
+$ns_ at 241.020000 "$node_(158) setdest 1120.346001 822.666425 13.686075" ;# 
+$ns_ at 241.020000 "$node_(81) setdest 2560.000000 10.000000 10.869565" ;# 
+$ns_ at 241.020000 "$node_(81) switch OFF" ;# leaving_area  
+$ns_ at 241.021739 "$node_(151) setdest 1543.380025 1462.151912 15.429814" ;# 
+$ns_ at 241.489100 "$node_(32) setdest 10.000000 2297.153203 26.604253" ;# 
+$ns_ at 241.909755 "$node_(32) switch OFF" ;# leaving_area  
+$ns_ at 242.002046 "$node_(130) setdest 3310.000000 610.000000 12.431964" ;# 
+$ns_ at 0.0 "$node_(194) switch OFF" ;# set_X,Y,Z  
+$node_(194) set X_ 0.000000
+$node_(194) set Y_ 0.000000
+$node_(194) set Z_ 0.0
+$ns_ at 252.070493 "$node_(194) setdest 3511.136364 10.000000 1000000000.000000" ;# init_node
+$ns_ at 252.080493 "$node_(194) switch ON" ;# inside  
+$ns_ at 252.080493 "$node_(194) setdest 3478.629602 34.242331 15.785706" ;# 
+$ns_ at 243.020000 "$node_(149) setdest 3241.421267 1265.322601 14.427790" ;# 
+$ns_ at 0.0 "$node_(195) switch OFF" ;# set_X,Y,Z  
+$node_(195) set X_ 0.000000
+$node_(195) set Y_ 0.000000
+$node_(195) set Z_ 0.0
+$ns_ at 256.812422 "$node_(195) setdest 1871.538461 10.000000 1000000000.000000" ;# init_node
+$ns_ at 256.822422 "$node_(195) switch ON" ;# inside  
+$ns_ at 256.822422 "$node_(195) setdest 1722.593073 286.612864 18.103072" ;# 
+$ns_ at 0.0 "$node_(196) switch OFF" ;# set_X,Y,Z  
+$node_(196) set X_ 0.000000
+$node_(196) set Y_ 0.000000
+$node_(196) set Z_ 0.0
+$ns_ at 247.224570 "$node_(196) setdest 3917.755102 10.000000 1000000000.000000" ;# init_node
+$ns_ at 247.234570 "$node_(196) switch ON" ;# inside  
+$ns_ at 247.234570 "$node_(196) setdest 3925.163593 131.005356 13.268041" ;# 
+$ns_ at 243.812592 "$node_(141) setdest 3290.000000 1020.000000 17.981748" ;# 
+$ns_ at 243.828990 "$node_(167) setdest 3290.000000 1020.000000 13.110980" ;# 
+$ns_ at 0.0 "$node_(197) switch OFF" ;# set_X,Y,Z  
+$node_(197) set X_ 0.000000
+$node_(197) set Y_ 0.000000
+$node_(197) set Z_ 0.0
+$ns_ at 247.342161 "$node_(197) setdest 1871.538461 10.000000 1000000000.000000" ;# init_node
+$ns_ at 247.352161 "$node_(197) switch ON" ;# inside  
+$ns_ at 247.352161 "$node_(197) setdest 1669.634201 384.965055 16.131351" ;# 
+$ns_ at 244.438586 "$node_(173) setdest 2560.000000 10.000000 18.360277" ;# 
+$ns_ at 245.443822 "$node_(127) setdest 1860.000000 1960.000000 12.504821" ;# 
+$ns_ at 245.704200 "$node_(164) setdest 3290.000000 1020.000000 15.244514" ;# 
+$ns_ at 0.0 "$node_(198) switch OFF" ;# set_X,Y,Z  
+$node_(198) set X_ 0.000000
+$node_(198) set Y_ 0.000000
+$node_(198) set Z_ 0.0
+$ns_ at 281.600909 "$node_(198) setdest 3511.136364 10.000000 1000000000.000000" ;# init_node
+$ns_ at 281.610909 "$node_(198) switch ON" ;# inside  
+$ns_ at 281.610909 "$node_(198) setdest 3310.000000 160.000000 13.629680" ;# 
+$ns_ at 300.010000 "$node_(198) switch OFF" ;# T_max_OFF  
+$ns_ at 246.020000 "$node_(144) setdest 3310.000000 610.000000 13.682917" ;# 
+$ns_ at 246.331659 "$node_(64) setdest 2796.492831 2507.802368 12.105176" ;# 
+$ns_ at 247.020000 "$node_(193) setdest 3692.215141 2911.380164 17.907006" ;# 
+$ns_ at 247.020000 "$node_(98) setdest 1730.456982 1983.478646 17.511933" ;# 
+$ns_ at 247.455956 "$node_(166) setdest 3290.000000 1020.000000 14.420495" ;# 
+$ns_ at 247.478312 "$node_(179) setdest 3310.000000 160.000000 14.774444" ;# 
+$ns_ at 247.729029 "$node_(151) setdest 1610.000000 1560.000000 12.740787" ;# 
+$ns_ at 248.020000 "$node_(163) setdest 2487.081871 2592.682662 19.118423" ;# 
+$ns_ at 249.020000 "$node_(6) setdest 3511.136364 10.000000 13.629680" ;# 
+$ns_ at 267.429091 "$node_(6) switch OFF" ;# leaving_area  
+$ns_ at 249.020000 "$node_(140) setdest 2294.157620 1512.483684 12.322164" ;# 
+$ns_ at 249.183617 "$node_(189) setdest 3529.052564 2822.642622 18.774785" ;# 
+$ns_ at 249.671079 "$node_(123) setdest 1341.227719 2527.780107 18.400516" ;# 
+$ns_ at 250.293412 "$node_(64) setdest 2660.000000 2730.000000 10.136287" ;# 
+#$ns_ at 251.020000 $node_(25) arrived_to 1610.000000 1560.000000  
+$ns_ at 251.020000 "$node_(25) switch OFF" ;# arrived_to  
+$ns_ at 252.020000 "$node_(25) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 252.030000 "$node_(25) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 251.137334 "$node_(112) setdest 1217.811115 2076.391648 17.354775" ;# 
+$ns_ at 251.745657 "$node_(134) setdest 3307.484579 661.566125 13.682917" ;# 
+$ns_ at 252.020000 "$node_(164) setdest 3199.289014 1478.090477 12.995666" ;# 
+$ns_ at 252.020000 "$node_(190) setdest 2662.886167 92.308933 14.318778" ;# 
+$ns_ at 252.020000 "$node_(176) setdest 3310.000000 312.898239 14.680096" ;# 
+$ns_ at 252.020000 "$node_(114) setdest 2660.000000 2730.000000 11.101662" ;# 
+$ns_ at 300.010000 "$node_(114) switch OFF" ;# T_max_OFF  
+$ns_ at 252.321271 "$node_(156) setdest 3090.000000 2030.000000 12.597207" ;# 
+$ns_ at 300.010000 "$node_(156) switch OFF" ;# T_max_OFF  
+$ns_ at 0.0 "$node_(199) switch OFF" ;# set_X,Y,Z  
+$node_(199) set X_ 0.000000
+$node_(199) set Y_ 0.000000
+$node_(199) set Z_ 0.0
+$ns_ at 269.129920 "$node_(199) setdest 3511.136364 10.000000 1000000000.000000" ;# init_node
+$ns_ at 269.139920 "$node_(199) switch ON" ;# inside  
+$ns_ at 269.139920 "$node_(199) setdest 3310.000000 160.000000 12.621177" ;# 
+$ns_ at 253.020000 "$node_(165) setdest 3299.583334 823.541659 12.599011" ;# 
+$ns_ at 253.080999 "$node_(169) setdest 2830.600950 1017.489193 12.558719" ;# 
+$ns_ at 0.0 "$node_(200) switch OFF" ;# set_X,Y,Z  
+$node_(200) set X_ 0.000000
+$node_(200) set Y_ 0.000000
+$node_(200) set Z_ 0.0
+$ns_ at 270.717354 "$node_(200) setdest 3511.136364 10.000000 1000000000.000000" ;# init_node
+$ns_ at 270.727354 "$node_(200) switch ON" ;# inside  
+$ns_ at 270.727354 "$node_(200) setdest 3485.917844 28.807032 12.570179" ;# 
+$ns_ at 253.304169 "$node_(178) setdest 3807.053278 1919.061551 14.776320" ;# 
+$ns_ at 253.428550 "$node_(186) setdest 3291.941567 2693.687519 17.562532" ;# 
+$ns_ at 253.871741 "$node_(193) setdest 3445.485770 2777.194015 16.137105" ;# 
+$ns_ at 254.020000 "$node_(141) setdest 3298.255149 850.769437 13.682917" ;# 
+$ns_ at 254.020000 "$node_(102) setdest 1572.162421 2012.168281 19.021455" ;# 
+$ns_ at 254.400062 "$node_(172) setdest 2807.157321 1037.416277 12.062106" ;# 
+$ns_ at 254.537930 "$node_(98) setdest 1375.511153 2047.809766 15.982135" ;# 
+$ns_ at 254.649333 "$node_(194) setdest 3310.000000 160.000000 12.110017" ;# 
+$ns_ at 255.020000 "$node_(162) setdest 2397.718784 2521.717858 18.602914" ;# 
+$ns_ at 255.020000 "$node_(97) setdest 2560.000000 10.000000 16.187162" ;# 
+$ns_ at 255.020000 "$node_(97) switch OFF" ;# leaving_area  
+$ns_ at 256.020000 "$node_(174) setdest 3124.724190 767.484438 14.720805" ;# 
+$ns_ at 256.097255 "$node_(125) setdest 1357.665608 2051.044129 18.685497" ;# 
+$ns_ at 256.371709 "$node_(196) setdest 3930.000000 210.000000 14.011772" ;# 
+$ns_ at 0.0 "$node_(201) switch OFF" ;# set_X,Y,Z  
+$node_(201) set X_ 0.000000
+$node_(201) set Y_ 0.000000
+$node_(201) set Z_ 0.0
+$ns_ at 259.298922 "$node_(201) setdest 3511.136364 10.000000 1000000000.000000" ;# init_node
+$ns_ at 259.308922 "$node_(201) switch ON" ;# inside  
+$ns_ at 259.308922 "$node_(201) setdest 3310.000000 160.000000 13.409704" ;# 
+$ns_ at 256.963340 "$node_(126) setdest 3800.000000 2970.000000 15.254966" ;# 
+$ns_ at 300.010000 "$node_(126) switch OFF" ;# T_max_OFF  
+$ns_ at 257.333838 "$node_(142) setdest 3803.691758 2419.928040 13.005582" ;# 
+$ns_ at 300.010000 "$node_(142) switch OFF" ;# T_max_OFF  
+$ns_ at 257.349863 "$node_(189) setdest 3365.618714 2733.757546 15.209833" ;# 
+$ns_ at 258.020000 "$node_(151) setdest 1449.752709 1721.436510 16.102052" ;# 
+$ns_ at 258.020000 "$node_(155) setdest 3290.000000 1020.000000 16.104256" ;# 
+$ns_ at 258.459312 "$node_(112) setdest 1071.000000 2103.000000 15.605874" ;# 
+$ns_ at 258.606605 "$node_(135) setdest 3160.256077 1675.206809 14.663169" ;# 
+$ns_ at 259.020000 "$node_(166) setdest 3191.562147 1153.539723 15.348738" ;# 
+$ns_ at 259.449125 "$node_(123) setdest 615.701215 2911.435483 16.274779" ;# 
+$ns_ at 300.010000 "$node_(123) switch OFF" ;# T_max_OFF  
+$ns_ at 259.569554 "$node_(163) setdest 1980.000000 2190.000000 15.621605" ;# 
+$ns_ at 300.010000 "$node_(163) switch OFF" ;# T_max_OFF  
+$ns_ at 260.020000 "$node_(179) setdest 3310.000000 478.542246 12.919754" ;# 
+$ns_ at 260.353641 "$node_(149) setdest 3173.723088 1607.198405 12.979277" ;# 
+$ns_ at 0.0 "$node_(202) switch OFF" ;# set_X,Y,Z  
+$node_(202) set X_ 0.000000
+$node_(202) set Y_ 0.000000
+$node_(202) set Z_ 0.0
+$ns_ at 263.642240 "$node_(202) setdest 3917.755102 10.000000 1000000000.000000" ;# init_node
+$ns_ at 263.652240 "$node_(202) switch ON" ;# inside  
+$ns_ at 263.652240 "$node_(202) setdest 3918.989712 30.165292 14.363337" ;# 
+$ns_ at 260.503329 "$node_(134) setdest 3310.000000 610.000000 14.680769" ;# 
+$ns_ at 260.987264 "$node_(188) setdest 1608.404318 498.677695 18.605537" ;# 
+#$ns_ at 261.020000 $node_(96) arrived_to 2560.000000 10.000000  
+$ns_ at 261.020000 "$node_(96) switch OFF" ;# arrived_to  
+$ns_ at 262.020000 "$node_(96) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 262.030000 "$node_(96) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 0.0 "$node_(203) switch OFF" ;# set_X,Y,Z  
+$node_(203) set X_ 0.000000
+$node_(203) set Y_ 0.000000
+$node_(203) set Z_ 0.0
+$ns_ at 274.471572 "$node_(203) setdest 1871.538462 10.000000 1000000000.000000" ;# init_node
+$ns_ at 274.481572 "$node_(203) switch ON" ;# inside  
+$ns_ at 274.481572 "$node_(203) setdest 1847.236368 55.132460 18.561446" ;# 
+$ns_ at 261.020000 "$node_(130) setdest 3000.966365 362.773092 15.047282" ;# 
+$ns_ at 261.020000 "$node_(103) setdest 2735.000000 3010.000000 15.960774" ;# 
+$ns_ at 279.181441 "$node_(103) switch OFF" ;# leaving_area  
+$ns_ at 261.020000 "$node_(104) setdest 1071.000000 2103.000000 16.364369" ;# 
+$ns_ at 300.010000 "$node_(104) switch OFF" ;# T_max_OFF  
+$ns_ at 261.192349 "$node_(186) setdest 3230.000000 2660.000000 18.421128" ;# 
+$ns_ at 261.221804 "$node_(190) setdest 2982.697876 348.158301 13.291497" ;# 
+$ns_ at 261.245447 "$node_(175) setdest 3310.000000 610.000000 15.691439" ;# 
+$ns_ at 261.701213 "$node_(192) setdest 1597.655765 518.639294 18.699970" ;# 
+#$ns_ at 262.020000 $node_(160) arrived_to 3310.000000 610.000000  
+$ns_ at 262.020000 "$node_(160) switch OFF" ;# arrived_to  
+$ns_ at 263.020000 "$node_(160) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 263.030000 "$node_(160) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 262.020000 "$node_(60) setdest 245.000000 2244.000000 16.430355" ;# 
+$ns_ at 300.010000 "$node_(60) switch OFF" ;# T_max_OFF  
+$ns_ at 262.435343 "$node_(176) setdest 3310.000000 610.000000 13.155027" ;# 
+#$ns_ at 263.020000 $node_(173) arrived_to 2560.000000 10.000000  
+$ns_ at 263.020000 "$node_(173) switch OFF" ;# arrived_to  
+$ns_ at 264.020000 "$node_(173) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 264.030000 "$node_(173) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 263.020000 "$node_(196) setdest 3908.483441 437.716912 15.190758" ;# 
+$ns_ at 0.0 "$node_(204) switch OFF" ;# set_X,Y,Z  
+$node_(204) set X_ 0.000000
+$node_(204) set Y_ 0.000000
+$node_(204) set Z_ 0.0
+$ns_ at 298.600909 "$node_(204) setdest 3511.136364 10.000000 1000000000.000000" ;# init_node
+$ns_ at 298.610909 "$node_(204) switch ON" ;# inside  
+$ns_ at 298.610909 "$node_(204) setdest 3310.000000 160.000000 13.629680" ;# 
+$ns_ at 300.010000 "$node_(204) switch OFF" ;# T_max_OFF  
+$ns_ at 264.020000 "$node_(183) setdest 3310.000000 303.526249 12.909401" ;# 
+#$ns_ at 264.020000 $node_(152) arrived_to 4660.000000 400.000000  
+$ns_ at 264.020000 "$node_(152) switch OFF" ;# arrived_to  
+$ns_ at 265.020000 "$node_(152) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 265.030000 "$node_(152) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 264.154636 "$node_(158) setdest 1059.132957 726.209508 16.018572" ;# 
+$ns_ at 264.920355 "$node_(135) setdest 3090.000000 2030.000000 12.871420" ;# 
+$ns_ at 265.020000 "$node_(148) setdest 2234.750151 1573.719075 12.965112" ;# 
+$ns_ at 265.020000 "$node_(134) setdest 3310.000000 374.300764 12.929696" ;# 
+$ns_ at 265.058811 "$node_(202) setdest 3930.000000 210.000000 12.905165" ;# 
+$ns_ at 266.020000 "$node_(105) setdest 1406.814353 2042.136309 16.364369" ;# 
+$ns_ at 266.020000 "$node_(186) setdest 3174.653359 2739.066630 18.311284" ;# 
+$ns_ at 266.020000 "$node_(100) setdest 2560.000000 10.000000 11.904762" ;# 
+$ns_ at 266.020000 "$node_(100) switch OFF" ;# leaving_area  
+$ns_ at 266.020000 "$node_(167) setdest 3032.000000 1370.000000 16.104256" ;# 
+$ns_ at 266.402724 "$node_(141) setdest 3301.058338 793.304071 14.587638" ;# 
+$ns_ at 0.0 "$node_(205) switch OFF" ;# set_X,Y,Z  
+$node_(205) set X_ 0.000000
+$node_(205) set Y_ 0.000000
+$node_(205) set Z_ 0.0
+$ns_ at 283.559876 "$node_(205) setdest 3917.755102 10.000000 1000000000.000000" ;# init_node
+$ns_ at 283.569876 "$node_(205) switch ON" ;# inside  
+$ns_ at 283.569876 "$node_(205) setdest 3930.000000 210.000000 12.969119" ;# 
+$ns_ at 267.216940 "$node_(125) setdest 1258.749142 2068.971955 17.916572" ;# 
+$ns_ at 268.020000 "$node_(175) setdest 3026.599394 850.890515 15.505963" ;# 
+$ns_ at 269.020000 "$node_(112) setdest 933.931004 2126.397976 17.469205" ;# 
+$ns_ at 269.222312 "$node_(113) setdest 2660.000000 2730.000000 17.766022" ;# 
+$ns_ at 269.398788 "$node_(102) setdest 1071.000000 2103.000000 15.148983" ;# 
+$ns_ at 300.010000 "$node_(102) switch OFF" ;# T_max_OFF  
+$ns_ at 269.581476 "$node_(189) setdest 3230.000000 2660.000000 18.294452" ;# 
+$ns_ at 269.828718 "$node_(166) setdest 3098.645114 1279.589962 16.104256" ;# 
+$ns_ at 269.989235 "$node_(165) setdest 3290.000000 1020.000000 15.094427" ;# 
+$ns_ at 270.020000 "$node_(168) setdest 1352.624480 1181.979705 12.902703" ;# 
+$ns_ at 270.346728 "$node_(141) setdest 3310.000000 610.000000 13.421954" ;# 
+$ns_ at 271.020000 "$node_(170) setdest 3300.868043 797.205109 16.036614" ;# 
+$ns_ at 271.276236 "$node_(193) setdest 3388.102947 2745.985813 17.730319" ;# 
+$ns_ at 271.286411 "$node_(158) setdest 960.000000 570.000000 12.557033" ;# 
+$ns_ at 271.290691 "$node_(186) setdest 3090.000000 2860.000000 15.172505" ;# 
+$ns_ at 271.329601 "$node_(177) setdest 3833.700318 1229.171633 13.716739" ;# 
+$ns_ at 0.0 "$node_(206) switch OFF" ;# set_X,Y,Z  
+$node_(206) set X_ 0.000000
+$node_(206) set Y_ 0.000000
+$node_(206) set Z_ 0.0
+$ns_ at 285.011585 "$node_(206) setdest 3511.136364 10.000000 1000000000.000000" ;# init_node
+$ns_ at 285.021585 "$node_(206) switch ON" ;# inside  
+$ns_ at 285.021585 "$node_(206) setdest 3480.783370 32.636131 15.994044" ;# 
+$ns_ at 271.902818 "$node_(128) setdest 4660.000000 400.000000 11.897432" ;# 
+$ns_ at 300.010000 "$node_(128) switch OFF" ;# T_max_OFF  
+$ns_ at 272.038058 "$node_(184) setdest 1290.000000 1090.000000 19.195132" ;# 
+$ns_ at 300.010000 "$node_(184) switch OFF" ;# T_max_OFF  
+$ns_ at 272.146545 "$node_(151) setdest 1278.910583 1893.546481 16.080596" ;# 
+$ns_ at 272.177425 "$node_(188) setdest 1290.000000 1090.000000 16.050581" ;# 
+$ns_ at 300.010000 "$node_(188) switch OFF" ;# T_max_OFF  
+$ns_ at 272.538354 "$node_(174) setdest 2920.540050 941.040957 12.490894" ;# 
+$ns_ at 272.827834 "$node_(125) setdest 1071.000000 2103.000000 15.650038" ;# 
+#$ns_ at 273.020000 $node_(143) arrived_to 2510.000000 1290.000000  
+$ns_ at 273.020000 "$node_(143) switch OFF" ;# arrived_to  
+$ns_ at 274.020000 "$node_(143) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 274.030000 "$node_(143) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 273.020000 "$node_(194) setdest 3310.000000 314.000815 12.678521" ;# 
+$ns_ at 0.0 "$node_(207) switch OFF" ;# set_X,Y,Z  
+$node_(207) set X_ 0.000000
+$node_(207) set Y_ 0.000000
+$node_(207) set Z_ 0.0
+$ns_ at 284.010000 "$node_(207) setdest 3838.461538 3010.000000 1000000000.000000" ;# init_node
+$ns_ at 284.020000 "$node_(207) switch ON" ;# inside  
+$ns_ at 284.020000 "$node_(207) setdest 3800.000000 2970.000000 27.745675" ;# 
+$ns_ at 273.023749 "$node_(162) setdest 1980.000000 2190.000000 15.241905" ;# 
+$ns_ at 300.010000 "$node_(162) switch OFF" ;# T_max_OFF  
+$ns_ at 273.230035 "$node_(200) setdest 3370.838584 114.628852 15.986849" ;# 
+$ns_ at 273.752223 "$node_(197) setdest 1571.156088 567.852979 18.939962" ;# 
+$ns_ at 274.020000 "$node_(185) setdest 3310.000000 610.000000 13.636364" ;# 
+$ns_ at 300.010000 "$node_(185) switch OFF" ;# T_max_OFF  
+$ns_ at 274.176208 "$node_(140) setdest 2149.035243 1662.071365 15.194038" ;# 
+$ns_ at 274.176638 "$node_(195) setdest 1290.000000 1090.000000 15.774523" ;# 
+$ns_ at 300.010000 "$node_(195) switch OFF" ;# T_max_OFF  
+$ns_ at 274.960337 "$node_(193) setdest 3230.000000 2660.000000 16.272876" ;# 
+$ns_ at 0.0 "$node_(208) switch OFF" ;# set_X,Y,Z  
+$node_(208) set X_ 0.000000
+$node_(208) set Y_ 0.000000
+$node_(208) set Z_ 0.0
+$ns_ at 297.499796 "$node_(208) setdest 3917.755102 10.000000 1000000000.000000" ;# init_node
+$ns_ at 297.509796 "$node_(208) switch ON" ;# inside  
+$ns_ at 297.509796 "$node_(208) setdest 3930.000000 210.000000 12.918882" ;# 
+$ns_ at 300.010000 "$node_(208) switch OFF" ;# T_max_OFF  
+$ns_ at 275.137963 "$node_(183) setdest 3310.000000 479.002370 13.636364" ;# 
+$ns_ at 276.020000 "$node_(187) setdest 3310.000000 610.000000 13.636364" ;# 
+$ns_ at 300.010000 "$node_(187) switch OFF" ;# T_max_OFF  
+$ns_ at 276.979818 "$node_(112) setdest 652.258409 2174.480102 15.968259" ;# 
+$ns_ at 277.020000 "$node_(64) setdest 2735.000000 3010.000000 15.899959" ;# 
+$ns_ at 295.250906 "$node_(64) switch OFF" ;# leaving_area  
+$ns_ at 277.020000 "$node_(144) setdest 3310.000000 335.978210 12.553115" ;# 
+$ns_ at 277.108662 "$node_(98) setdest 1202.558343 2079.156092 14.985040" ;# 
+$ns_ at 277.243180 "$node_(203) setdest 1290.000000 1090.000000 16.150151" ;# 
+$ns_ at 300.010000 "$node_(203) switch OFF" ;# T_max_OFF  
+$ns_ at 278.077259 "$node_(196) setdest 3810.000000 1480.000000 13.606554" ;# 
+$ns_ at 300.010000 "$node_(196) switch OFF" ;# T_max_OFF  
+$ns_ at 278.644150 "$node_(168) setdest 1506.630378 1408.175868 13.163647" ;# 
+$ns_ at 0.0 "$node_(209) switch OFF" ;# set_X,Y,Z  
+$node_(209) set X_ 0.000000
+$node_(209) set Y_ 0.000000
+$node_(209) set Z_ 0.0
+$ns_ at 292.847417 "$node_(209) setdest 1871.538462 10.000000 1000000000.000000" ;# init_node
+$ns_ at 292.857417 "$node_(209) switch ON" ;# inside  
+$ns_ at 292.857417 "$node_(209) setdest 1787.764693 165.579856 18.057289" ;# 
+$ns_ at 300.010000 "$node_(209) switch OFF" ;# T_max_OFF  
+$ns_ at 279.020000 "$node_(201) setdest 3018.450604 101.690121 15.597688" ;# 
+$ns_ at 279.020000 "$node_(189) setdest 3090.000000 2860.000000 16.275407" ;# 
+$ns_ at 279.020000 "$node_(119) setdest 1071.000000 2103.000000 16.364369" ;# 
+$ns_ at 300.010000 "$node_(119) switch OFF" ;# T_max_OFF  
+$ns_ at 279.552593 "$node_(166) setdest 3032.000000 1370.000000 17.366924" ;# 
+$ns_ at 279.726100 "$node_(145) setdest 2042.789914 1771.585781 15.204555" ;# 
+#$ns_ at 280.020000 $node_(181) arrived_to 100.000000 470.000000  
+$ns_ at 280.020000 "$node_(181) switch OFF" ;# arrived_to  
+$ns_ at 281.020000 "$node_(181) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 281.030000 "$node_(181) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+#$ns_ at 280.020000 $node_(202) arrived_to 3930.000000 210.000000  
+$ns_ at 280.020000 "$node_(202) switch OFF" ;# arrived_to  
+$ns_ at 281.020000 "$node_(202) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 281.030000 "$node_(202) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 281.213529 "$node_(178) setdest 3810.000000 1480.000000 12.987793" ;# 
+$ns_ at 300.010000 "$node_(178) switch OFF" ;# T_max_OFF  
+$ns_ at 281.903767 "$node_(192) setdest 1448.159338 796.275514 17.625321" ;# 
+$ns_ at 282.020000 "$node_(186) setdest 2834.985079 2782.902466 15.230088" ;# 
+$ns_ at 282.209730 "$node_(200) setdest 3310.000000 160.000000 15.777459" ;# 
+$ns_ at 282.707487 "$node_(170) setdest 3290.000000 1020.000000 12.180731" ;# 
+$ns_ at 300.010000 "$node_(170) switch OFF" ;# T_max_OFF  
+$ns_ at 283.249294 "$node_(134) setdest 3310.000000 264.551232 13.636364" ;# 
+$ns_ at 284.020000 "$node_(165) setdest 3182.459519 1165.888250 16.104256" ;# 
+$ns_ at 284.675442 "$node_(179) setdest 3310.000000 610.000000 15.753712" ;# 
+$ns_ at 284.719298 "$node_(197) setdest 1290.000000 1090.000000 15.898667" ;# 
+$ns_ at 300.010000 "$node_(197) switch OFF" ;# T_max_OFF  
+$ns_ at 284.761407 "$node_(169) setdest 2748.414174 1087.347952 15.097365" ;# 
+$ns_ at 285.020000 "$node_(141) setdest 2892.144321 275.715457 13.020350" ;# 
+$ns_ at 300.010000 "$node_(141) switch OFF" ;# T_max_OFF  
+$ns_ at 285.166592 "$node_(194) setdest 3310.000000 502.334199 13.636364" ;# 
+$ns_ at 286.020000 "$node_(125) setdest 792.280359 2150.578050 17.630170" ;# 
+$ns_ at 300.010000 "$node_(125) switch OFF" ;# T_max_OFF  
+$ns_ at 286.020000 "$node_(176) setdest 3147.315698 748.281656 14.195689" ;# 
+$ns_ at 300.010000 "$node_(176) switch OFF" ;# T_max_OFF  
+$ns_ at 286.020000 "$node_(191) setdest 3310.000000 610.000000 13.636364" ;# 
+$ns_ at 300.010000 "$node_(191) switch OFF" ;# T_max_OFF  
+$ns_ at 286.020000 "$node_(155) setdest 3310.000000 610.000000 13.682917" ;# 
+$ns_ at 300.010000 "$node_(155) switch OFF" ;# T_max_OFF  
+$ns_ at 287.020000 "$node_(166) setdest 2822.407652 1533.370461 17.893114" ;# 
+$ns_ at 300.010000 "$node_(166) switch OFF" ;# T_max_OFF  
+#$ns_ at 287.020000 $node_(158) arrived_to 960.000000 570.000000  
+$ns_ at 287.020000 "$node_(158) switch OFF" ;# arrived_to  
+$ns_ at 288.020000 "$node_(158) setdest 0.010000 0.010000 1000000001.000000" ;# remove_from_area_upon__arrived_to
+$ns_ at 288.030000 "$node_(158) setdest 0.020000 0.020000 1000000001.000000" ;# nam_hack__force_remove
+$ns_ at 287.020000 "$node_(207) setdest 3425.453803 2189.695423 16.743154" ;# 
+$ns_ at 300.010000 "$node_(207) switch OFF" ;# T_max_OFF  
+$ns_ at 287.020000 "$node_(193) setdest 3090.000000 2860.000000 16.275407" ;# 
+$ns_ at 300.010000 "$node_(193) switch OFF" ;# T_max_OFF  
+$ns_ at 287.103704 "$node_(145) setdest 1860.000000 1960.000000 13.180718" ;# 
+$ns_ at 300.010000 "$node_(145) switch OFF" ;# T_max_OFF  
+$ns_ at 287.205226 "$node_(149) setdest 3147.933022 1737.438239 15.121541" ;# 
+$ns_ at 287.227168 "$node_(151) setdest 1167.406570 2005.877982 17.555660" ;# 
+$ns_ at 287.320839 "$node_(130) setdest 2560.000000 10.000000 12.922731" ;# 
+$ns_ at 300.010000 "$node_(130) switch OFF" ;# T_max_OFF  
+$ns_ at 287.388980 "$node_(206) setdest 3437.234248 65.113442 14.851351" ;# 
+$ns_ at 287.893128 "$node_(140) setdest 2054.749923 1759.257771 14.591216" ;# 
+$ns_ at 287.953933 "$node_(164) setdest 3126.171441 1847.334225 13.547521" ;# 
+$ns_ at 300.010000 "$node_(164) switch OFF" ;# T_max_OFF  
+$ns_ at 288.006212 "$node_(183) setdest 3310.000000 610.000000 14.533028" ;# 
+$ns_ at 288.020000 "$node_(200) setdest 3310.000000 610.000000 13.636364" ;# 
+$ns_ at 300.010000 "$node_(200) switch OFF" ;# T_max_OFF  
+$ns_ at 288.838393 "$node_(98) setdest 1071.000000 2103.000000 18.617229" ;# 
+$ns_ at 290.020000 "$node_(199) setdest 3310.000000 610.000000 13.636364" ;# 
+$ns_ at 300.010000 "$node_(199) switch OFF" ;# T_max_OFF  
+$ns_ at 290.561376 "$node_(172) setdest 2688.201079 1138.529083 14.299696" ;# 
+$ns_ at 300.010000 "$node_(172) switch OFF" ;# T_max_OFF  
+$ns_ at 291.046956 "$node_(206) setdest 3310.000000 160.000000 13.256438" ;# 
+$ns_ at 300.010000 "$node_(206) switch OFF" ;# T_max_OFF  
+$ns_ at 291.297593 "$node_(134) setdest 3310.000000 160.000000 15.552650" ;# 
+$ns_ at 291.906048 "$node_(169) setdest 2510.000000 1290.000000 12.976074" ;# 
+$ns_ at 300.010000 "$node_(169) switch OFF" ;# T_max_OFF  
+$ns_ at 292.007315 "$node_(175) setdest 2510.000000 1290.000000 13.035396" ;# 
+$ns_ at 300.010000 "$node_(175) switch OFF" ;# T_max_OFF  
+$ns_ at 292.020000 "$node_(113) setdest 2735.000000 3010.000000 15.101927" ;# 
+$ns_ at 300.010000 "$node_(113) switch OFF" ;# T_max_OFF  
+$ns_ at 292.035400 "$node_(190) setdest 3070.515632 418.412506 14.688686" ;# 
+$ns_ at 293.020000 "$node_(127) setdest 1673.304115 1993.837150 17.640181" ;# 
+$ns_ at 300.010000 "$node_(127) switch OFF" ;# T_max_OFF  
+$ns_ at 293.625449 "$node_(177) setdest 3810.000000 1480.000000 14.484169" ;# 
+$ns_ at 300.010000 "$node_(177) switch OFF" ;# T_max_OFF  
+$ns_ at 293.992345 "$node_(174) setdest 2706.805910 1122.714977 12.494798" ;# 
+$ns_ at 300.010000 "$node_(174) switch OFF" ;# T_max_OFF  
+$ns_ at 294.020000 "$node_(179) setdest 3304.517955 722.381925 16.000743" ;# 
+$ns_ at 300.010000 "$node_(179) switch OFF" ;# T_max_OFF  
+$ns_ at 294.020000 "$node_(135) setdest 3176.853891 2420.842508 11.916613" ;# 
+$ns_ at 300.010000 "$node_(135) switch OFF" ;# T_max_OFF  
+$ns_ at 294.020000 "$node_(167) setdest 2491.411823 1791.371013 14.782947" ;# 
+$ns_ at 300.010000 "$node_(167) switch OFF" ;# T_max_OFF  
+$ns_ at 294.164610 "$node_(105) setdest 1305.977451 2060.412198 18.593638" ;# 
+$ns_ at 294.849575 "$node_(180) setdest 3099.279959 1510.166582 19.634022" ;# 
+$ns_ at 300.010000 "$node_(180) switch OFF" ;# T_max_OFF  
+$ns_ at 294.874505 "$node_(112) setdest 505.052271 2199.608511 19.124276" ;# 
+$ns_ at 300.010000 "$node_(112) switch OFF" ;# T_max_OFF  
+$ns_ at 295.020000 "$node_(189) setdest 3034.184067 2843.125416 18.991202" ;# 
+$ns_ at 295.274236 "$node_(165) setdest 3151.084092 1208.451813 18.489324" ;# 
+$ns_ at 295.509215 "$node_(148) setdest 2129.452627 1682.256523 14.455178" ;# 
+$ns_ at 300.010000 "$node_(148) switch OFF" ;# T_max_OFF  
+$ns_ at 295.985333 "$node_(149) setdest 3090.000000 2030.000000 12.947553" ;# 
+$ns_ at 300.010000 "$node_(149) switch OFF" ;# T_max_OFF  
+$ns_ at 296.242875 "$node_(151) setdest 1071.000000 2103.000000 17.596004" ;# 
+$ns_ at 300.010000 "$node_(151) switch OFF" ;# T_max_OFF  
+$ns_ at 297.020000 "$node_(98) setdest 713.988790 2163.942592 16.430355" ;# 
+$ns_ at 300.010000 "$node_(98) switch OFF" ;# T_max_OFF  
+$ns_ at 297.173128 "$node_(140) setdest 1860.000000 1960.000000 12.802166" ;# 
+$ns_ at 300.010000 "$node_(140) switch OFF" ;# T_max_OFF  
+$ns_ at 298.020000 "$node_(183) setdest 3290.000000 1020.000000 13.682917" ;# 
+$ns_ at 300.010000 "$node_(183) switch OFF" ;# T_max_OFF  
+$ns_ at 298.082005 "$node_(201) setdest 2752.229440 48.445888 16.627238" ;# 
+$ns_ at 300.010000 "$node_(201) switch OFF" ;# T_max_OFF  
+$ns_ at 298.090420 "$node_(189) setdest 2660.000000 2730.000000 16.335873" ;# 
+$ns_ at 300.010000 "$node_(189) switch OFF" ;# T_max_OFF  
+$ns_ at 298.134152 "$node_(165) setdest 3032.000000 1370.000000 15.574908" ;# 
+$ns_ at 300.010000 "$node_(165) switch OFF" ;# T_max_OFF  
+$ns_ at 298.848988 "$node_(144) setdest 3310.000000 160.000000 15.753113" ;# 
+$ns_ at 300.010000 "$node_(144) switch OFF" ;# T_max_OFF  
+$ns_ at 298.977706 "$node_(194) setdest 3310.000000 610.000000 15.288458" ;# 
+$ns_ at 300.010000 "$node_(194) switch OFF" ;# T_max_OFF  
+$ns_ at 299.020000 "$node_(134) setdest 3014.622394 100.924479 19.074457" ;# 
+$ns_ at 300.010000 "$node_(134) switch OFF" ;# T_max_OFF  
+$ns_ at 299.432212 "$node_(168) setdest 1576.463624 1510.743448 15.724072" ;# 
+$ns_ at 300.010000 "$node_(168) switch OFF" ;# T_max_OFF  
+$ns_ at 299.512638 "$node_(186) setdest 2660.000000 2730.000000 19.227956" ;# 
+$ns_ at 300.010000 "$node_(186) switch OFF" ;# T_max_OFF  
+$ns_ at 299.676156 "$node_(105) setdest 1071.000000 2103.000000 15.563610" ;# 
+$ns_ at 300.010000 "$node_(105) switch OFF" ;# T_max_OFF  
+$ns_ at 299.691742 "$node_(190) setdest 3310.000000 610.000000 13.146700" ;# 
+$ns_ at 300.010000 "$node_(190) switch OFF" ;# T_max_OFF  
+$ns_ at 299.794328 "$node_(192) setdest 1290.000000 1090.000000 15.716782" ;# 
+$ns_ at 300.010000 "$node_(192) switch OFF" ;# T_max_OFF  
