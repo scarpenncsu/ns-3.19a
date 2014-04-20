@@ -55,9 +55,14 @@
  * Scenarios 2, 3, and 4 playback vehicular trace files in 
  * ns-2 movement format, and are taken from:
  * http://www.lst.inf.ethz.ch/research/ad-hoc/car-traces/
+ * These scenarios are 300 simulation seconds of 99, 210, and
+ * 370 vehicles respectively within the Unterstrass
+ * section of Zurich Switzerland that travel based on
+ * models derived from real traffic data.  Note that these
+ * scenarios can require a lot of clock time to complete.
  *
  * All parameters can be changed from their defaults (see  
- * --help) and changing simualtion parameters can have dramatic
+ * --help) and changing simulation parameters can have dramatic
  * impact on network performance.
  * 
  * Several items can be output:
@@ -68,6 +73,25 @@
  * - dump of routing tables at 5 seconds into the simulation
  * - ASCII trace file
  * - PCAP trace files for each node
+ *
+ * Known issues:
+ * - According to the following, DSR not showing results in 
+ *   flowmon is a known bug:
+ *   https://groups.google.com/forum/#!searchin/ns-3-users/DSR/ns-3-users/1OAswtqMvBA/7MvPrnz9k-cJ
+ *   This is likely related to the DSR issues below.
+ * - DSR results are suspect.  Routing throughput rates are
+ *   much higher than for other routing protocols
+ * - Specifying --protocol=4 (DSR), BSM PDR is 0%.
+ *   This is because none of the transmitted broadcast
+ *   BSM messages are received.  Unexplained at this point.
+ * - Selecting DSR for scenario=4 (370 vehicles) crashes.
+ * - Selecting --protocol=0 (no routing protocol) gives
+ *   non-zero routing packet loss.  Since there is no
+ *   routing protocol specified, there should not be any
+ *   routing data, and hence no routing packets to become
+ *   lost.  Likely related to the need to enable
+ *   internet routing (AODV) even though no application 
+ *   data packets are subsequently scheduled to be sent.
  */
 
 #include <fstream>
@@ -938,7 +962,6 @@ VanetRoutingExperiment::Run ()
   SetupLogFile ();
   SetupLogging ();
   ConfigureDefaults ();
-  int nWifis = m_nNodes;
   SetupAdhocMobilityNodes ();
   SetupAdhocDevices();
   SetupRouting ();
